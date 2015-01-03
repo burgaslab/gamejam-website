@@ -7,4 +7,16 @@ class Home extends CI_Controller {
 
 		$this->load->view("home");
 	}
+	
+	public function what() {
+		$this->load->library("path");
+
+		$this->load->view("what");
+	}
+	
+	public function rules() {
+		$this->load->library("path");
+
+		$this->load->view("rules");
+	}
 }

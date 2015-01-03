@@ -9,13 +9,13 @@
 		<?php require_once("partial/header.php"); ?>
 
 		<h1>Регистрация</h1>
-      <div class="row" >
-				<div class="col-xs-16">
-					<?php if ($is_success) { ?>
+		<div class="row" >
+			<div class="col-xs-16">
+			<?php if ($is_success) { ?>
 				<div class="alert alert-success" role="alert">
 					<p>Вашата регистрация за Burgas Game Jam беше успешна!</p>
 				</div>
-				<?php } else { ?>
+			<?php } else { ?>
 				<form method="post" action="#" class="reg">
 					<div class="row validate required <?= $validator->has_error("name") ? "has-error":""?>">
 						<p class="col-lg-4"><input type="text" class="form-control" placeholder="Име и фамилия" name="name" value="<?= htmlspecialchars($data["name"]) ?>" /></p>

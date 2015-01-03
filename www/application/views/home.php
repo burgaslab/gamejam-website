@@ -12,18 +12,18 @@
 			<div class="col-xs-8">
 				<div style="border-radius: 4px; padding: 40px 20px; text-align: center;">
 					<div class="inspiration left">
-						<span><span class="badge">1</span> Разкрий своя талант</span>
+						<span><span class="badge">1</span> Ела и научи</span>
 					</div>
 					<div class="inspiration left">
 						<span>Сформирай екип <span class="badge">2</span></span>
 					</div>
 					<div class="inspiration left">
-						<span><span class="badge">3</span> Ела и направи игра!</span>
+						<span><span class="badge">3</span> Направи игра!</span>
 					</div>
 					<div class="info">
 						<span>1 тема</span>
 					</div>
-					<div class=" info">
+					<div class="info">	
 						<span>45 часа</span>
 					</div>
 					<div class="info">
@@ -33,11 +33,21 @@
 					<h3>
 						<a class="btn btn-primary btn-hg" style="font-size: 0.8em; font-weight: 600; color: #1f1f1f; background: #11d520" href="#fakelink">Регистрирай се за участие още сега!</a>
 					</h3>
-					<h4 class="inspiration"><span><span class="badge">?</span> Какво е Burgas Game Jam</span></h4>
+					<h4 class="inspiration">
+						<span><span class="badge">?</span> Какво е Burgas Game Jam</span>
+					</h4>
 					<p class="indented">
 					Burgas Game Jam е 48 часов хакатон за правене на игри. <br />
 					Случва се в рамките на 3 дни. <br />
-					Част e от глобалната инициатива Global Game Jam.<br />
+					Част e от глобалната инициатива <a href="http://globalgamejam.org/">Global Game Jam.</a><br />
+					<br />
+					<h4 class="inspiration">
+						<span><span class="badge">?</span> Правила</span>
+					</h4>
+					<p class="indented">
+					На 23ти януари ела в Казиното в 12:00, за да се запознаеш с останалите game ентусиасти в Бургас, откриеш твоя екип и заедно направите игра за 48 часа! <br />
+					Участието е безплатно и всички са добре дошли - програмисти, дизайнери, артисти, геймъри, game ентусиасти, любители и професионалисти. <br />
+					Минимална възраст: 12+ <br />
 					<br />
 					Домакин е бургаският хакерспейс <br /><a href="http://burgaslab.org"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>
 					</p>

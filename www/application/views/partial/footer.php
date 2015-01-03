@@ -2,7 +2,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-7">
-				Домакин е бургаският хакерспейс <br /><a href="http://burgaslab.org"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>
+				Домакин е бургаският хакерспейс <br />
+				<a href="http://burgaslab.org">
+					<img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" />
+				</a>
 			</div>
 			<div class="col-xs-5"></div>
 		</div>

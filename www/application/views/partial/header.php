@@ -9,19 +9,21 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse-01">
 				<ul class="nav navbar-nav navbar-left">
 					<li><a href="<?= $this->path->base ?>">Начало</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">За Game Jam-а<b class="caret"></b></a> <span class="dropdown-arrow"></span>
+					<li class="dropdown">
+						<a href="<?= $this->path->base ?>home/what" class="dropdown-toggle" data-toggle="dropdown">Какво?<b class="caret"></b></a> <span class="dropdown-arrow"></span>
 						<ul class="dropdown-menu">
-							<li><a href="<?= $this->path->base ?>burgag-game-jam">Какво е Burgas Game Jam?</a></li>
-							<li class="divider"></li>
-							<li><a href="<?= $this->path->base ?>global-game-jam">Какво е Global Game Jam?</a></li>
-							<li><a href="<?= $this->path->base ?>game-jam">Какво е Game Jam?</a></li>
+							<li><a href="<?= $this->path->base ?>home/what#game-jam">Какво е Game Jam?</a></li>
+							<li><a href="<?= $this->path->base ?>home/what#global-game-jam">Какво е Global Game Jam?</a></li>
+							<li><a href="<?= $this->path->base ?>home/what#burgas-game-jam">Какво е Burgas Game Jam?</a></li>
 						</ul></li>
-					<li class="dropdown"><a href="<?= $this->path->base ?>rules" class="dropdown-toggle" data-toggle="dropdown">Правила<b class="caret"></b></a> <span class="dropdown-arrow"></span>
+					<li class="dropdown">
+						<a href="<?= $this->path->base ?>home/rules" class="dropdown-toggle" data-toggle="dropdown">Правила<b class="caret"></b></a> 
+						<span class="dropdown-arrow"></span>
 						<ul class="dropdown-menu">
-							<li><a href="#">Темата</a></li>
-							<li><a href="#">Продължителност</a></li>
-							<li><a href="#">Участие</a></li>
-							<li><a href="#">Интелектуални права</a></li>
+							<li><a href="<?= $this->path->base ?>home/rules#theme">Темата</a></li>
+							<li><a href="<?= $this->path->base ?>home/rules#time">Време</a></li>
+							<li><a href="<?= $this->path->base ?>home/rules#participate">Участие</a></li>
+							<li><a href="<?= $this->path->base ?>home/rules#copyright">Интелектуални права</a></li>
 						</ul></li>
 					<li class="dropdown"><a href="<?= $this->path->base ?>programme" data-toggle="dropdown">Програма</a></li>
 				</ul>

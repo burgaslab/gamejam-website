@@ -13,7 +13,6 @@ class Registration extends CI_Controller {
 		$this->load->library("path");
 		$this->load->library("session");
 		$this->load->helper("url");
-		$this->load->database();
 
 		require_once($this->path->abs_app . "libraries/class/Validator.php");
 
@@ -23,6 +22,8 @@ class Registration extends CI_Controller {
 		$this->validator = new validator();
 
 		if ($this->input->post()) {
+			$this->load->database();
+
 			$this->validator->validate_required("name", $post["name"], 1);
 			$this->validator->validate_email("email", $post["email"], 1);
 

@@ -19,4 +19,10 @@ class Home extends CI_Controller {
 
 		$this->load->view("rules");
 	}
+	
+	public function programme() {
+		$this->load->library("path");
+
+		$this->load->view("programme");
+	}
 }

@@ -433,6 +433,12 @@ body {
   background-color: #f4d313;
  }
 
+ .inner-container {
+  border-radius: 4px; 
+  /*padding: 40px 20px; */
+  padding: 5% 10%;
+ }
+
 
 .inspiration span {
   background-color: #2C3E50;

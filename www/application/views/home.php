@@ -10,7 +10,7 @@
 		<div class="row demo-row">
 			<!-- <div class="col-xs-2"></div> -->
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div style="border-radius: 4px; padding: 40px 20px; text-align: center;" class="trans-black">
+				<div style="text-align: center;" class="inner-container trans-black">
 					<div class="inspiration left">
 						<span><span class="badge">1</span> Ела и научи</span>
 					</div>

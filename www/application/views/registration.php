@@ -48,7 +48,7 @@
 								<input type="radio" name="occupation" value="<?= htmlspecialchars($o) ?>" id="occupation-<?=$index?>" data-toggle="radio" <?= ($data["occupation"]==$o) ? 'checked="checked"' : "" ?> >
 								<?= htmlspecialchars($o) ?>
 							</label>
-							<? } ?>
+							<?php } ?>
 						</div>
 					</div>
 					<div class="row">

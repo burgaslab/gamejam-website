@@ -433,6 +433,11 @@ body {
   background-color: #f4d313;
  }
 
+.navbar-inverse .navbar-nav > li > a.active {
+  color: #000;
+  background-color: #fff100;
+ }
+
  .inner-container {
   border-radius: 4px; 
   /*padding: 40px 20px; */
@@ -465,5 +470,17 @@ footer.jumbotron {
 
 hr {
   border-top: 1px solid rgba(55, 55, 55, 0.22);
+}
+
+.info-host{
+  text-align: left; 
+  font-size: 0.25em; 
+  line-height: 130%; 
+  color: #E9E9E9; 
+  font-weight: 500;
+}
+
+.info-host a {
+  color: #E9E9E9; 
 }
 /* END changes */

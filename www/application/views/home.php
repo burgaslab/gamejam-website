@@ -53,7 +53,7 @@
 					Участието е безплатно и всички са добре дошли - програмисти, дизайнери, артисти, геймъри, game ентусиасти, любители и професионалисти. <br />
 					Минимална възраст: 12+ <br />
 					<br />
-					Домакин: <br /><a href="http://burgaslab.org"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>
+					<!-- Домакин: <br /><a href="http://burgaslab.org"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a> -->
 					</p>
 				</div>
 			</div>

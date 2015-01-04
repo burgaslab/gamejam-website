@@ -25,4 +25,10 @@ class Home extends CI_Controller {
 
 		$this->load->view("programme");
 	}
+	
+	public function support() {
+		$this->load->library("path");
+
+		$this->load->view("support");
+	}
 }

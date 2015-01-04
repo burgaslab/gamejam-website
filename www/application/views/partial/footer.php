@@ -34,10 +34,10 @@
 		<div class="row">
 
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<a href="#" class="navbar-brand btn btn-block btn-warning" >Подкрепи Burgas Game Jam</a>
+				<a href="<?= $this->path->base ?>support" class="navbar-brand btn btn-block btn-warning" >Подкрепи Burgas Game Jam</a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<a href="#" class="navbar-brand btn btn-block btn-warning" >Стани спонсор</a>
+				<a href="<?= $this->path->base ?>support#sponsor" class="navbar-brand btn btn-block btn-warning" >Стани спонсор</a>
 			</div>
 		</div>
 	</div>

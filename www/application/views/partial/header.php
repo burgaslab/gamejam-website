@@ -1,5 +1,5 @@
-<div class="row demo-row">
-	<div class="col-xs-12">
+<div class="row ">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<nav class="navbar navbar-inverse navbar-embossed" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
@@ -27,13 +27,14 @@
 					<li><a href="<?= $this->path->base ?>programme" >Програма</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a class="btn btn-block btn-lg" style="color: #fff; background: rgba(240, 4, 4, 0.1)" href="<?= $this->path->base ?>registration">Регистрирай се за участие</a></li>
+					<!-- <li><a class="btn btn-block btn-lg btn-success"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a></li> -->
+					<li><a class="register"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 </div>
-<div class="demo-headline">
+<div class="demo-headline demo-row trans-black">
 	<a href="<?= $this->path->base ?>">
 		<h1 class="demo-logo" style="">
 			<div style="font-family: 'Courier New', monospace; font-size: 13px; line-height: normal;">
@@ -45,3 +46,5 @@
 		</h1>
 	</a>
 </div>
+
+

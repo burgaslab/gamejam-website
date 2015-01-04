@@ -69,7 +69,8 @@
 						<div class="row demo-row">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="bootstrap-switch-square validate required <?= $validator->has_error("agree") ? "has-error":""?>">
-									<label><input type="checkbox" name="agree" <?= $data["agree"] ? 'checked="checked"' : ""?> data-toggle="switch" id="custom-switch-03" data-on-text="<span class='fui-check'></span>" data-off-text="<span class='fui-cross'></span>" />&nbsp;Наясно съм, че проектите се публикуват под <a href="http://creativecommons.org/" target="_blank">Creative commons лиценз</a> </label>
+									<label><input type="checkbox" name="agree" <?= $data["agree"] ? 'checked="checked"' : ""?> data-toggle="switch" id="custom-switch-03" data-on-text="<span class='fui-check'></span>" data-off-text="<span class='fui-cross'></span>" />&nbsp;Наясно съм, че проектите се публикуват под <a href="http://creativecommons.org/" target="_blank">Creative commons лиценз</a>. </label>
+									<a href="<?= $this->path->base ?>rules#copyright" target="_blank"><span class="fui-info-circle" ></span></a>
 								</div>
 							</div>
 						</div>

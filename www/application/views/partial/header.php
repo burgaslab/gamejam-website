@@ -22,7 +22,7 @@
 							<li><a href="<?= $this->path->base ?>rules#theme">Темата</a></li>
 							<li><a href="<?= $this->path->base ?>rules#time">Време</a></li>
 							<li><a href="<?= $this->path->base ?>rules#participate">Участие</a></li>
-							<li><a href="<?= $this->path->base ?>rules#copyright">Интелектуални права</a></li>
+							<li><a href="<?= $this->path->base ?>rules#copyright">Авторски права</a></li>
 						</ul></li>
 					<li><a href="<?= $this->path->base ?>programme" >Програма</a></li>
 				</ul>

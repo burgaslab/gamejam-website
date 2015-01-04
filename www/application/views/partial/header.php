@@ -43,16 +43,16 @@
 				</div>
 				<div class="" style="margin-top: -55px; margin-left: 200px">
 
-				<div class="info-host">
-					23-25 януари 2015
+					<div class="info-host">
+						23-25 януари 2015
+					</div>
+					<div class="info-host">
+						в Културен център “Морско Казино”<br />
+					</div>
+					<!-- <div class="info-host">
+						Домакин: <a href="http://burgaslab.org" ><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" style="width:80px;" /></a>
+					</div> -->
 				</div>
-				<div class="info-host">
-					в Културен център “Морско Казино”<br />
-				</div>
-				<div class="info-host">
-					Домакин: <a href="http://burgaslab.org" ><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" style="width:80px;" /></a>
-				</div>
-				<div>
 				
 			</h1>
 		</a>

@@ -8,7 +8,6 @@
 	<div class=" container">
 		<?php require_once("partial/header.php"); ?>
 		<div class="row demo-row">
-			<!-- <div class="col-xs-2"></div> -->
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div style="text-align: center;" class="inner-container trans-black">
 					<div class="inspiration left">
@@ -29,10 +28,10 @@
 					<div class="info">
 						<span>24 000 участника в целия свят (2014)</span>
 					</div>
-					<br />
 					<h3>
-						<a class="btn btn-primary btn-hg btn-success" style="font-size: 0.8em; font-weight: 600;" href="#fakelink">Регистрирай се за участие още сега!</a>
+						<a class="btn btn-primary btn-hg btn-warning" style="font-size: 0.8em; font-weight: 600;" href="<?= $this->path->base ?>registration">Регистрирай се за участие още сега!</a>
 					</h3>
+					<br />
 					<h4 class="inspiration">
 						<a href="<?= $this->path->base ?>what">
 							<span><span class="badge">?</span> Какво е Burgas Game Jam</span>
@@ -41,7 +40,11 @@
 					<p class="indented">
 					Burgas Game Jam е 48 часов хакатон за правене на игри. <br />
 					Случва се в рамките на 3 дни. <br />
-					Част e от глобалната инициатива <a href="http://globalgamejam.org/">Global Game Jam.</a><br />
+					Част e от глобалната инициатива <a href="http://globalgamejam.org/" target="_blank">Global Game Jam.</a>
+					<a href="http://globalgamejam.org" target="_blank"><img style="vertical-align: text-top;" src="<?= $this->path->base ?>resource/img/site/partners/ggj-logo-small.png" /></a><br />
+					Организатор: <br />
+					<a href="http://burgaslab.org" target="_blank"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>					
+					<br />
 					<br />
 					<h4 class="inspiration">
 						<a href="<?= $this->path->base ?>rules">
@@ -51,10 +54,7 @@
 					<p class="indented">
 					На 23ти януари ела в Казиното в 12:00, за да се запознаеш с останалите game ентусиасти в Бургас, откриеш твоя екип и заедно направите игра за 48 часа! <br />
 					Участието е безплатно и всички са добре дошли - програмисти, дизайнери, артисти, геймъри, game ентусиасти, любители и професионалисти. <br />
-					Минимална възраст: 12+ <br />
-					<br />
-					Домакин: <br /><a href="http://burgaslab.org"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>
-					</p>
+					Минимална възраст: 12+ 
 				</div>
 			</div>
 		</div>

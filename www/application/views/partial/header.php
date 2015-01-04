@@ -34,28 +34,29 @@
 		</nav>
 	</div>
 </div>
-<div class="demo-headline demo-row trans-black">
-	<a href="<?= $this->path->base ?>">
-		<h1 class="demo-logo" style="">
-			<div style="font-family: 'Courier New', monospace; font-size: 13px; line-height: normal;">
+<div class="demo-headline row trans-black">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+		<a href="<?= $this->path->base ?>">
+			<h1 class="demo-logo">
+				<div style="font-family: 'Courier New', monospace; font-size: 13px; line-height: normal;">
 					<img src="<?= $this->path->base ?>resource/img/site/logo-3.png" />
-				
-			</div>
-			<div class="" style="margin-top: -55px; margin-left: 200px">
+				</div>
+				<div class="" style="margin-top: -55px; margin-left: 200px">
 
-			<div class="info-host">
-				23-25 януари 2015
-			</div>
-			<div class="info-host">
-				в Културен център “Морско Казино”<br />
-			</div>
-			<div class="info-host">
-				Домакин: <a href="http://burgaslab.org" ><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" style="width:80px;" /></a>
-			</div>
-			<div>
-			
-		</h1>
-	</a>
+				<div class="info-host">
+					23-25 януари 2015
+				</div>
+				<div class="info-host">
+					в Културен център “Морско Казино”<br />
+				</div>
+				<div class="info-host">
+					Домакин: <a href="http://burgaslab.org" ><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" style="width:80px;" /></a>
+				</div>
+				<div>
+				
+			</h1>
+		</a>
+	</div>
 </div>
 
 

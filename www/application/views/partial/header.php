@@ -41,7 +41,7 @@
 				<div style="font-family: 'Courier New', monospace; font-size: 13px; line-height: normal;">
 					<img src="<?= $this->path->base ?>resource/img/site/logo-3.png" />
 				</div>
-				<div class="" style="margin-top: -55px; margin-left: 200px">
+				<div class="" style="margin-top: -55px; margin-left: 260px">
 
 					<div class="info-host">
 						23-25 януари 2015

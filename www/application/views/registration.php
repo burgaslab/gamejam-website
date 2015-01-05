@@ -8,13 +8,10 @@
 	<div class="container">
 		<?php require_once("partial/header.php"); ?>
 
-		
+
 		<div class="row" >
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="inner-container trans-black">
-				
-					<h1 style="margin: 0px 0px 1em 0px; text-align: center; ">Регистрация</h1>	
-					<hr />
 				<?php if ($is_success) { ?>
 					<div class="alert alert-success" role="alert">
 						<p>Вашата регистрация за Burgas Game Jam беше успешна!</p>
@@ -33,9 +30,9 @@
 								</div>
 								<label>(ще бъде използван за връзка с вас)</label>
 							</div>
-							
+
 						</div>
-			
+
 						<div class="row demo-row">
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 validate required <?= $validator->has_error("age") ? "has-error":""?>">
 								<p style="margin: 5px 0 -5px 0;">Възрастова група</p>
@@ -63,7 +60,7 @@
 									<input type="text" class="tagsinput skills form-control" placeholder="Умения" name="skills" value="<?= htmlspecialchars($data["skills"]) ?>" />
 									<label>(разделени със запетая)</label>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="row demo-row">

@@ -9,6 +9,8 @@ class Registration extends CI_Controller {
 
 	private $validator = null;
 
+	public $method = "registration";
+
 	public function index() {
 		$this->load->library("path");
 		$this->load->library("session");

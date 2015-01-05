@@ -2,33 +2,33 @@
 
 class Home extends CI_Controller {
 
-	public function index() {
+	public $method;
+
+	public function __construct() {
+		parent::__construct();
+
 		$this->load->library("path");
 
+		$this->method = $this->router->fetch_method();
+	}
+
+	public function index() {
 		$this->load->view("home");
 	}
-	
-	public function what() {
-		$this->load->library("path");
 
+	public function what() {
 		$this->load->view("what");
 	}
-	
-	public function rules() {
-		$this->load->library("path");
 
+	public function rules() {
 		$this->load->view("rules");
 	}
-	
-	public function programme() {
-		$this->load->library("path");
 
+	public function programme() {
 		$this->load->view("programme");
 	}
-	
-	public function support() {
-		$this->load->library("path");
 
+	public function support() {
 		$this->load->view("support");
 	}
 }

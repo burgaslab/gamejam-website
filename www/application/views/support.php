@@ -34,8 +34,10 @@
 					</h4>
 					<p class="indented">
 					Участвай в Burgas Game Jam и доведи приятели!<br />
-					Разкажи на всеки, ще GGJ15 идва в Бургас!<br />
-					Запиши се в събитието във <a target="_blank" href="#">facebook</a>. 					
+					Разкажи на всеки, че GGJ15 идва в Бургас!<br />
+					<!-- Запиши се в събитието във <a target="_blank" href="#">facebook</a>. 	 -->	
+					Искаш ли да споделиш твоя опит в правенето на игри по време на Burgas Game Jam? Стани лектор! Пиши ни на 
+					<a href="mailto:gamejam@burgaslab.org?Subject=Donation" target="_top">gamejam@burgaslab.org</a>
 				</div>
 			</div>			
 		</div>

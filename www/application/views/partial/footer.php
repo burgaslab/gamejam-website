@@ -10,8 +10,8 @@
 			<div class="col-xs-5"></div>
 		</div> -->
 		<div class="row demo-panel-title">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">С подкрепата на</div> 
-		</div>		
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">С подкрепата на</div>
+		</div>
 		<div class="row demo-row">
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<a href="http://globalgamejam.org/" target="_blank" title="Global Game Jam" class="thumbnail thumbnail-cust">
@@ -24,6 +24,10 @@
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<a href="http://www.vijburgas.com" target="_blank" title="ВИЖ! Бургас" class="thumbnail thumbnail-dark thumbnail-cust">
 					<img src="<?= $this->path->base ?>resource/img/site/partners/logo-vijBurgas.png" alt="ВИЖ! Бургас"></a>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<a href="http://www.hamalogika.com" target="_blank" title="Хамалогика" class="thumbnail thumbnail-cust">
+					<img src="<?= $this->path->base ?>resource/img/site/partners/hamalogika.png" alt="Хамалогика"></a>
 			</div>
 		</div>
 		<hr />
@@ -41,13 +45,13 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 						<a href="mailto:gamejam@burgaslab.org?Subject=Donation" target="_top">gamejam@burgaslab.org</a> <br />
-						Организатор: <a href="http://burgaslab.org" target="_blank">BurgasLab</a>	
+						Организатор: <a href="http://burgaslab.org" target="_blank">BurgasLab</a>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<a href="#" target="_blank"><span class="fui-facebook" ></span> facebook събитие</a><br />
+						<a href="https://www.facebook.com/events/759492127470937/759502870803196/" target="_blank"><span class="fui-facebook" ></span> facebook събитие</a><br />
 						<a href="https://twitter.com/search?f=realtime&q=%23bgj2015&src=typd" target="_blank"><span class="fui-twitter" ></span> #bgj2015</a><br />
 					</div>
-				</div>				
+				</div>
 			</div>
 			<!--<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<a href="<?= $this->path->base ?>support#sponsor" class="btn btn-primary btn-hg btn-warning btn-wrap" >Стани спонсор</a>

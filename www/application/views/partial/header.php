@@ -8,6 +8,9 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse-01">
 				<ul class="nav navbar-nav navbar-left">
+					<li>
+						<a href="<?= $this->path->base ?>" class="<?= $this->method=="index" ? "active" : ""?>" >Начало</a>
+					</li>
 					<li class="dropdown">
 						<a href="<?= $this->path->base ?>what" class="dropdown-toggle <?= $this->method=="what" ? "active" : ""?>" data-toggle="dropdown">Какво?<b class="caret"></b></a> <span class="dropdown-arrow"></span>
 						<ul class="dropdown-menu">
@@ -50,5 +53,3 @@
 		</a>
 	</div>
 </div>
-
-

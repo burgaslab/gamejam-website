@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#"
+	  lang="bg">
 <head>
-<title>Burgas Game Jam | започваме на 23 януари в Морското казино</title>
+<title>Burgas Game Jam 2015 | започваме на 23 януари в Морското казино</title>
 	<?php require_once("partial/head.php"); ?>
 </head>
 <body>
@@ -22,7 +24,7 @@
 					<div class="info">
 						<span>1 тема</span>
 					</div>
-					<div class="info">	
+					<div class="info">
 						<span>45 часа</span>
 					</div>
 					<div class="info">
@@ -45,7 +47,7 @@
 					<a href="http://globalgamejam.org" target="_blank"><img style="vertical-align: text-top;" src="<?= $this->path->base ?>resource/img/site/partners/ggj-logo-small.png" /></a><br />
 					-->
 					Организатор: <br />
-					<a href="http://burgaslab.org" target="_blank"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>					
+					<a href="http://burgaslab.org" target="_blank"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>
 					<br />
 					<br />
 					<h4 class="inspiration">
@@ -56,7 +58,7 @@
 					<p>
 					На 23ти януари ела в Казиното в 12:00, за да се запознаеш с останалите game ентусиасти в Бургас, откриеш твоя екип и заедно направите игра за 48 часа! <br />
 					Участието е безплатно и всички са добре дошли - програмисти, дизайнери, артисти, геймъри, game ентусиасти, любители и професионалисти. <br />
-					Минимална възраст: 12+ 
+					Минимална възраст: 12+
 				</div>
 			</div>
 		</div>

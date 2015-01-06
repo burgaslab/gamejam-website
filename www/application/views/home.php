@@ -29,7 +29,7 @@
 						<span>24 000 участника в целия свят (2014)</span>
 					</div>
 					<h3>
-						<a class="btn btn-primary btn-hg btn-warning" style="font-size: 0.8em; font-weight: 600;" href="<?= $this->path->base ?>registration">Регистрирай се за участие още сега!</a>
+						<a class="btn btn-primary btn-hg btn-warning btn-wrap" style="font-size: 0.8em; font-weight: 600; background: #F39C12;" href="<?= $this->path->base ?>registration">Регистрирай се за участие още сега!</a>
 					</h3>
 					<br />
 					<h4 class="inspiration">
@@ -37,11 +37,13 @@
 							<span><span class="badge">?</span> Какво е Burgas Game Jam</span>
 						</a>
 					</h4>
-					<p class="indented">
+					<p>
 					Burgas Game Jam е 48 часов хакатон за правене на игри. <br />
 					Случва се в рамките на 3 дни. <br />
-					Част e от глобалната инициатива <a href="http://globalgamejam.org/" target="_blank">Global Game Jam.</a>
+					Част e от глобалната инициатива <a href="http://globalgamejam.org/" target="_blank">Global Game Jam.</a><br />
+					<!--
 					<a href="http://globalgamejam.org" target="_blank"><img style="vertical-align: text-top;" src="<?= $this->path->base ?>resource/img/site/partners/ggj-logo-small.png" /></a><br />
+					-->
 					Организатор: <br />
 					<a href="http://burgaslab.org" target="_blank"><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" /></a>					
 					<br />
@@ -51,7 +53,7 @@
 							<span><span class="badge">!</span> Правила</span>
 						</a>
 					</h4>
-					<p class="indented">
+					<p>
 					На 23ти януари ела в Казиното в 12:00, за да се запознаеш с останалите game ентусиасти в Бургас, откриеш твоя екип и заедно направите игра за 48 часа! <br />
 					Участието е безплатно и всички са добре дошли - програмисти, дизайнери, артисти, геймъри, game ентусиасти, любители и професионалисти. <br />
 					Минимална възраст: 12+ 

@@ -96,10 +96,9 @@ ol.linenums {
   /*width: 970px !important;*/
 
   }
-.demo-headline {
-  padding: 0 0 40px 0;
-  text-align: center;
-  margin: 70px 0 0px 0;
+.demo-headline {  
+  padding: 3% 0px;
+  margin: 0px;
 }
 .demo-logo {
   /* margin: 10px 0; */
@@ -375,25 +374,44 @@ ol.linenums {
 	
 }
 
-.inspiration span {
-	padding: 7px; background: rgba(255, 184, 0, 0.2);
+.inspiration span, .inspiration a span {
+	padding: 7px; 
+/* 	background: rgba(255, 184, 0, 0.2); */
+	background-color: #2C3E50; /*MIDNIGHT BLUE*/
+	font-weight: 400;
+	color: #ECF0F1; /*CLOUDS*/
 }
 
 .inspiration span.badge {
-	display: inline-block; background: #DB9006; width: 60px; height: 60px;
-	padding: 10px; border-radius: 50%; font-size: 1em;
+	display: inline-block; 
+	/* background: #DB9006;  */
+	width: 60px; 
+	height: 60px;
+	padding: 10px; 
+	border-radius: 50%; 
+	font-size: 1em;	
+	background-color: #F1C40F; /*SUN FLOWER*/
+	color:  #2C3E50; /*MIDNIGHT BLUE*/
+	font-weight: 700;
+}
+.inspiration span.badge .up {
+	font-size: 0.7em;
+    vertical-align: text-top;
+    background: none repeat scroll 0% 0% transparent;
+    padding: 0px;
+    color: #2C3E50; /*MIDNIGHT BLUE*/
 }
 
 .has-error { color: #f00; }
 
-
 /* BEGIN changes */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,100&subset=latin,cyrillic);
+/* поради някаква причина този импорт не сработва..*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,100&subset=latin,cyrillic);*/
 
 body {
   background: url('../img/site/footer_lodyas.png') repeat;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   width: 100%;
  }
 .container {
@@ -404,38 +422,37 @@ body {
  
 }
 
-
- .demo-headline {
-  padding: 30px 0 40px 0;
-  margin: 0px;
-
- }
-
 .navbar-inverse {
   background-color: #222;
 }
 
-.navbar-nav > li > a.btn, .inspiration span, .inspiration a span {
+/*.navbar-nav > li > a.btn, .inspiration span, .inspiration a span {
   color: #fff;
- }
+ }*/
 
 .navbar-inverse .navbar-nav > li > a.register {
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
+/*   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15);
   background-color: #fff100;
   color: #676565;
   font-weight: 600;
   border-right-color: transparent;
   border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px; */
+  background: #F39C12; /* ORANGE */
+  color: #FFF;
  }
 
 .navbar-inverse .navbar-nav > li > a.register:hover, .navbar-inverse .navbar-nav > li > a.register:focus {
-  background-color: #f4d313;
+ /*  background-color: #f4d313; */
+ color: #FFF;
  }
 
 .navbar-inverse .navbar-nav > li > a.active {
   color: #000;
   background-color: #fff100;
+ }
+ .navbar-inverse .navbar-nav > li > a.active:hover {
+  color: #000 !important;
  }
 
  .inner-container {
@@ -443,20 +460,6 @@ body {
   /*padding: 40px 20px; */
   padding: 5% 10%;
  }
-
-
-.inspiration span {
-  background-color: #2C3E50;
-}
-
-.inspiration span.badge {
-  background-color: #F1C40F;
-}
-
-
-.inspiration span {
-  font-weight: 700;
-}
 
 footer.jumbotron {
   border-radius: 3px;
@@ -476,11 +479,17 @@ hr {
   text-align: left; 
   font-size: 0.25em; 
   line-height: 130%; 
-  color: #E9E9E9; 
+  color: #ECF0F1; 
   font-weight: 500;
+  margin-top: -6%;
+  margin-left: 1%;
 }
 
 .info-host a {
-  color: #E9E9E9; 
+  color: #ECF0F1; 
+}
+
+.btn-wrap {
+	white-space: normal;
 }
 /* END changes */

@@ -27,8 +27,9 @@
 					<li><a href="<?= $this->path->base ?>programme" class="<?= $this->method=="programme" ? "active" : ""?>">Програма</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<!-- <li><a class="btn btn-block btn-lg btn-success"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a></li> -->
-					<li><a class="register <?= $this->method=="registration" ? "active" : ""?>"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a></li>
+					<li class="dropdown">
+						<a class="register <?= $this->method=="registration" ? "active" : ""?>"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -38,22 +39,13 @@
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 		<a href="<?= $this->path->base ?>">
 			<h1 class="demo-logo">
-				<div style="font-family: 'Courier New', monospace; font-size: 13px; line-height: normal;">
-					<img src="<?= $this->path->base ?>resource/img/site/logo-3.png" />
-				</div>
-				<div class="" style="margin-top: -55px; margin-left: 200px">
-
+				<div style="width: 100%; margin: 0px auto; max-width: 595px;">
+					<img src="<?= $this->path->base ?>resource/img/site/logo-3.png" style="max-width: 595px; width: 100%;"/>
 					<div class="info-host">
-						23-25 януари 2015
+							23-25 януари 2015 <br/>
+							в Културен център “Морско Казино”
 					</div>
-					<div class="info-host">
-						в Културен център “Морско Казино”<br />
-					</div>
-					<!-- <div class="info-host">
-						Домакин: <a href="http://burgaslab.org" ><img src="<?= $this->path->base ?>resource/img/site/logo_burgaslab.png" style="width:80px;" /></a>
-					</div> -->
 				</div>
-
 			</h1>
 		</a>
 	</div>

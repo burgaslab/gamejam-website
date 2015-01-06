@@ -11,7 +11,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="inner-container trans-black">
 					<h4 class="inspiration">
-					<span><span class="badge">1<span style="font-size: 0.7em; vertical-align: text-top; background: none repeat scroll 0% 0% transparent; padding: 0px;">ви</span></span> Ден</span>
+					<span><span class="badge">1<span class="up">ви</span></span> Ден</span>
 				</h4>
 				<p class="indented">
 				12:00 Регистрация <br />
@@ -19,7 +19,7 @@
 				17:30-18:00: Обявяване на темата <br />
 				18:00-? : Сформиране на отбори <br />
 				<h4 class="inspiration">
-					<span><span class="badge">2<span style="font-size: 0.7em; vertical-align: text-top; background: none repeat scroll 0% 0% transparent; padding: 0px;">ри</span></span> Ден</span>
+					<span><span class="badge">2<span class="up">ри</span></span> Ден</span>
 				</h4>
 				<p class="indented">
 				10:00 Начало <br />
@@ -28,7 +28,7 @@
 				и профилна страница за играта <br />
 				18:00-19:00: Тестване на игрите на други отбори <br />
 				<h4 class="inspiration">
-					<span><span class="badge">3<span style="font-size: 0.7em; vertical-align: text-top; background: none repeat scroll 0% 0% transparent; padding: 0px;">ти</span></span> Ден</span>
+					<span><span class="badge">3<span class="up">ти</span></span> Ден</span>
 				</h4>
 				<p class="indented">
 				10:00 Начало <br />

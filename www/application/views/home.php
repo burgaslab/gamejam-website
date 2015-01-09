@@ -3,7 +3,7 @@
       xmlns:fb="http://ogp.me/ns/fb#"
 	  lang="bg">
 <head>
-<title>Burgas Game Jam 2015 | започваме на 23 януари в Морското казино</title>
+<title>Burgas Game Jam 2015</title>
 	<?php require_once("partial/head.php"); ?>
 </head>
 <body>

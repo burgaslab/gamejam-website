@@ -22,12 +22,16 @@
 					<img src="<?= $this->path->base ?>resource/img/site/partners/hackafe.png" alt="Hackafe Plovdiv"></a>
 			</div>
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-				<a href="http://www.vijburgas.com" target="_blank" title="ВИЖ! Бургас" class="thumbnail thumbnail-dark thumbnail-cust">
-					<img src="<?= $this->path->base ?>resource/img/site/partners/logo-vijBurgas.png" alt="ВИЖ! Бургас"></a>
+				<a href="http://www.business-burgas.com/" target="_blank" title="Бизнес Инкубатор - Бургас" class="thumbnail thumbnail-dark thumbnail-cust">
+					<img src="<?= $this->path->base ?>resource/img/site/partners/bib-logo.png" alt="Бизнес Инкубатор - Бургас"></a>
 			</div>
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<a href="http://www.hamalogika.com" target="_blank" title="Хамалогика" class="thumbnail thumbnail-cust">
-					<img src="<?= $this->path->base ?>resource/img/site/partners/hamalogika.png" alt="Хамалогика"></a>
+					<img src="<?= $this->path->base ?>resource/img/site/partners/hama-logo-b.png" alt="Хамалогика"></a>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<a href="http://www.vijburgas.com" target="_blank" title="ВИЖ! Бургас" class="thumbnail thumbnail-dark thumbnail-cust">
+					<img src="<?= $this->path->base ?>resource/img/site/partners/logo-vijBurgas.png" alt="ВИЖ! Бургас" style="height: 70px;"></a>
 			</div>
 		</div>
 		<hr />

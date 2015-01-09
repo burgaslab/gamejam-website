@@ -501,3 +501,13 @@ hr {
 	border: none;
 }
 /* END changes */
+.thumbnail {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

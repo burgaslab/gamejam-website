@@ -96,7 +96,7 @@ ol.linenums {
   /*width: 970px !important;*/
 
   }
-.demo-headline {  
+.demo-headline {
   padding: 3% 0px;
   margin: 0px;
 }
@@ -127,6 +127,9 @@ ol.linenums {
 }
 .demo-row {
   margin-bottom: 20px;
+  }
+  .row > div{
+    padding-bottom: 15px;
   }
 .demo-row .demo-heading-note,
 .demo-row .demo-text-note {
@@ -355,7 +358,7 @@ ol.linenums {
   margin-left: 20px;
   }
 
-	
+
 	p.indented {
 	padding-left: 70px;
 }
@@ -366,16 +369,16 @@ ol.linenums {
 
 .inspiration.left>span {
 	/*float: left;*/
-	
+
 }
 
 .inspiration.right>span {
 	/*float: right;*/
-	
+
 }
 
 .inspiration span, .inspiration a span {
-	padding: 7px; 
+	padding: 7px;
 /* 	background: rgba(255, 184, 0, 0.2); */
 	background-color: #2C3E50; /*MIDNIGHT BLUE*/
 	font-weight: 400;
@@ -383,13 +386,13 @@ ol.linenums {
 }
 
 .inspiration span.badge {
-	display: inline-block; 
+	display: inline-block;
 	/* background: #DB9006;  */
-	width: 60px; 
+	width: 60px;
 	height: 60px;
-	padding: 10px; 
-	border-radius: 50%; 
-	font-size: 1em;	
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 1em;
 	background-color: #F1C40F; /*SUN FLOWER*/
 	color:  #2C3E50; /*MIDNIGHT BLUE*/
 	font-weight: 700;
@@ -419,7 +422,7 @@ body {
   display: table;
   margin: 0  auto;
   position: relative;*/
- 
+
 }
 
 .navbar-inverse {
@@ -456,7 +459,7 @@ body {
  }
 
  .inner-container {
-  border-radius: 4px; 
+  border-radius: 4px;
   /*padding: 40px 20px; */
   padding: 5% 10%;
  }
@@ -476,17 +479,17 @@ hr {
 }
 
 .info-host{
-  text-align: left; 
-  font-size: 0.25em; 
-  line-height: 130%; 
-  color: #ECF0F1; 
+  text-align: left;
+  font-size: 0.25em;
+  line-height: 130%;
+  color: #ECF0F1;
   font-weight: 500;
   margin-top: -6%;
   margin-left: 1%;
 }
 
 .info-host a {
-  color: #ECF0F1; 
+  color: #ECF0F1;
 }
 
 .btn-wrap {

@@ -26,8 +26,18 @@
 							<li><a href="<?= $this->path->base ?>rules#time">Време</a></li>
 							<li><a href="<?= $this->path->base ?>rules#participate">Участие</a></li>
 							<li><a href="<?= $this->path->base ?>rules#copyright">Авторски права</a></li>
-						</ul></li>
-					<li><a href="<?= $this->path->base ?>programme#day1" class="<?= $this->method=="programme" ? "active" : ""?>">Програма</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="<?= $this->path->base ?>programme#day1" class="dropdown-toggle <?= $this->method=="programme" ? "active" : ""?>" data-toggle="dropdown">Програма<b class="caret"></b></a>
+						<span class="dropdown-arrow"></span>
+						<ul class="dropdown-menu">
+							<li><a href="<?= $this->path->base ?>programme#day1">Ден 1 - Петък</a></li>
+							<li><a href="<?= $this->path->base ?>programme#day2">Ден 2 - Събота</a></li>
+							<li><a href="<?= $this->path->base ?>programme#day3">Ден 3 - Неделя</a></li>
+							<li><a href="<?= $this->path->base ?>programme#speakers">Лектори</a></li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">

@@ -511,3 +511,7 @@ hr {
     -webkit-align-items: center;
     align-items: center;
 }
+.programme { padding-left: 70px; }
+.programme p { margin: 5px 0; }
+.programme label { background: #3498db; padding: 0 5px; margin: 0 10px 0 0; line-height: 28px;}
+.programme span { margin: 0 0 0 110px; font-size: 14px; }

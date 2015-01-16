@@ -27,7 +27,7 @@
 							<li><a href="<?= $this->path->base ?>rules#participate">Участие</a></li>
 							<li><a href="<?= $this->path->base ?>rules#copyright">Авторски права</a></li>
 						</ul></li>
-					<li><a href="<?= $this->path->base ?>programme" class="<?= $this->method=="programme" ? "active" : ""?>">Програма</a></li>
+					<li><a href="<?= $this->path->base ?>programme#day1" class="<?= $this->method=="programme" ? "active" : ""?>">Програма</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">

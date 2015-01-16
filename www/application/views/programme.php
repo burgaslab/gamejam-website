@@ -23,10 +23,10 @@
 							<span>Никола Стоянов, 2Д художник и Петър Петров, 3Д художник; Танко Шокеров, продуцент</span></p>
 						<p><label>15:30 – 16:20</label>
 							Лекция: Подходи при правенето на игри / Game Design Approaches<br />
-					    <span>Симеон Николов, game designer, project manager, technical and team leader, BigMage Game Studios, Варна</span></p>
+					    <span>Симеон Николов, game designer, project manager, technical and team leader, <a href="http://bigmage.com/" target="_blank">BigMage Game Studios</a>, Варна</span></p>
 						<p><label>16:30 – 17:20</label>
 							Лекция: Математиката в програмирането - трябва ли ни или не? Математика при разработката на игри. / Do we need Mathematics for Programming? Mathematics in Game Development. (на английски)<br />
-					    <span>Мартин Антонов, математик и предприемач, Fractal Games / Zariba, Варна</span></p>
+					    <span>Мартин Антонов, математик и предприемач, Fractal Games / <a href="http://zariba.eu" target="_blank">Zariba</a>, Варна</span></p>
 						<p><label>17:30 – 18:00</label> Keynote видео от Global Game Jam и официално обявяване на темата за 2015 година</p>
 						<p><label>18:15 – 19:15</label>
 							Лекция: Unity in Game Jams - лекция, Unity<br />
@@ -70,11 +70,11 @@
 
 					<a name="speakers"></a>
 					<div class="speakers">
-						<h2>Лектори</h2>
+						<h2 class="inspiration"><span><span class="badge"><span style="background-color: transparent; color: #2C3E50;" class="fui-bubble"></span></span>Лектори</h2>
 						<h3>Мартин Антонов</h3>
-						<p>Казвам се Мартин Антонов от Варна. Завършил съм Математика в University of Warwick преди 2 години. Бях учител по математика на английски език в София за 1 година следващата година (2014) учих в Академията Телерик. Междувременно продадох седем годишния си бизнес www.yoyobulgaria.com и започнах 2 нови: www.efreetyoyos.eu и Fractal Games за компютърни игри. С 2 думи:  математик и предприемач.</p>
+						<p>Казвам се Мартин Антонов от Варна. Завършил съм Математика в University of Warwick преди 2 години. Бях учител по математика на английски език в София за 1 година следващата година (2014) учих в Академията Телерик. Междувременно продадох седем годишния си бизнес <a href="http://www.yoyobulgaria.com" target="_blank">www.yoyobulgaria.com</a> и започнах 2 нови: <a href="http://www.efreetyoyos.eu" target="_blank">www.efreetyoyos.eu</a и Fractal Games за компютърни игри. С 2 думи:  математик и предприемач.</p>
 						<h3>Симеон Николов</h3>
-						<p>Симеон Николов е game designer, project manager, technical and team leader в Big mage game studios. Започнал е да се занимава с разработката на мобилни игри и развлекателни приложения още през 2003. Уповава се на опита натрупан в интернационални екипи със специалисти от Англия, Финландия, Холандия, Хонг Конг, САЩ и др. Не познава deadlines и държи да покаже на света, че интелектуалния труд еволюира, когато е в плоска екипна структура. Когато не е заедно с екипа си, може да го срещнете да обикаля и разглежда реалния свят, или в някой hackerspace.</p>
+						<p>Симеон Николов е game designer, project manager, technical and team leader в <a href="http://bigmage.com/" target="_blank">Big mage game studios</a>. Започнал е да се занимава с разработката на мобилни игри и развлекателни приложения още през 2003. Уповава се на опита натрупан в интернационални екипи със специалисти от Англия, Финландия, Холандия, Хонг Конг, САЩ и др. Не познава deadlines и държи да покаже на света, че интелектуалния труд еволюира, когато е в плоска екипна структура. Когато не е заедно с екипа си, може да го срещнете да обикаля и разглежда реалния свят, или в някой hackerspace.</p>
 
 					</div>
 				</div>

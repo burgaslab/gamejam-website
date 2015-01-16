@@ -76,7 +76,9 @@
 						Организатор: <a href="http://burgaslab.org" target="_blank">BurgasLab</a>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-						<a href="https://www.facebook.com/events/759492127470937/759502870803196/" target="_blank"><span class="fui-facebook" ></span> facebook събитие</a><br />
+						<a href="https://www.facebook.com/events/759492127470937/" target="_blank"><span class="fui-facebook" ></span> facebook събитие</a><br />
+						<a href="https://www.facebook.com/BurgasGamJam" target="_blank"><span class="fui-facebook" ></span> facebook страница</a>
+						<br />
 						<a href="https://twitter.com/search?f=realtime&q=%23bgj2015&src=typd" target="_blank"><span class="fui-twitter" ></span> #bgj2015</a><br />
 					</div>
 				</div>

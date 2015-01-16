@@ -518,3 +518,6 @@ hr {
 .programme p { margin: 5px 0; }
 .programme label { background: #3498db; padding: 0 5px; margin: 0 10px 0 0; line-height: 28px;}
 .programme span { margin: 0 0 0 110px; font-size: 14px; }
+
+.speakers h2 {background-color: #2c3e50; color: #ecf0f1; font-weight: 400; padding: 7px; font-size: 30px; margin: 40px 0 0 0; display: inline-block; }
+.speakers h3 { font-size: 20px; }

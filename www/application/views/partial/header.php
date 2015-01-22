@@ -38,6 +38,9 @@
 							<li><a href="<?= $this->path->base ?>programme#speakers">Лектори</a></li>
 						</ul>
 					</li>
+					<li>
+						<a href="<?= $this->path->base ?>jammers" class="dropdown-toggle <?= $this->method=="jammers" ? "active" : ""?>">За Jammer-и</a>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">

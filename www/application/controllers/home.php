@@ -31,4 +31,8 @@ class Home extends CI_Controller {
 	public function support() {
 		$this->load->view("support");
 	}
+
+	public function jammers() {
+		$this->load->view("jammers");
+	}
 }

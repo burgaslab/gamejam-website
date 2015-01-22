@@ -11,7 +11,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="inner-container trans-black">
 					<p class="indented">
-					Тук ще публикуваме текуща информация за Jammer-ите.
+					Тук ще публикуваме текуща информация, касаеща Jammer-ите от Бургас.
 					</p>
 				</div>
 			</div>

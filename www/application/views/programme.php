@@ -18,17 +18,25 @@
 						<p><label>13:30 – 14:00</label> Официално откриване</p>
 						<p><label>13:30 – 17:00</label> Регистрация</p>
 						<p><label>14:00 – 14:30</label> Разясняване на правилата</p>
-						<p><label>14:30 – 15:20</label>
+						<p style="text-decoration: line-through;"><label style="text-decoration: line-through;">14:30 – 15:20</label>
 							Лекция: Art Pipeline in Casual Games / Agile Methodologies in game development – workshop, Gameloft. (на живо от Plovdiv Game Jam)<br />
 							<span>Никола Стоянов, 2Д художник и Петър Петров, 3Д художник; Танко Шокеров, продуцент</span></p>
+						<p><label>14:30 – 15:20</label>
+							Лекция: Gamification of edication<br />
+							<span>Delivered at Casual Connect Eastern Europe, November 2014</span></br>
+							<span><a target="_blank" href="https://www.youtube.com/watch?v=1_Z9X9ONrFY">видео</a></span>
+						</p>
 						<p><label>15:30 – 16:20</label>
-							Лекция: Подходи при правенето на игри / Game Design Approaches<br />
-					    <span>Симеон Николов, game designer, project manager, technical and team leader, <a href="http://bigmage.com/" target="_blank">BigMage Game Studios</a>, Варна</span></p>
+							Лекция: Подходи при правенето на игри / Game Design Approaches
+							<br />
+					    <span>Симеон Николов, game designer, project manager, technical and team leader, <a href="http://bigmage.com/" target="_blank">BigMage Game Studios</a>, Варна</span>
+						<span><a target="_blank" href="https://prezi.com/_rkafmjuxpzm/ggj-bs/">презентация</a></span>
+						</p>						
 						<p><label>16:30 – 17:20</label>
 							Лекция: Математиката в програмирането - трябва ли ни или не? Математика при разработката на игри. / Do we need Mathematics for Programming? Mathematics in Game Development. (на английски)<br />
 					    <span>Мартин Антонов, математик и предприемач, Fractal Games / <a href="http://zariba.eu" target="_blank">Zariba</a>, Варна</span></p>
 						<p><label>17:30 – 18:00</label> Keynote видео от Global Game Jam и официално обявяване на темата за 2015 година</p>
-						<p><label>18:15 – 19:15</label>
+						<p style="text-decoration: line-through;"><label style="text-decoration: line-through;">18:15 – 19:15</label>
 							Лекция: Unity in Game Jams - лекция, Unity<br />
 					    <span>Джо Робинс (на живо от Plovdiv Game Jam, на английски)</span></p>
 						<p><label>19:15 – 20:00</label>  Сформиране на отбори<br/></p>

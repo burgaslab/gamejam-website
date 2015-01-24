@@ -39,14 +39,15 @@
 						</ul>
 					</li>
 					<li>
-						<a href="<?= $this->path->base ?>jammers" class="dropdown-toggle <?= $this->method=="jammers" ? "active" : ""?>">За Jammer-и</a>
+						<a href="<?= $this->path->base ?>jammers" class="dropdown-toggle register <?= $this->method=="jammers" ? "active" : ""?>">За Jammer-и</a>
 					</li>
 				</ul>
+				<!--
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a class="register <?= $this->method=="registration" ? "active" : ""?>"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</nav>
 	</div>

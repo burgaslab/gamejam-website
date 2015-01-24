@@ -30,9 +30,11 @@
 					<div class="info">
 						<span>24 000 участника в целия свят (2014)</span>
 					</div>
+					<!--
 					<h3>
 						<a class="btn btn-primary btn-hg btn-warning btn-wrap" style="font-size: 0.8em; font-weight: 600; background: #F39C12;" href="<?= $this->path->base ?>registration">Регистрирай се за участие още сега!</a>
 					</h3>
+					-->
 					<br />
 					<h4 class="inspiration">
 						<a href="<?= $this->path->base ?>what">

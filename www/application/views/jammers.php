@@ -32,6 +32,14 @@
 							<a href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/preview?sle=true" 
 							target="_blank">Handy list put together by GGJ14 organizers from around the world.</a>
 						</li>
+						<li>
+							<a href="http://archive.globalgamejam.org/wiki/board-games" 
+							target="_blank">Как се правят настолни игри + <span style="color:#F39C12;"><b>Инструкции как да се опишат компонентите</b></span> (на английски)</a>
+						</li>
+						<li>
+							<a href="https://docs.google.com/document/d/1igd63lA40t35mp63ripE48g2mJbNv04fZ8fSar7Mtl4/edit?usp=sharing" 
+							target="_blank">Как се правят настолни игри + <span style="color:#F39C12;"><b>Инструкции как да се опишат компонентите</b></span> (на български)</a>
+						</li>
 						</ul>
 					</li>
 					<li>
@@ -42,7 +50,7 @@
 						Delivery procedure: Цялата процедура трябва да е завършена до <span style="color:#F39C12;"><b>неделя, 15:00ч</b></span>.
 						<ul>
 							<li>
-								Тази <a href="
+								<span  style="color:#ea2727;"><b>Важно!!</b></span> Тази <a href="
 					https://docs.google.com/presentation/d/1e1SYr0qyT0umf7mUtsnJcyr7Knmn4YVlN1kZQ2PE9iQ/edit#slide=id.p" 
 								target="_blank">презентация</a> показва как да предадете играта си</li>
 						</ul>

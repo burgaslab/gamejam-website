@@ -50,7 +50,7 @@ class Home extends CI_Controller {
 		$imgthumbsdir = 'resource/img/site/event/thumbs/'; //Pick your thumbs folder
 		$imgdir = 'resource/img/site/event/'; //Pick your folder
 		$allowed_types = array('png','jpg','jpeg','gif'); //Allowed types of files
-		$errors = [];
+		$errors = array();
 		
 		if (is_dir($imgdir)) {
 			if ($dh = opendir($imgdir)) {

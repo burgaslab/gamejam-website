@@ -59,6 +59,7 @@
 </div>
 <div class="demo-headline row trans-black">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+		<h3 style="text-align: center; margin: 40px 10px;">Burgas Game Jam 2016: 29-31 януари<br /> Очаквайте подробности!</h3>
 		<a href="<?= $this->path->base ?>">
 			<h1 class="demo-logo">
 				<div style="width: 100%; margin: 0px auto; max-width: 595px;">

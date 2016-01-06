@@ -3,7 +3,7 @@
       xmlns:fb="http://ogp.me/ns/fb#"
 	  lang="bg">
 <head>
-<title>Burgas Game Jam 2015</title>
+<title>Burgas Game Jam 2016</title>
 	<?php require_once("partial/head.php"); ?>
 </head>
 <body>

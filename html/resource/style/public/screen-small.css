@@ -1,0 +1,14 @@
+@media screen and (min-width: 736px) {
+  .wrap {
+    width: 95%;
+  }
+  #header .mobile {
+    display: none;
+  }
+  #header nav {
+    display: block;
+  }
+  #header .logo {
+    margin: 0;
+  }
+}

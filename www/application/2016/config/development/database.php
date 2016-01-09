@@ -3,7 +3,7 @@
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'gamejam';
+$db['default']['database'] = 'burgasgamejam';
 $db['default']['port'] = 3306;
 
 $active_group = 'default';

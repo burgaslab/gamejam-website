@@ -1,5 +1,6 @@
 .settings
 .project
 .development
-www/application/2015/config/production
-www/application/2016/config/production
+/www/application/2015/config/production
+/www/application/2016/config/production
+/stuff/legacy/app/config/mysql.php

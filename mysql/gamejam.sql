@@ -5,6 +5,7 @@ CREATE TABLE `participants` (
   `age` varchar(32) NOT NULL,
   `occupation` varchar(32) NOT NULL,
   `skills` text NOT NULL,
-  `date_confirmed` datetime DEFAULT NULL,
+  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `time_confirmed` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8

@@ -16,6 +16,9 @@
     padding-left: 120px;
     padding-right: 120px;
   }
+  #content .home p {
+    padding: 0;
+  }
   #content .registration {
     padding-left: 50px;
     padding-right: 50px;

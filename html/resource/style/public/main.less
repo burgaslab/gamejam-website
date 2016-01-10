@@ -70,9 +70,10 @@ body { background: url(../../image/public/body.png); }
 	.text {
 		padding: 20px;
 		h4 {
-			span { background-color: @blue; color: #ecf0f1; font-weight: 400; padding: 7px; font-size: 1.5em; line-height: 3em; }
-			i { background-color: #f1c40f; border-radius: 50%; color: #2c3e50; display: inline-block; font-size: 1em; font-weight: 700; height: 40px; padding: 10px; width: 40px; margin: 0 5px 0 0; line-height: 35px; vertical-align: middle; font-style: normal; text-align: center; }
-			i em { font-size: 0.7em; padding: 0; vertical-align: super; }
+			margin: 20px 0 0 0;
+			span { color: #000; font-weight: 400; padding: 7px; font-size: 1.5em; line-height: 3em; position: relative; }
+			i { background-color: @blue; border-radius: 50%; color: #fff; display: inline-block; font-size: 1em; font-weight: 700; height: 40px; padding: 10px; width: 40px; margin: 0 5px 0 0; line-height: 35px; vertical-align: middle; font-style: normal; text-align: center; }
+			i sup { font-size: 0.7em; }
 			a { text-decoration: none; }
 			a:hover { text-decoration: underline; }
 		}
@@ -166,3 +167,53 @@ body { background: url(../../image/public/body.png); }
 .cf:after { clear: both; }
 
 .mosaicflow__column { float: left; }
+
+em.bubble { display:inline-block; background: #1DA0E6; border-radius: 30px; position: absolute; opacity: 1; width: 30px; height: 30px; }
+em.bubble-1 { animation: bubble1 1s linear 1s infinite; -webkit-animation: bubble1 1s linear 1s infinite; top: -25px; left: 15px; }
+em.bubble-2 { animation: bubble2 2s linear 1s infinite; -webkit-animation: bubble2 2s linear 1s infinite; top: -35px; left: 15px; }
+em.bubble-3 { animation: bubble3 1.5s linear 1s infinite; -webkit-animation: bubble3 1.5s linear 1s infinite; top: -35px; left: 15px;
+}
+@keyframes bubble1 {
+  0% { top: -25px; left: 15px; }
+	25% { top: -30px; left: 30px; }
+  50% { top: -35px; left: 45px; }
+  75% { top: -40px; left: 30px; }
+  100% { top: -45px; left: 15px; width: 10px; height: 10px; opacity: 0; }
+}
+@-moz-keyframes bubble1 {
+  0% { top: -25px; left: 15px; }
+	25% { top: -30px; left: 30px; }
+  50% { top: -35px; left: 45px; }
+  75% { top: -40px; left: 30px; }
+  100% { top: -45px; left: 15px; width: 10px; height: 10px; opacity: 0; }
+}
+
+@keyframes bubble2 {
+  0% { top: -35px; left: 15px; }
+  25% { top: -40px; left: 0px; }
+  50% { top: -45px; left: -15px; }
+  75% { top: -50px; left: 0px; }
+  100% { top: -55px; left: 15px; width: 10px; height: 10px; opacity: 0; }
+}
+@-moz-keyframes bubble2 {
+  0% { top: -35px; left: 15px; }
+  25% { top: -40px; left: 0px; }
+  50% { top: -45px; left: -15px; }
+  75% { top: -50px; left: 0px; }
+  100% { top: -55px; left: 15px; width: 10px; height: 10px; opacity: 0; }
+}
+
+@keyframes bubble3 {
+  0% { top: -35px; left: 15px; }
+  25% { top: -40px; left: 30px; }
+  50% { top: -45px; left: 45px; }
+  75% { top: -50px; left: 30px; }
+  100% { top: -55px; left: 15px; width: 10px; height: 10px; 	opacity: 0; }
+}
+@-moz-keyframes bubble3 {
+  0% { top: -35px; left: 15px; }
+  25% { top: -40px; left: 30px; }
+  50% { top: -45px; left: 45px; }
+  75% { top: -50px; left: 30px; }
+  100% { top: -55px; left: 15px; width: 10px; height: 10px; 	opacity: 0; }
+}

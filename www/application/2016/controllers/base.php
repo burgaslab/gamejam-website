@@ -1,19 +1,13 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 
-class Home extends CI_Controller {
+abstract class Base extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
 
 		$this->load->config("webresources");
-		$this->load->library("path");
 		$this->load->library("smarty", null, "view");
 	}
-
-	public function index() {
-		$this->render("base");
-	}
-
 
 	protected function json_response($res) {
 		$this->output->

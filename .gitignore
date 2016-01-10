@@ -4,4 +4,5 @@
 /www/application/2015/config/production/database.php
 /www/application/2016/config/production/database.php
 /stuff/legacy/app/config/mysql.php
-/www/application/2016/cache/smarty
+/www/application/2016/cache/*
+!/www/application/2016/cache/index.html

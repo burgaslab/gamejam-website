@@ -41,6 +41,8 @@
 $route['default_controller'] = "uc";
 $route['404_override'] = '';
 
+$route['(.*\.less)'] = 'service/less';
+
 $route['registration'] = "registration";
 $route['(:any)'] = "home/$1";
 

@@ -5,7 +5,7 @@ require("base.php");
 class Home extends Base {
 
 	public function index() {
-		$this->render("base");
+		$this->render("home");
 	}
 
 }

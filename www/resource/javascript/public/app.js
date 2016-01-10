@@ -12,6 +12,14 @@ $(function() {
 	// swipebox
 	$(".assets.gallery a").swipebox();
 	
+	$("a.swipebox-iframe").click(function(e) {
+		e.preventDefault();
+		$.swipebox([
+     		{ href: $(this).data("iframe"), title: $(this).text() }
+     	]);
+	});
+	
+	
 	$("form.validate").formValidator();
 
 	FlipClock.Lang.Bulgarian = {

@@ -21,9 +21,10 @@ $config["webresources"] = array (
 		"public_js" => array (
 				"resource/javascript/jquery-1.11.0.min.js",
 				"resource/javascript/jquery.mosaicflow.min.js",
-				"resource/javascript/jquery.swipebox.min.js",
+				"resource/javascript/jquery.swipebox.js",
 				"resource/javascript/flipclock.min.js",
 				"resource/javascript/form-validator.js",
+				"resource/javascript/googlemap.js",
 				"resource/javascript/public/app.js",
 		),
 );

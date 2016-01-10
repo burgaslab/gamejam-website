@@ -8,7 +8,7 @@ $config["age_groups"] = array("12-16г.", "17-18г.", "18г.+");
 $config["occupations"] = array("ученик", "студент", "работещ", "безработен");
 
 $config["event_start"] = "2016-01-29 13:00:00";
-
+$config["location"] = array(42.494730, 27.482612);
 /*
  * Use this from other config files like so:
  * merge_env(__FILE__, $config).

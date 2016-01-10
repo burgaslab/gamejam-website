@@ -2,6 +2,9 @@
 
 {block "content"}
 	<div class="home text">
+		{if $time > 0}
+		<div id="countdown"><div data-time="{$time}"></div></div>
+		{/if}
 		<h4><span><em class="bubble bubble-1"></em><i>1</i>Ела и научи</span></h4>
 		<h4><span><em class="bubble bubble-2"></em><i>2</i>Сформирай екип</span></h4>
 		<h4><span><em class="bubble bubble-3"></em><i>3</i>Направи игра!</span></h4>

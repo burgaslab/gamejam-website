@@ -13,4 +13,23 @@ $(function() {
 	$(".assets.gallery a").swipebox();
 	
 	$("form.validate").formValidator();
+
+	FlipClock.Lang.Bulgarian = {
+		"years"   : "Години",
+		"months"  : "Месеци",
+		"days"    : "Дни",
+		"hours"   : "Часа",
+		"minutes" : "Минути",
+		"seconds" : "Секунди"
+	};
+	FlipClock.Lang["bg"] = FlipClock.Lang.Bulgarian;
+	
+	var clockEl = $("#countdown div"); 
+	var clock = clockEl.FlipClock({
+	    clockFace: "DailyCounter",
+	    countdown: true,
+	    language: "bg"
+	});
+	clock.setTime(clockEl.data("time"));
+	clock.start();
 });

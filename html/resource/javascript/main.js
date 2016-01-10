@@ -11,7 +11,4 @@ $(function() {
 
 	// swipebox
 	$(".assets.gallery a").swipebox();
-	
-	$("form.validate").formValidator();
-
 });

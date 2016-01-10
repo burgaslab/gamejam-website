@@ -1,6 +1,6 @@
 <?php
 
-$config["profiler"] = false;
+$config["cache_dir"] = APPPATH . "cache/";
 
 /*
  * Use this from other config files like so:

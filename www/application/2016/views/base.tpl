@@ -48,21 +48,18 @@
 		<div id="footer">
 			<div class="wrap">
 				<div class="partners">
-					<h3>С подкрепата на: </h3>
+					<h3>С подкрепата на:</h3>
 					<ul class="assets">
-						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
-						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
+						<li><a href="http://globalgamejam.org/" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="" /></a></li>
+						<li><a href="http://burgas.bg" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgasmunic.png" alt="" /></a></li>
+						<li><a href="http://vijburgas.bg" title="Виж! Бургас" target="_blank"><img src="{$base}resource/image/public/partner/vijburgas.jpg" alt="" /></a></li>
+						<li><a href="http://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="" /></a></li>
 					</ul>
 				</div>
 				<div class="contacts">
-					<h3>Контакти:</h3>
 					<div class="pure-g">
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<a href="#" class="support">Подкрепи Burgas Game Jam 2016</a>
+							<a href="{$base}support" class="support">Подкрепи Burgas Game Jam 2016</a>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
 							<p><a href="mailto:gamejam@burgaslab.org">gamejam@burgaslab.org</a></p>
@@ -71,6 +68,9 @@
 						<div class="pure-u-1 pure-u-sm-1-4">
 							<p><a href="#"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
 							<p><a href="#">локация</a></p>
+						</div>
+						<div class="pure-u-1 pure-u-sm-1-4">
+							<p><a href="{$base}2015">Burgas Game Jam 2015</a></p>
 						</div>
 					</div>
 				</div>

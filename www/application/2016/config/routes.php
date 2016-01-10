@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "uc";
+$route['default_controller'] = "home";
 $route['404_override'] = '';
 
 $route['(.*\.less)'] = 'service/less';

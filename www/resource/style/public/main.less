@@ -17,7 +17,7 @@ body { background: url(../../image/public/body.png); }
 	img { display: block; width: 100%; background: #fff; padding: 10px; box-sizing: border-box; }
 	a { display: block; color: #fff; text-decoration: none; height: 44px; line-height: 44px; border-top: solid 1px rgba(255, 255, 255, 0.05); padding: 0 1em 0 1em; -webkit-transition: color 0.15s ease-in-out; transition: color 0.15s ease-in-out; }
 	li.highlight > a { color: #F39C12; }
-	a:hover, li.active > a { color: #FFF100; }
+	a:hover, li.active > a { background: @blue; }
 	ul ul a { text-indent: 20px; }
 	.fa { margin: 0 0 0 0.5em;  font-size: 1.2em; }
 	a:hover { color: #0C91D3; }
@@ -39,7 +39,7 @@ body { background: url(../../image/public/body.png); }
 			> a { -webkit-transition: color 0.15s ease-in-out; transition: color 0.15s ease-in-out; display: block; text-decoration: none; font-weight: 600; font-size: 1em; outline: 0; color: #333; line-height: 45px; padding: 0px 12px 5px 12px; }
 			&:hover > a, &.active > a { color: @blue; }
 			&.highlight { background: #F39C12; }
-			&.active { background: #FFF100; }
+			&.active { background: @blue; a { color: #fff; }}
 			.fa { margin: 0 0 0 0.5em;  font-size: 1.2em; }
 		}
 		> ul > li {

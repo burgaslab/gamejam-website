@@ -18,6 +18,7 @@
 				<span class="mobile"><i class="fa fa-bars"></i></span>
 				<nav>
 					<ul>
+						{strip}
 						{foreach $nav as $i}
 							{assign var="children" value=((isset($i.sub)) ? $i.sub : array())}
 							<li class="{$i.css|default} {if $children}dropdown{/if}"><a href="{$base}{$i.url}">{$i.title}{if $children}<i class="fa fa-caret-down"></i>{/if}</a>
@@ -30,6 +31,7 @@
 								{/if}
 							</li>
 						{/foreach}
+						{/strip}
 					</ul>
 				</nav>
 				<div class="logo">

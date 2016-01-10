@@ -34,7 +34,7 @@
 					<em>Разделени със запетая</em>
 				</div>
 				<div class="pure-u-1 validate required {if $validator->has_error("agree")}error{/if}">
-					<label><input type="checkbox" name="agree" {checked $model.agree} />&nbsp;Наясно съм, че проектите се публикуват под <a href="#">Creative commons лиценз <i class="fa fa-exclamation-circle"></i></a></label>
+					<label><input type="checkbox" name="agree" {checked $model.agree} />&nbsp;Наясно съм, че проектите се публикуват под <a href="{$base}rules#copyrights">Creative commons лиценз <i class="fa fa-exclamation-circle"></i></a></label>
 				</div>
 				<div class="pure-u-1">
 					<button type="submit" class="pure-button pure-button-primary">Регистрирай ме!</button>

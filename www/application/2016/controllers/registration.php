@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Registration extends CI_Controller {
+require("base.php");
+
+class Registration extends Base {
 
 	const STATUS = "_status";
 
@@ -12,6 +14,9 @@ class Registration extends CI_Controller {
 	public $method = "registration";
 
 	public function index() {
+		$this->render("registration");
+		return;
+
 		$this->load->library("path");
 		$this->load->library("session");
 		$this->load->helper("url");

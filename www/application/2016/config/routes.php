@@ -43,8 +43,5 @@ $route['404_override'] = '';
 
 $route['(.*\.less)'] = 'service/less';
 
-$route['registration'] = "registration";
-$route['(:any)'] = "home/$1";
-
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

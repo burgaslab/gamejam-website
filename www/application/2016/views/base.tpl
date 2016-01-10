@@ -7,43 +7,34 @@
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
 {webresources icon="public"}
-
-	
-	<script src="resource/javascript/jquery-1.11.0.min.js" type="text/javascript"></script>
-	<script src="resource/javascript/jquery.mosaicflow.min.js" type="text/javascript"></script>
-	<script src="resource/javascript/jquery.swipebox.min.js" type="text/javascript"></script>
-	<script src="resource/javascript/main.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="page-wrap">
 		<div id="side-nav">
-			<img src="resource/image/public/logo.png" alt="" />
+			<img src="{$base}resource/image/public/logo.png" alt="" />
 		</div>
 		<div id="header" class="cf">
 			<div class="wrap">
 				<span class="mobile"><i class="fa fa-bars"></i></span>
 				<nav>
 					<ul>
-						<li><a href="#">Home</a>
-						<li class="active dropdown"><a href="#">Dropdown<i class="fa fa-caret-down"></i></a>
-							<ul>
-								<li><a href="#">Lorem ipsum dolor</a></li>
-								<li><a href="#">Magna phasellus</a></li>
-								<li><a href="#">Etiam dolore nisl</a></li>
-								<li><a href="#">Phasellus consequat</a></li>
-								<li><a href="#">Veroeros feugiat</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Left Sidebar</a></li>
-						<li class="highlight"><a href="#">Right Sidebar</a></li>
-						<li><a href="#">Two Sidebar</a></li>
-						<li><a href="#">No Sidebar</a></li>
-						<li><a href="#">Contact</a></li>
+						{foreach $nav as $i}
+							{assign var="children" value=((isset($i->sub)) ? $i->sub : array())}
+							<li class="{if isset($i->css)}{$i->css}{/if} {if $children}dropdown{/if}"><a href="{$base}{$i->url}">{$i->title}{if $children}<i class="fa fa-caret-down"></i>{/if}</a>
+								{if $children}
+								<ul>
+									{foreach $children as $j}
+									<li><a href="{$base}{$i->url}{$j->url}">{$j->title}</a></li>
+									{/foreach}
+								</ul>
+								{/if}
+							</li>
+						{/foreach}
 					</ul>
 				</nav>
 				<div class="logo">
 					<div class="logo-wrap">
-						<img src="resource/image/public/logo.png" class="pure-img" alt="" />
+						<img src="{$base}resource/image/public/logo.png" class="pure-img" alt="" />
 						<p>29-31 януари 2016<br/>в Културен център “Морско Казино”</p>
 					</div>
 				</div>
@@ -57,7 +48,7 @@
 		<div id="footer">
 			<div class="wrap">
 				<div class="partners">
-					<h3>С подрепата на: </h3>
+					<h3>С подкрепата на: </h3>
 					<ul class="assets">
 						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>
 						<li><a href="#"><img src="temp.jpg" alt="" /></a></li>

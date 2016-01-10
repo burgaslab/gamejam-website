@@ -2,6 +2,7 @@
 
 $config["cache_dir"] = APPPATH . "cache/";
 
+
 /*
  * Use this from other config files like so:
  * merge_env(__FILE__, $config).

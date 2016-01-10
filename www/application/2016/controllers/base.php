@@ -7,6 +7,20 @@ abstract class Base extends CI_Controller {
 
 		$this->load->config("webresources");
 		$this->load->library("smarty", null, "view");
+
+		$this->view->set("base", $this->path->base);
+
+		$nav = json_decode(file_get_contents($this->path->abs_app . "config/nav.json"));
+
+		$current = $this->router->fetch_class();
+
+		foreach ($nav as $i) {
+			if ($i->url == $current) {
+				$css = (isset($i->css) ? $i->css : "");
+				$i->css = "{$css} active";
+			}
+		}
+		$this->view->set("nav", $nav);
 	}
 
 	protected function json_response($res) {

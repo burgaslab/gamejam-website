@@ -34,7 +34,7 @@
 				</nav>
 				<div class="logo">
 					<div class="logo-wrap">
-						<img src="{$base}resource/image/public/logo.png" class="pure-img" alt="" />
+						<a href="{$base}"><img src="{$base}resource/image/public/logo.png" class="pure-img" alt="" /></a>
 						<p>29-31 януари 2016<br/>в Културен център “Морско Казино”</p>
 					</div>
 				</div>

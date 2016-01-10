@@ -6,54 +6,46 @@ class Registration extends Base {
 
 	const STATUS = "_status";
 
-	private static $age = array("12-16г.", "17-18г.", "18г.+");
-	private static $occupation = array("ученик", "студент", "работещ", "безработен");
-
-	private $validator = null;
-
-	public $method = "registration";
-
 	public function index() {
-		$this->render("registration");
-		return;
-
 		$this->load->library("path");
 		$this->load->library("session");
 		$this->load->helper("url");
+		$this->load->database();
+
+		$age_groups = conf("age_groups");
+		$occupations = conf("occupations");
 
 		require_once($this->path->abs_app . "libraries/class/Validator.php");
 
-		$post = array("name"=>"", "email"=>"", "age"=>"", "occupation"=>"", "skills"=>"", "agree"=>"");
-		$post = array_merge($post, (array)$this->input->post());
+		$model = array("name"=>"", "email"=>"", "age"=>"", "occupation"=>"", "skills"=>"", "agree"=>"");
+		$model = array_merge($model, (array)$this->input->post());
 
-		$this->validator = new validator();
+		$validator = new validator();
 
 		if ($this->input->post()) {
-			$this->load->database();
+			$validator->validate_required("name", $model["name"], 1);
+			$validator->validate_email("email", $model["email"], 1);
 
-			$this->validator->validate_required("name", $post["name"], 1);
-			$this->validator->validate_email("email", $post["email"], 1);
-
-			$sql = sprintf("SELECT 1 FROM participants WHERE email='%s'", $this->db->escape_str($post["email"]));
+			$sql = sprintf("SELECT 1 FROM participants WHERE email='%s'", $this->db->escape_str($model["email"]));
 			$query = $this->db->query($sql);
 			if ($query->result()) {
-				$this->validator->add_error("email", "1");
+				$validator->add_error("email", "1");
 			}
-			if (!in_array($post["age"], self::$age)) {
-				$this->validator->add_error("age", 1);
+			if (!in_array($model["age"], $age_groups)) {
+				$validator->add_error("age", 1);
 			}
-			if (!in_array($post["occupation"], self::$occupation)) {
-				$this->validator->add_error("occupation", 1);
+			if (!in_array($model["occupation"], $occupations)) {
+				$validator->add_error("occupation", 1);
 			}
-			$this->validator->validate_required("agree", $post["agree"], 1);
+			$validator->validate_required("agree", $model["agree"], 1);
 
-			if ($this->validator->is_valid()) {
+			if ($validator->is_valid()) {
 				$data = array(
-						"name" => $post["name"],
-						"email" => $post["email"],
-						"age" => $post["age"],
-						"occupation" => $post["occupation"],
-						"skills" => $post["skills"],
+						"name" => $model["name"],
+						"email" => $model["email"],
+						"age" => $model["age"],
+						"occupation" => $model["occupation"],
+						"skills" => $model["skills"],
 				);
 
 				$sql = "INSERT INTO participants (name, email, age, occupation, skills) VALUES (?, ?, ?, ?, ?)";
@@ -65,14 +57,12 @@ class Registration extends Base {
 		}
 
 
-		$model = array(
-			"data"=> $post,
-			"validator"=> $this->validator,
-			"age"=> self::$age,
-			"occupation"=> self::$occupation,
-			"is_success"=> $this->session->flashdata(self::STATUS),
-		);
+		$this->view->set("age_groups", $age_groups);
+		$this->view->set("occupations", $occupations);
+		$this->view->set("model", $model);
+		$this->view->set("validator", $validator);
+		$this->view->set("success", $this->session->flashdata(self::STATUS));
 
-		$this->load->view("registration", $model);
+		$this->render("registration");
 	}
 }

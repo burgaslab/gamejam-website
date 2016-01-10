@@ -63,7 +63,7 @@ body { background: url(../../image/public/body.png); }
 }
 
 #content {
-	padding: 1em 0; min-height: 300px;
+	padding: 1em 0;
 	.wrap { background: rgba(220, 220, 220, 0.6); border-radius: 8px; }
 	h1 { color: @blue; margin: 0.5em 0; }
 	h2 { color: @gray; font-size: 1.4em; margin: 0.8em 0 0 0; padding: 0 0 0.5em;}
@@ -121,6 +121,7 @@ body { background: url(../../image/public/body.png); }
 		em { font-size: 0.8em;color: @gray; }
 		p.label  { font-size: 1.1em; font-weight: 500; } 
 		label { margin: 5px 0 5px 20px; }
+		input[type=radio] { margin-right: 6px; }
 	}
 	form {
 		.pure-g { padding: 0; box-sizing: border-box; }
@@ -220,3 +221,15 @@ em.bubble-3 { animation: bubble3 1.5s linear 1s infinite; -webkit-animation: bub
   75% { top: -50px; left: 30px; }
   100% { top: -55px; left: 15px; width: 10px; height: 10px; 	opacity: 0; }
 }
+
+
+.validator-summary { font-size: 14px; font-weight: bold; color: #f00; padding: 5px 5px 5px 20px; }
+.validator-summary li { list-style-type: square; }
+.validator { color: #f00; margin-left: 10px; }
+
+.error {
+	input, textarea, select { border-color:#E77776 !important; background:#F8DBDB !important; }
+	> label, > p.label { font-weight:600; color:#DC2102; }
+}
+
+.success { padding:15px; border:1px #d6e9c6 transparent; border-radius:4px; color:#3c763d;background-color:#dff0d8; font-size: 1.5em; }

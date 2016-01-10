@@ -2,9 +2,9 @@
 
 require("base.php");
 
-class Home extends Base {
+class What extends Base {
 
 	public function index() {
-		$this->render("home");
+		$this->render("what");
 	}
 }

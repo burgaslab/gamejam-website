@@ -15,13 +15,24 @@ abstract class Base extends CI_Controller {
 
 		$nav = conf("nav");
 
+		$page_title = "";
 		foreach ($nav as &$i) {
 			if ($i["url"] == $current) {
 				$css = arr($i, "css", "");
 				$i["css"] = "{$css} active";
+
+				if ($current != "home") {
+					$page_title = $i["title"];
+				}
 			}
 		}
 		$this->view->set("nav", $nav);
+
+		$title = conf("title");
+		if ($page_title) {
+			$title = "{$page_title} | {$title}";
+		}
+		$this->view->set("html_title", $title);
 	}
 
 	protected function json_response($res) {

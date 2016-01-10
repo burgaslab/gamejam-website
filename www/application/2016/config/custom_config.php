@@ -2,6 +2,7 @@
 
 $config["cache_dir"] = APPPATH . "cache/";
 
+$config["title"] = "Burgas Game Jam :: 29-31 януари 2016";
 
 /*
  * Use this from other config files like so:

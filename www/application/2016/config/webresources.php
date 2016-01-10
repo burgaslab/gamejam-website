@@ -26,7 +26,7 @@ $config["webresources"] = array (
 );
 
 $config["webresources_icons"] = array(
-	"public" => "resource/public/image/favicon.ico",
+	"public" => "resource/image/public/favicon.ico",
 );
 
 if (function_exists("merge_env")) {

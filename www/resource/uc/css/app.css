@@ -111,7 +111,7 @@ ol.linenums {
   margin: 0 auto 26px;
   overflow: hidden;
   text-indent: -9999em;
-  background: url(../img/demo/logo-mask.png) center 0 no-repeat;
+  background: url(../image/demo/logo-mask.png) center 0 no-repeat;
   background-size: 236px 181px;
   }
 .demo-logo small {
@@ -278,7 +278,7 @@ ol.linenums {
   padding-top: 42px;
   margin: 0 41px 140px 0;
   color: #fff;
-  background: #2c3e50 url(../img/demo/browser.png) 0 0 no-repeat;
+  background: #2c3e50 url(../image/demo/browser.png) 0 0 no-repeat;
   background-size: 659px 42px;
   border-radius: 0 0 6px 6px;
   }
@@ -308,7 +308,7 @@ ol.linenums {
   width: 84px;
   height: 84px;
   margin: 0 auto;
-  background: url(../img/demo/browser-author.jpg) center no-repeat;
+  background: url(../image/demo/browser-author.jpg) center no-repeat;
   border: 3px solid #fff;
   border-radius: 50%;
   }
@@ -339,10 +339,10 @@ ol.linenums {
   }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
   .logo {
-    background-image: url(../img/demo/logo-mask-2x.png);
+    background-image: url(../image/demo/logo-mask-2x.png);
     }
   .demo-browser {
-    background-image: url(../img/demo/browser-2x.png);
+    background-image: url(../image/demo/browser-2x.png);
     }
   }
 .demo-swatches-row [class*="col"] {
@@ -413,7 +413,7 @@ ol.linenums {
 /*@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,100&subset=latin,cyrillic);*/
 
 body {
-  background: url('../img/site/footer_lodyas.png') repeat;
+  background: url('../image/body.png') repeat;
   font-family: 'Roboto', Arial, sans-serif;
   width: 100%;
  }

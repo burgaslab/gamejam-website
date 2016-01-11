@@ -10,6 +10,7 @@ abstract class Base extends CI_Controller {
 		$this->load->library("smarty", null, "view");
 
 		$this->view->set("base", $this->path->base);
+		$this->view->set("http_base", $this->path->http_base);
 
 		$current = $this->router->fetch_class();
 

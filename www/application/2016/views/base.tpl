@@ -4,7 +4,7 @@
 	<title>{$html_title}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:image" content="{$base}/resource/image/public/facebook.jpg" />
+	<meta property="og:image" content="{$base}resource/image/public/facebook.jpg" />
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
 {webresources icon="public"}

@@ -22,6 +22,6 @@ $config["nav"] = array(
 	array("title"=>"За Jammer-и", "url"=>"jammers"),
 	// array("title"=>"Снимки", "url"=>"photos"),
 	array("title"=>"BGJ 2015", "url"=>"bgj2015"),
-	array("title"=>"Покрепи", "url"=>"support"),
+	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
 );

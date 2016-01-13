@@ -69,7 +69,7 @@
 							<p>организатор: <a href="http://burgaslab.org">BurgasLab</a></p>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="#"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
+							<p><a href="https://www.facebook.com/events/727283600742643/"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
 							<p><a href="https://www.google.bg/maps/place/Sea+Casino/@42.494256,27.4819305,17.5z/data=!4m2!3m1!1s0x0000000000000000:0x852570772343eadc?hl=en" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2080.218232373273!2d27.48193048992954!3d42.494256012388426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x852570772343eadc!2sSea+Casino!5e0!3m2!1sen!2sbg!4v1452447228232" class="swipebox-iframe">Място: "Морско Казино" Бургас</a></p>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">

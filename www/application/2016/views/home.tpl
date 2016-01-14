@@ -20,7 +20,7 @@
 			Burgas Game Jam е 48 часов хакатон за правене на игри. <br />
 			Случва се в рамките на 3 дни. <br />
 			Част e от глобалната инициатива <a href="http://globalgamejam.org/" target="_blank">Global Game Jam.</a><br />
-			<a href="http://globalgamejam.org" target="_blank"><img src="resource/image/public/ggj.png" alt="" /></a><br />
+			<a href="http://globalgamejam.org" target="_blank"><img src="resource/image/public/partner/ggj.png" alt="" /></a><br />
 			Организатор: <br />
 			<a href="http://burgaslab.org" target="_blank"><img src="resource/image/public/burgaslab.png" alt="" /></a>
 		</p>

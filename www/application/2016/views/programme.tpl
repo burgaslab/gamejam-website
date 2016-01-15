@@ -8,8 +8,10 @@
 		<p><label>14:00 – 14:30</label> Официално откриване</p>
 		<p><label>14:30 – 17:00</label> Регистрация</p>
 		<p><label>14:30 – 15:00</label> Разясняване на правилата</p>
-		<p><label>15:00 – 17:00</label>
-			Лекции</p>
+		<p><label>15:00 – 15:45</label>
+			"Game Design Now" - Иван Фъртунов, Gameloft България</p>
+		<p><label>16:00 – 17:00</label>
+			To be announced..</p>
 		<p><label>17:30 – 18:00</label> Keynote видео от Global Game Jam и официално обявяване на темата за 2016 година</p>
 		<p><label>18:00 – 20:00</label>  Сформиране на отбори<br/></p>
 		<a id="day2"></a>

@@ -4,9 +4,9 @@ $(function() {
 		$("#page-wrap").toggleClass("sidebar");
 	});
 	
-	$("ul.assets.gallery").mosaicflow({
+	$("ul.assets.gallery1").mosaicflow({
 		itemSelector: "> li",
-		minItemWidth: 250
+		minItemWidth: 400
 	});
 
 	// swipebox

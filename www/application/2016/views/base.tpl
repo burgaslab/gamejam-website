@@ -58,6 +58,7 @@
 						<li><a href="http://vijburgas.bg" title="Виж! Бургас" target="_blank"><img src="{$base}resource/image/public/partner/vijburgas.png" alt="" /></a></li>
 						<li><a href="http://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="" /></a></li>
 						<li><a href="https://codific.eu" title="Codific" target="_blank"><img src="{$base}resource/image/public/partner/codific.png" alt="" /></a></li>
+					<!--	<li><div><a href="{$base}support" title="Support Burgas Game Jam" class="support">Подкрепи Burgas Game Jam 2016</a></div></li> -->
 					</ul>
 				</div>
 				<div class="contacts">
@@ -66,15 +67,15 @@
 							<a href="{$base}support" class="support">Подкрепи Burgas Game Jam 2016</a>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="mailto:gamejam@burgaslab.org">gamejam@burgaslab.org</a></p>
+							<p><a href="mailto:gamejam@burgaslab.org"><i class="fa fa-envelope"></i>gamejam@burgaslab.org</a></p>
 							<p>организатор: <a href="http://burgaslab.org">BurgasLab</a></p>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
 							<p><a href="https://www.facebook.com/events/727283600742643/"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
-							<p><a href="https://www.google.bg/maps/place/Sea+Casino/@42.494256,27.4819305,17.5z/data=!4m2!3m1!1s0x0000000000000000:0x852570772343eadc?hl=en" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2080.218232373273!2d27.48193048992954!3d42.494256012388426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x852570772343eadc!2sSea+Casino!5e0!3m2!1sen!2sbg!4v1452447228232" class="swipebox-iframe">Място: "Морско Казино" Бургас</a></p>
-						</div>
+							<p><a href="https://www.facebook.com/BurgasGameJam"><i class="fa fa-facebook"></i>Burgas Game Jam</a></p>
+							</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="{$base}2015">Burgas Game Jam 2015</a></p>
+							<p><a href="https://www.google.bg/maps/place/Sea+Casino/@42.494256,27.4819305,17.5z/data=!4m2!3m1!1s0x0000000000000000:0x852570772343eadc?hl=en" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2080.218232373273!2d27.48193048992954!3d42.494256012388426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x852570772343eadc!2sSea+Casino!5e0!3m2!1sen!2sbg!4v1452447228232" class="swipebox-iframe"><i class="fa fa-map-marker"></i>"Морско Казино" Бургас</a></p>
 						</div>
 					</div>
 				</div>

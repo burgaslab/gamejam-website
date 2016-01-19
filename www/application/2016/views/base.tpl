@@ -55,9 +55,11 @@
 					<ul class="assets">
 						<li><a href="http://globalgamejam.org" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="" /></a></li>
 						<li><a href="http://burgas.bg" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgasmunic.png" alt="" /></a></li>
+						<li><a href="http://www.atlantisresort-bg.com/zavedeniya-i-razvlecheniya/bouling-centar-atlantis/" title="Atlantis Bowling Center" target="_blank"><img src="{$base}resource/image/public/partner/AtlantisBowling_logo_vertical.png" alt="" /></a></li>
+						<li><a href="https://codific.eu" title="Codific" target="_blank"><img src="{$base}resource/image/public/partner/codific.png" alt="" /></a></li>
+						<li><a href="http://stedicenter.com/" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi_logo_sm.png" alt="" /></a></li>
 						<li><a href="http://vijburgas.bg" title="Виж! Бургас" target="_blank"><img src="{$base}resource/image/public/partner/vijburgas.png" alt="" /></a></li>
 						<li><a href="http://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="" /></a></li>
-						<li><a href="https://codific.eu" title="Codific" target="_blank"><img src="{$base}resource/image/public/partner/codific.png" alt="" /></a></li>
 					<!--	<li><div><a href="{$base}support" title="Support Burgas Game Jam" class="support">Подкрепи Burgas Game Jam 2016</a></div></li> -->
 					</ul>
 				</div>

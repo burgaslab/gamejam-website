@@ -55,7 +55,7 @@
 					<ul class="assets">
 						<li><a href="http://globalgamejam.org" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="" /></a></li>
 						<li><a href="http://burgas.bg" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgasmunic.png" alt="" /></a></li>
-						<li><a href="http://www.computermarket.bg/" title="Computer Market" target="_blank"><img src="{$base}resource/image/public/partner/cm-logo.png" alt="" /></a></li>
+						<li><a href="http://www.computermarket.bg/" title="Computer Market" target="_blank"><img src="{$base}resource/image/public/partner/computermarket.png" alt="" /></a></li>
 						<li><a href="https://codific.eu" title="Codific" target="_blank"><img src="{$base}resource/image/public/partner/codific.png" alt="" /></a></li>
 						<li><a href="http://www.atlantisresort-bg.com/zavedeniya-i-razvlecheniya/bouling-centar-atlantis/" title="Atlantis Bowling Center" target="_blank"><img src="{$base}resource/image/public/partner/atlantis.png" alt="" /></a></li>
 						<li><a href="http://stedicenter.com/" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.png" alt="" /></a></li>

@@ -25,3 +25,10 @@ $config["nav"] = array(
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
 );
+
+
+$config["nav_orga"] = array(
+		array("title"=>"Участници", "url"=>"orga/participants"),
+		array("title"=>"Отбори", "url"=>"orga/teams"),
+		array("title"=>"Изход", "url"=>"orga/auth/logout"),
+);

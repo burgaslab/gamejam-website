@@ -15,7 +15,7 @@ class Registration extends Base {
 		$age_groups = conf("age_groups");
 		$occupations = conf("occupations");
 
-		require_once($this->path->abs_app . "libraries/class/Validator.php");
+		$this->classloader->load("common", "Validator");
 
 		$model = array("name"=>"", "email"=>"", "age"=>"", "occupation"=>"", "skills"=>"", "agree"=>"");
 		$model = array_merge($model, (array)$this->input->post());

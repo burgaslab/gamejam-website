@@ -41,6 +41,8 @@
 $route['default_controller'] = "home";
 $route['404_override'] = '';
 
+$route['orga'] = 'orga/participants';
+
 $route['(.*\.less)'] = 'service/less';
 
 /* End of file routes.php */

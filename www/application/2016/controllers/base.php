@@ -14,11 +14,12 @@ abstract class Base extends CI_Controller {
 
 		$current = $this->router->fetch_class();
 
-		$nav = conf("nav");
+		$nav = $this->get_nav();
 
 		$page_title = "";
 		foreach ($nav as &$i) {
-			if ($i["url"] == $current) {
+			$quoted = preg_quote($current);
+			if (preg_match("/{$quoted}$/", $i["url"])) {
 				$css = arr($i, "css", "");
 				$i["css"] = "{$css} active";
 
@@ -27,6 +28,7 @@ abstract class Base extends CI_Controller {
 				}
 			}
 		}
+
 		$this->view->set("nav", $nav);
 
 		$title = conf("title");
@@ -34,6 +36,10 @@ abstract class Base extends CI_Controller {
 			$title = "{$page_title} | {$title}";
 		}
 		$this->view->set("html_title", $title);
+	}
+
+	protected function get_nav() {
+		return conf("nav");
 	}
 
 	protected function json_response($res) {

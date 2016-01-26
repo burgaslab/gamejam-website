@@ -26,7 +26,7 @@
 								{if $children}
 								<ul>
 									{foreach $children as $j}
-									<li><a href="{$base}{$i.url}{$j.url}">{$j.title}</a></li>
+									<li><a href="{$base}{$i.url}/{$j.url}">{$j.title}</a></li>
 									{/foreach}
 								</ul>
 								{/if}
@@ -35,12 +35,14 @@
 						{/strip}
 					</ul>
 				</nav>
+				{block "logo"}
 				<div class="logo">
 					<div class="logo-wrap">
 						<a href="{$base}"><img src="{$base}resource/image/public/logo.png" class="pure-img" alt="" /></a>
 						<p>29-31 януари 2016<br/>в Културен център “Морско Казино”</p>
 					</div>
 				</div>
+				{/block}
 			</div>
 		</div>
 		<div id="content">
@@ -48,6 +50,7 @@
 				{block "content"}{/block}
 			</div>
 		</div>
+		{block "footer"}
 		<div id="footer">
 			<div class="wrap">
 				<div class="partners">
@@ -88,7 +91,9 @@
 				</div>
 			</div>
 		</div>
+		{/block}
 	</div>
+	{block "webcounter"}
 	{literal}
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -99,5 +104,6 @@
 		ga('send', 'pageview');
 	</script>
 	{/literal}
+	{/block}
 </body>
 </html>

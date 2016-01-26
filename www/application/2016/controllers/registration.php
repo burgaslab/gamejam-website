@@ -11,6 +11,7 @@ class Registration extends Base {
 		$this->load->library("session");
 		$this->load->helper("url");
 		$this->load->database();
+		$this->load->model("Registration_model");
 
 		$age_groups = conf("age_groups");
 		$occupations = conf("occupations");
@@ -26,9 +27,7 @@ class Registration extends Base {
 			$validator->validate_required("name", $model["name"], 1);
 			$validator->validate_email("email", $model["email"], 1);
 
-			$sql = sprintf("SELECT 1 FROM participants WHERE email='%s'", $this->db->escape_str($model["email"]));
-			$query = $this->db->query($sql);
-			if ($query->result()) {
+			if (!$this->Registration_model->check_email($model["email"])) {
 				$validator->add_error("email", "1");
 			}
 			if (!in_array($model["age"], $age_groups)) {
@@ -40,16 +39,7 @@ class Registration extends Base {
 			$validator->validate_required("agree", $model["agree"], 1);
 
 			if ($validator->is_valid()) {
-				$data = array(
-						"name" => $model["name"],
-						"email" => $model["email"],
-						"age" => $model["age"],
-						"occupation" => $model["occupation"],
-						"skills" => $model["skills"],
-				);
-
-				$sql = "INSERT INTO participants (name, email, age, occupation, skills) VALUES (?, ?, ?, ?, ?)";
-				$this->db->query($sql, $data);
+				$this->Registration_model->add($model["name"], $model["email"], $model["age"], $model["occupation"], $model["skills"]);
 
 				$this->session->set_flashdata(self::STATUS, 1);
 				redirect(current_url());

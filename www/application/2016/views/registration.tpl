@@ -20,13 +20,13 @@
 				<div class="pure-u-1 pure-u-sm-1-2 validate required {if $validator->has_error("age")}error{/if}">
 					<p class="label">Възрастова група</p>
 					{foreach $age_groups as $i}
-					<label><input type="radio" name="age" value="{$i}" {selected $model.age==$i}>{$i}</label>
+					<label><input type="radio" name="age" value="{$i}" {checked $model.age==$i}>{$i}</label>
 					{/foreach}
 				</div>
 				<div class="pure-u-1 pure-u-sm-1-2 validate required {if $validator->has_error("occupation")}error{/if}">
 					<p class="label">Заетост</p>
 					{foreach $occupations as $i}
-					<label><input type="radio" name="occupation" value="{$i}" {selected $model.occupation==$i}>{$i}</label>
+					<label><input type="radio" name="occupation" value="{$i}" {checked $model.occupation==$i}>{$i}</label>
 					{/foreach}
 				</div>
 				<div class="pure-u-1">

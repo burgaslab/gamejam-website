@@ -5,9 +5,9 @@
 <div class="text">
 	<div class="reviews">
 	<h3>Историческият първи Burgas Game Jam 2015!</h3>
-	<p>
-		<a target="_blank" href="http://gamejam.burgaslab.org/2015/">Burgas Game Jam 2015</a> беше едно невероятно преживяване! Над 50 участника, разделени на 12 отбора твориха в продължение на 45 часа. Цялото изживяване беше уникално, всички усетиха какво означава да си част от световната общност на  Global Game Jam. Имаше много повече участници, отколкото очаквахме да се появят, имайки предвид работните дни, изпитната сесия и грипната ваканция, и най-страхотното - имаше много деца. Част от снимките може да разгледате <a target="_blank" href="http://gamejam.burgaslab.org/2015/gallery">тук</a>.</p>
-
+	<p><a target="_blank" href="http://gamejam.burgaslab.org/2015/">Burgas Game Jam 2015</a> беше едно невероятно преживяване! Над 50 участника, разделени на 12 отбора твориха в продължение на 45 часа. Цялото изживяване беше уникално, всички усетиха какво означава да си част от световната общност на  Global Game Jam. Имаше много повече участници, отколкото очаквахме да се появят, имайки предвид работните дни, изпитната сесия и грипната ваканция, и най-страхотното - имаше много деца. Част от снимките може да разгледате <a target="_blank" href="http://gamejam.burgaslab.org/2015/gallery">тук</a>.</p>
+	<p>Малко кадри от <a target="_blank" href="http://gamejam.burgaslab.org/2015/">събитието през 2015-та</a>:</p>
+	<p style="margin: 10px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/_a6Ae7_kzcs" frameborder="0" allowfullscreen></iframe></p>
 	<p>Представяме ви на кратко игрите от миналата година. Архивите са <a target="_blank" href="http://globalgamejam.org/2015/jam-sites/burgas-game-jam/games">тук</a>.</p>
 	<h3>Отбор "No name" с игра <a href="http://globalgamejam.org/2015/games/michael-was-alone" target="_blank">Michael Was Alone</a></h3>
 	<p>Майкъл беше сам. Беше му самотно и объркано, но преди всичко му беше скучно. Въпросът "Какво да правя?" не напускаше ума му, след което видя един квадрат да се върти из въздуха...</p>

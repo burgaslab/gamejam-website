@@ -11,7 +11,7 @@ class Registration extends Base {
 		$this->load->library("session");
 		$this->load->helper("url");
 		$this->load->database();
-		$this->load->model("Registration_model");
+		$this->load->model("Participants_model");
 
 		$age_groups = conf("age_groups");
 		$occupations = conf("occupations");
@@ -24,22 +24,13 @@ class Registration extends Base {
 		$validator = new validator();
 
 		if ($this->input->post()) {
-			$validator->validate_required("name", $model["name"], 1);
-			$validator->validate_email("email", $model["email"], 1);
-
-			if (!$this->Registration_model->check_email($model["email"])) {
-				$validator->add_error("email", "1");
-			}
-			if (!in_array($model["age"], $age_groups)) {
-				$validator->add_error("age", 1);
-			}
-			if (!in_array($model["occupation"], $occupations)) {
-				$validator->add_error("occupation", 1);
-			}
+			$validator = $this->Participants_model->validate(0, $model);
 			$validator->validate_required("agree", $model["agree"], 1);
 
 			if ($validator->is_valid()) {
-				$this->Registration_model->add($model["name"], $model["email"], $model["age"], $model["occupation"], $model["skills"]);
+				unset($model["confirmed"]);
+				unset($model["team_id"]);
+				$this->Participants_model->add($model);
 
 				$this->session->set_flashdata(self::STATUS, 1);
 				redirect(current_url());

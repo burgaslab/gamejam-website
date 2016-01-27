@@ -22,22 +22,120 @@ $(function() {
 	
 	$("form.validate").formValidator();
 
-	FlipClock.Lang.Bulgarian = {
-		"years"   : "Години",
-		"months"  : "Месеци",
-		"days"    : "Дни",
-		"hours"   : "Часа",
-		"minutes" : "Минути",
-		"seconds" : "Секунди"
-	};
-	FlipClock.Lang["bg"] = FlipClock.Lang.Bulgarian;
+	var clockEl = $("#countdown div");
+	if (clockEl.size()) {
+		FlipClock.Lang.Bulgarian = {
+			"years"   : "Години",
+			"months"  : "Месеци",
+			"days"    : "Дни",
+			"hours"   : "Часа",
+			"minutes" : "Минути",
+			"seconds" : "Секунди"
+		};
+		FlipClock.Lang["bg"] = FlipClock.Lang.Bulgarian;
+		
+		var clockEl = $("#countdown div"); 
+		var clock = clockEl.FlipClock({
+		    clockFace: "DailyCounter",
+		    countdown: true,
+		    language: "bg"
+		});
+		clock.setTime(clockEl.data("time"));
+		clock.start();
+	}
 	
-	var clockEl = $("#countdown div"); 
-	var clock = clockEl.FlipClock({
-	    clockFace: "DailyCounter",
-	    countdown: true,
-	    language: "bg"
+		
+	$(".grid tr.edit").on("click", "button.edit", function(e){
+		e.preventDefault();
+		var row = $(this).closest("tr");
+		var params = {id: row.data("id")};
+		var url = $(".grid").data("edit-url");
+		$.post(url, params, function(res) {
+			if (res) {
+				row.html(res);
+				row.addClass("update");
+			}
+		});
 	});
-	clock.setTime(clockEl.data("time"));
-	clock.start();
+	
+	$(".grid tr.edit").on("click", "button.cancel", function(e){
+		e.preventDefault();
+		var row = $(this).closest("tr");
+		var params = {id: row.data("id")};
+		var url = $(".grid").data("cancel-url");
+		$.post(url, params, function(res) {
+			if (res) {
+				row.html(res);
+				row.removeClass("update");
+			}
+		});
+	});
+	
+	
+	$(".grid tr.edit").on("click", "button.save", function(e){
+		e.preventDefault();
+		var row = $(this).closest("tr"); 
+		row.removeClass("update");
+		var params = row.find("input,select,textarea").serializeObject();
+		params.id = row.data("id");
+		var url = $(".grid").data("save-url");
+		$.post(url, params, function(res) {
+			if (res.success) {
+				row.html(res.data);
+			} else {
+				alert(validatorToString(res.data));
+			}
+		});
+	});
+	
+	$(".grid tr.edit").on("click", "button.del", function(e){
+		if (confirm("Confirm delete?")) {
+			e.preventDefault();
+			var row = $(this).closest("tr"); 
+			var params = {
+				id : row.data("id"),
+			};
+			var url = $(".grid").data("delete-url");
+			$.post(url, params, function(res) {
+				row.remove();
+			});
+		}
+	});
+
+	
+	$(".grid tr.add").on("click", "button.save", function(e){
+		e.preventDefault();
+		var row = $(this).closest("tr"); 
+		var params = row.find("input,select,textarea").serializeObject();
+		var url = $(".grid").data("add-url");
+		$.post(url, params, function(res) {
+			if (res.success) {
+				window.location = window.location;
+			} else {
+				alert(validatorToString(res.data));
+			}
+		});
+	});
+	
+	var validatorToString = function(validator) {
+		return Object.keys(validator).map(function (key) {return validator[key]}).join("\n");
+	}
 });
+
+
+
+$.fn.serializeObject = function() {
+	var o = {};
+	var a = this.serializeArray();
+	$.each(a, function() {
+		if (o[this.name] !== undefined) {
+			if (!o[this.name].push) {
+				o[this.name] = [ o[this.name] ];
+			}
+			o[this.name].push(this.value || '');
+		} else {
+			o[this.name] = this.value || '';
+		}
+	});
+	return o;
+};

@@ -23,17 +23,17 @@
 				<button type="submit" class="pure-button pure-button-primary">Търси &raquo;</button>
 			</div>
 		</form>
-		<table class="grid pure-form" id="participants" data-edit-url="{$current_path}/edit" data-save-url="{$current_path}/save" data-cancel-url="{$current_path}/cancel" data-add-url="{$current_path}/add" data-delete-url="{$current_path}/delete">
+		<table class="grid pure-form sort" id="participants" data-edit-url="{$current_path}/edit" data-save-url="{$current_path}/save" data-cancel-url="{$current_path}/cancel" data-add-url="{$current_path}/add" data-delete-url="{$current_path}/delete">
 			<thead>
 			<tr>
-				<th>име и фамилия</th>
-				<th>имейл</th>
-				<th>възраст</th>
-				<th>заетост</th>
-				<th>умения</th>
-				<th>регистрация</th>
-				<th>потвърден</th>
-				<th>отбор</th>
+				<th class="sort">име и фамилия</th>
+				<th class="sort">имейл</th>
+				<th class="sort">възраст</th>
+				<th class="sort">заетост</th>
+				<th class="sort">умения</th>
+				<th class="sort">регистрация</th>
+				<th class="sort">потвърден</th>
+				<th class="sort">отбор</th>
 				<th class="actions">действия</th>
 			</tr>
 			</thead>
@@ -44,9 +44,11 @@
 					{include "orga/participant-row-view.tpl" item=$i}
 				</tr>
 			{/foreach}
+			<tfoot>
 			<tr class="add">
 				{include "orga/participant-row-edit.tpl"}
 			</tr>
+			</tfoot>
 			</tbody>
 		</table>
 	</div>

@@ -120,6 +120,33 @@ $(function() {
 	var validatorToString = function(validator) {
 		return Object.keys(validator).map(function (key) {return validator[key]}).join("\n");
 	}
+	
+
+		
+	$("table.sort").each(function() {
+		var table = $(this);
+		var headers = {};
+		var th = table.find("thead tr >");
+		th.each(function(index, el) {
+			if (!$(el).hasClass("sort")) {
+				headers[index] = {
+					sorter : false
+				};
+			}
+		});
+		table.tablesorter({
+			headers : headers,
+			cssHeader : "tablesorter-header",
+			textExtraction : function(node) {
+				node = $(node);
+				var res = node.data("sort");
+				if (typeof res !== "undefined") {
+					return res;
+				}
+				return node.text();
+			},
+		});
+	});
 });
 
 

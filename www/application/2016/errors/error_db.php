@@ -56,7 +56,9 @@ p {
 <body>
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+		<pre>
+			<?php echo $message; ?>
+		</pre>
 	</div>
 </body>
 </html>

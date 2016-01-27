@@ -8,3 +8,4 @@
 !/www/application/2016/cache/index.html
 /www/application/2016/config/production/auth.php
 /www/application/2016/config/production/config.php
+/www/application/2016/logs/*.php

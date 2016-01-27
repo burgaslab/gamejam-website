@@ -26,18 +26,15 @@ div {
 }
 
 p { font-family: monospace; margin: 5px 0 5px 15px; }
-
+}
 </style>
 </head>
 <body>
 	<div>
-		<h1>A PHP Error was encountered</h1>
-		<p>&nbsp;</p>
-		<p>Severity: <?php echo $severity; ?></p>
-		<p>Message:  <?php echo $message; ?></p>
-		<p>Filename: <?php echo $filepath; ?></p>
-		<p>Line Number: <?php echo $line; ?></p>
-		<p>&nbsp;</p>
+		<h1>FATAL ERROR</h1>
+		<pre>
+			<p>#message#</p>
+		</pre>
 	</div>
 </body>
 </html>

@@ -41,7 +41,7 @@
 $route['default_controller'] = "home";
 $route['404_override'] = 'error404';
 
-$route['orga'] = 'orga/participants';
+$route['orga'] = 'orga/index';
 
 $route['(.*\.less)'] = 'service/less';
 

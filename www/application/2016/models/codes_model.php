@@ -43,6 +43,20 @@ class Codes_model extends CI_Model {
 		return $count == 0;
 	}
 
+	public function can_assign() {
+		$sql = "SELECT COUNT(1) FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.time_confirmed IS NOT NULL AND A.team_id IS NOT NULL AND is_reserved=1";
+
+		$query = $this->db->query($sql);
+
+		$res = $query->row_array();
+
+		$query->free_result();
+
+		$count = reset($res);
+
+		return $count == 0;
+	}
+
 	public function generate($normal, $reserved) {
 		$total = $normal + $reserved;
 
@@ -103,9 +117,7 @@ class Codes_model extends CI_Model {
 		return $res;
 	}
 
-
-	public function get_participants() {
-		// assigning codes to participants
+	public function assign() {
 		$sql = "SELECT * FROM participants WHERE time_confirmed IS NOT NULL AND team_id IS NOT NULL";
 		$query = $this->db->query($sql);
 		$participants = array();
@@ -129,15 +141,36 @@ class Codes_model extends CI_Model {
 
 			$this->db->query($sql, $data);
 		}
+	}
 
+	public function get_participants() {
 		// getting list
 		$sql = "SELECT A.id, A.name, A.email, A.team_id, B.code FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.time_confirmed IS NOT NULL AND A.team_id IS NOT NULL AND is_reserved=1";
 		$query = $this->db->query($sql);
 
 		$res = array();
 
+		$key = conf("encryption_key");
+
 		foreach ($query->result() as $row) {
-			$res[] = $row;
+			$data = array(
+					"participant_id" => $row->id,
+					"team_id" => $row->team_id,
+					"code" => $row->code,
+			);
+
+			$data = json_encode($data);
+			$data = data_encrypt($data, $key);
+			$data = base64_encode_urlsafe($data);
+
+			$res[] = array(
+					"id" => $row->id,
+					"name" => $row->name,
+					"email" => $row->email,
+					"team_id" => $row->team_id,
+					"code" => $row->code,
+					"url" => $this->path->http_base . "vote?" . $data,
+			);
 		}
 
 		$query->free_result();

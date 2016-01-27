@@ -29,6 +29,12 @@ class Codes extends Auth {
 			case "export":
 				$this->export();
 				break;
+			case "assign":
+				$this->assign();
+				break;
+			case "list":
+				$this->_list();
+				break;
 			case "send":
 				$this->send();
 				break;
@@ -68,32 +74,34 @@ class Codes extends Auth {
 		force_download("codes.txt", $codes);
 	}
 
+	public function assign() {
+		if ($this->Codes_model->can_assign()) {
+			$this->Codes_model->assign();
+			redirect(current_url());
+		} else {
+			$this->view->set("error", "Кодовете вече са зачислени.");
+		}
+	}
+
+	public function _list() {
+		$this->view->set("list", $this->Codes_model->get_participants());
+	}
+
 	public function send() {
 		$list = $this->Codes_model->get_participants();
-		$key = conf("encryption_key");
 
 		$this->load->config("email");
 		$this->load->library("email");
 
 		foreach ($list as $i) {
-			$data = array(
-				"participant_id" => $i->id,
-				"team_id" => $i->team_id,
-				"code" => $i->code,
-			);
-
-			$data = json_encode($data);
-			$data = data_encrypt($data, $key);
-			$data = base64_encode_urlsafe($data);
-
 			$view_model = array(
-				"url" => $this->path->http_base . "vote?" . $data,
-				"name" => $i->name,
+				"url" => $i["url"],
+				"name" => $i["name"],
 			);
 
 			$body = $this->view->result("orga/vote_email", true, $view_model);
 
-			$this->send_email("Гласувайте на BurgasGameJam 2016", $body, $i->email);
+			$this->send_email("Гласувайте на Burgas Game Jam 2016", $body, $i["email"]);
 		}
 	}
 

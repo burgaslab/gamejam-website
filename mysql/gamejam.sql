@@ -27,28 +27,33 @@ CREATE TABLE `categories` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `votes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `code` varchar(16) NOT NULL,
-  `participant_id` int(11) DEFAULT NULL,
-  `time_vote` datetime DEFAULT NULL,
+DROP TABLE vote_categories;
+DROP TABLE votes;
+
+CREATE TABLE `codes` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `code` VARCHAR(16) NOT NULL,
+  `participant_id` INT(11) DEFAULT NULL,
+  `time_vote` DATETIME DEFAULT NULL,
+  `is_reserved` TINYINT(4) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `code` (`code`),
-  KEY `votes_ibfk_1` (`participant_id`),
-  CONSTRAINT `votes_ibfk_1` FOREIGN KEY (`participant_id`) REFERENCES `participants` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  KEY `codes_ibfk_1` (`participant_id`),
+  CONSTRAINT `codes_ibfk_1` FOREIGN KEY (`participant_id`) REFERENCES `participants` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 
-CREATE TABLE `vote_categories` (
-  `vote_id` int(11) NOT NULL,
-  `category` varchar(32) NOT NULL,
-  `team_id` int(11) NOT NULL,
-  PRIMARY KEY (`vote_id`,`category`),
+CREATE TABLE `votes` (
+  `code_id` INT(11) NOT NULL,
+  `category` VARCHAR(32) NOT NULL,
+  `team_id` INT(11) NOT NULL,
+  PRIMARY KEY (`code_id`,`category`),
   KEY `category` (`category`),
   KEY `team_id` (`team_id`),
-  CONSTRAINT `vote_categories_ibfk_1` FOREIGN KEY (`vote_id`) REFERENCES `votes` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `vote_categories_ibfk_2` FOREIGN KEY (`category`) REFERENCES `categories` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `vote_categories_ibfk_3` FOREIGN KEY (`team_id`) REFERENCES `teams` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `votes_ibfk_1` FOREIGN KEY (`code_id`) REFERENCES `codes` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `votes_ibfk_2` FOREIGN KEY (`category`) REFERENCES `categories` (`name`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  CONSTRAINT `votes_ibfk_3` FOREIGN KEY (`team_id`) REFERENCES `teams` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
+
 
 insert  into `categories`(`name`,`desc`) values ('design','Оформпление'),('gameplay','Геймплей (начин, по който се играе играта)'),('pleasure','Удоволствие от играта'),('storyline','Най-оригинална идея');

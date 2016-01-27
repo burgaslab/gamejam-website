@@ -208,10 +208,26 @@ body { background: url(../../image/public/body.png); }
 			}
 		}
 		.status {
-			font-size: 15px; position: absolute; top: 0; right: 10px; padding: 10px 30px 10px 70px; border: 1px solid #ddd; font-weight: bold; z-index: 5;
+			font-size: 15px; padding: 10px 30px; border: 1px solid #ddd; font-weight: bold; z-index: 5;
 			&.success { background: #6da625; color: #fff; border-color: #97FF88; }
 			&.notice { background: #FFFBCC; color: #C69E00; border-color: #FFF35E; }
 			&.error { background: #FFCFCF; color: #CC3300; border-color: #FF9595; }
+		}
+		.message { 
+			background:#f4f4f4; border:1px solid #d9d9d9; padding:15px 20px; margin:0 0 20px;
+			a { text-decoration:underline; }
+			&.error { 
+				border-color:#dc2102; padding-left:50px; background:#fff0ed;
+				a { color:#dc1f00; }
+			}
+			&.success { 
+				background:#e7f9d0; border-color:#7dc457;
+				a { color:#4a771e; }
+			}
+			&.info { 
+				background:#f4f4f4;
+				a { color:#0973c4; }
+			}
 		}
 		
 		table.sort thead th.tablesorter-header { 
@@ -219,6 +235,8 @@ body { background: url(../../image/public/body.png); }
 			&.headerSortUp  { background-image: url(../../image/tablesorter-asc.gif); background-color: #e4e4e4; }
 			&.headerSortDown  { background-image: url(../../image/tablesorter-desc.gif); background-color: #e4e4e4; }
 		}
+		
+		.spacer { margin: 20px 0; border-bottom: 1px solid #ccc; }
 	}
 }
 

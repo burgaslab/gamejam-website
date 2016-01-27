@@ -147,6 +147,12 @@ $(function() {
 			},
 		});
 	});
+	
+	$(".codes form button").click(function(e) {
+		if (!confirm("Сигурни ли сте?")) {
+			e.preventDefault();
+		}
+	})
 });
 
 

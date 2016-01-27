@@ -43,8 +43,6 @@ class MY_Log extends CI_Log {
 		$text .= str_replace("\n", $NL, var_export($_GET, true));
 		$text .= $NL."POST:".$NL;
 		$text .= str_replace("\n", $NL, var_export($_POST, true));
-		$text .= $NL."SESSION:".$NL;
-		$text .= str_replace("\n", $NL, var_export($_SESSION, true));
 		$text .= $NL."FILES:".$NL;
 		$text .= str_replace("\n", $NL, var_export($_FILES, true));
 		$text .= $NL."TRACE:".$NL;

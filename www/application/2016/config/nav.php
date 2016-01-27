@@ -31,5 +31,7 @@ $config["nav"] = array(
 $config["nav_orga"] = array(
 		array("title"=>"Участници", "url"=>"orga/participants"),
 		array("title"=>"Отбори", "url"=>"orga/teams"),
+		array("title"=>"Кодове", "url"=>"orga/codes"),
+		array("title"=>"Гласове", "url"=>"orga/votes"),
 		array("title"=>"Изход", "url"=>"orga/auth/logout"),
 );

@@ -32,9 +32,9 @@
 <td>
 	<select name="team_id">
 		<option value="">-</option>
-		{*
-		{options data=$tracks value="id" text="name" sel=$item->track_id}
-		*}
+		{foreach $teams as $i}
+			<option value="{$i->id}" {selected $item->team_id|default==$i->id}>{$i->name} ({$i->game})</option>
+		{/foreach}
 	</select>
 </td>
 <td class="actions">

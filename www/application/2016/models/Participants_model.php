@@ -10,7 +10,7 @@ class Participants_model extends CI_Model {
 		$where = array(1);
 		$params = array();
 		if ($term) {
-			$where[] = "(name LIKE ? OR email LIKE ? OR age LIKE ? OR occupation LIKE ? OR skills LIKE ?)";
+			$where[] = "(A.name LIKE ? OR email LIKE ? OR age LIKE ? OR occupation LIKE ? OR skills LIKE ?)";
 			$term = "%{$term}%";
 			$params[] = $term;
 			$params[] = $term;
@@ -34,7 +34,7 @@ class Participants_model extends CI_Model {
 
 		$where = implode(" AND ", $where);
 
-		$sql = "SELECT * FROM participants WHERE {$where}";
+		$sql = "SELECT A.*, B.name team_name, B.game FROM participants A LEFT JOIN teams B ON (A.team_id=B.id) WHERE {$where} ORDER BY name";
 		$query = $this->db->query($sql, $params);
 
 		$res = array();
@@ -49,7 +49,7 @@ class Participants_model extends CI_Model {
 	}
 
 	public function get_one($id) {
-		$sql = "SELECT * FROM participants WHERE id=?";
+		$sql = "SELECT A.*, B.name team_name, B.game FROM participants A LEFT JOIN teams B ON (A.team_id=B.id) WHERE A.id=?";
 		$query = $this->db->query($sql, $id);
 
 		return $query->row();

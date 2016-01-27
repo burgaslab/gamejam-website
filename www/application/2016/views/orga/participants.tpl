@@ -2,7 +2,7 @@
 
 {block "content"}
 	<div class="orga">
-		<form method="get" action="#" class="pure-form filter">
+		<form method="get" action="{$current_path}" class="pure-form filter">
 			<div class="column">
 				<label>Търсене</label>
 				<input type="text" name="term" value="{$filter.term}" />
@@ -18,12 +18,18 @@
 			</div>
 			<div class="column">
 				<label>Отбор</label>
+				<select name="team_id">
+					<option value="">всички...</option>
+					{foreach $teams as $i}
+						<option value="{$i->id}" {selected $i->id==$filter.team_id}>{$i->name} ({$i->game})</option>
+					{/foreach}
+				</select>
 			</div>
 			<div class="column">
 				<button type="submit" class="pure-button pure-button-primary">Търси &raquo;</button>
 			</div>
 		</form>
-		<table class="grid pure-form sort" id="participants" data-edit-url="{$current_path}/edit" data-save-url="{$current_path}/save" data-cancel-url="{$current_path}/cancel" data-add-url="{$current_path}/add" data-delete-url="{$current_path}/delete">
+		<table class="grid pure-form sort" data-edit-url="{$current_path}/edit" data-save-url="{$current_path}/save" data-cancel-url="{$current_path}/cancel" data-add-url="{$current_path}/add" data-delete-url="{$current_path}/delete">
 			<thead>
 			<tr>
 				<th class="sort">име и фамилия</th>

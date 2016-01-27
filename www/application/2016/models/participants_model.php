@@ -61,9 +61,9 @@ class Participants_model extends CI_Model {
 		$age = $model["age"];
 		$occupation = $model["occupation"];
 		$skills = $model["skills"];
-		$confirmed = $model["confirmed"];
+		$confirmed = arr($model, "confirmed");
 		$time_confirmed = ($confirmed ? date("Y-m-d H:i:s") : null);
-		$team_id = $model["team_id"];
+		$team_id = arr($model, "team_id");
 		$team_id = $team_id ? $team_id : null;
 
 		$data = array(

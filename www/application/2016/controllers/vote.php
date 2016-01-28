@@ -22,20 +22,16 @@ class Vote extends Base {
 			$model[$c->name] = "";
 		}
 
-
-		$is_participant = false;
 		$team_id = 0;
 		if ($this->input->get()) {
 			$key = conf("encryption_key");
 
-			$params = current(array_keys($this->input->get()));
 			$params = current(array_keys($this->input->get()));
 			$params = base64_decode_urlsafe($params);
 			$params = data_decrypt($params, $key);
 			$params = json_decode($params);
 			if (isset($params->code)) {
 				$model["code"] = $params->code;
-				$is_participant = true;
 				$team_id = $params->team_id;
 			}
 		}
@@ -43,10 +39,6 @@ class Vote extends Base {
 		$model = array_merge($model, (array)$this->input->post());
 
 		$teams = $this->Teams_model->get_list($team_id);
-
-
-
-
 
 		$validator = new validator();
 
@@ -61,7 +53,7 @@ class Vote extends Base {
 			}
 		}
 
-		$this->view->set("is_participant", $is_participant);
+		$this->view->set("is_participant", ($team_id != 0));
 		$this->view->set("categories", $categories);
 		$this->view->set("teams", $teams);
 		$this->view->set("model", $model);

@@ -49,7 +49,7 @@ class Codes extends Auth {
 
 	private function generate() {
 		if ($this->Codes_model->can_generate()) {
-			$this->Codes_model->generate(500, 100);
+			$this->Codes_model->generate(500, 200);
 			redirect(current_url());
 		} else {
 			$this->view->set("error", "Кодовете вече са генерирани.");

@@ -69,6 +69,7 @@
 						<li><a href="http://www.fusionmotion.net/" title="Fusion Motion Bulgaria" target="_blank"><img src="{$base}resource/image/public/partner/fusionmotion.png" alt="" /></a></li>
 						<li><a href="http://vijburgas.bg" title="Виж! Бургас" target="_blank"><img src="{$base}resource/image/public/partner/vijburgas.png" alt="" /></a></li>
 						<li><a href="http://burgasdream.com/" title="Burgas Dreams" target="_blank"><img src="{$base}resource/image/public/partner/burgasdreams.png" alt="" /></a></li>
+						<li><a href="http://provectus.com/" title="Provectus" target="_blank"><img src="{$base}resource/image/public/partner/provectus.png" alt="" /></a></li>
 					</ul>
 				</div>
 				<div class="contacts">

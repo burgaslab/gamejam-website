@@ -17,7 +17,7 @@ class Participants extends Auth {
 		$this->view->set("age_groups", conf("age_groups"));
 		$this->view->set("occupations", conf("occupations"));
 		$this->view->set("teams", $this->Teams_model->get_list());
-		$this->view->set("current_path", $this->path->base . strtok($this->path->current, "?"));
+		$this->view->set("current_path", $this->path->base . trim(strtok($this->path->current, "?") , "/"))
 	}
 
 	public function index() {

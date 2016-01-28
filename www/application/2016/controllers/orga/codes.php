@@ -10,7 +10,7 @@ class Codes extends Auth {
 		$this->load->database();
 		$this->load->model("Codes_model");
 
-		$this->view->set("current_path", $this->path->base . strtok($this->path->current, "?"));
+		$this->view->set("current_path", $this->path->base . trim(strtok($this->path->current, "?") , "/"));
 	}
 
 	public function index() {
@@ -38,13 +38,16 @@ class Codes extends Auth {
 			case "send":
 				$this->send();
 				break;
+			case "test_email":
+				$this->test_email();
+				break;
 		}
 
 		$this->render("orga/codes");
 	}
 
 
-	public function generate() {
+	private function generate() {
 		if ($this->Codes_model->can_generate()) {
 			$this->Codes_model->generate(500, 100);
 			redirect(current_url());
@@ -53,7 +56,7 @@ class Codes extends Auth {
 		}
 	}
 
-	public function clear() {
+	private function clear() {
 		if ($this->Codes_model->can_delete()) {
 			$this->Codes_model->delete();
 			redirect(current_url());
@@ -62,7 +65,7 @@ class Codes extends Auth {
 		}
 	}
 
-	public function export() {
+	private function export() {
 		$this->load->helper("download");
 
 		$list = $this->Codes_model->get_list(0);
@@ -74,7 +77,7 @@ class Codes extends Auth {
 		force_download("codes.txt", $codes);
 	}
 
-	public function assign() {
+	private function assign() {
 		if ($this->Codes_model->can_assign()) {
 			$this->Codes_model->assign();
 			redirect(current_url());
@@ -83,11 +86,11 @@ class Codes extends Auth {
 		}
 	}
 
-	public function _list() {
+	private function _list() {
 		$this->view->set("list", $this->Codes_model->get_participants());
 	}
 
-	public function send() {
+	private function send() {
 		$list = $this->Codes_model->get_participants();
 
 		$this->load->config("email");
@@ -101,7 +104,7 @@ class Codes extends Auth {
 
 			$body = $this->view->result("orga/vote_email", true, $view_model);
 
-			$this->send_email("Гласувайте на Burgas Game Jam 2016", $body, $i["email"]);
+			$this->send_email("Гласувайте за най-добра игра на Burgas Game Jam 2016", $body, $i["email"]);
 		}
 	}
 
@@ -125,4 +128,17 @@ class Codes extends Auth {
 		$this->email->send();
 	}
 
+	private function test_email() {
+		$this->load->config("email");
+		$this->load->library("email");
+		$view_model = array(
+				"url" => "http://gamejam.burgaslab.org",
+				"name" => "Ivan",
+		);
+
+		$body = $this->view->result("orga/vote_email", true, $view_model);
+
+		$this->send_email("Гласувайте за най-добра игра на Burgas Game Jam 2016", $body, "@");
+		exit;
+	}
 }

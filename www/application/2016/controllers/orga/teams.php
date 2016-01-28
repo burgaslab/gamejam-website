@@ -12,7 +12,7 @@ class Teams extends Auth {
 
 		$this->classloader->load("common", "Validator");
 
-		$this->view->set("current_path", $this->path->base . trim(strtok($this->path->current, "?") , "/"))
+		$this->view->set("current_path", $this->path->base . trim(strtok($this->path->current, "?") , "/"));
 	}
 
 	public function index() {

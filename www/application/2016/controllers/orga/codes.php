@@ -68,7 +68,7 @@ class Codes extends Auth {
 	private function export() {
 		$this->load->helper("download");
 
-		$list = $this->Codes_model->get_list(0);
+		$list = $this->Codes_model->get_list(false, "id");
 		$codes = array();
 		foreach ($list as $i) {
 			$codes[] = self::format_code($i->code);

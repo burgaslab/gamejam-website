@@ -46,7 +46,7 @@ class Codes extends Auth {
 
 	public function generate() {
 		if ($this->Codes_model->can_generate()) {
-			$this->Codes_model->generate(1000, 200);
+			$this->Codes_model->generate(500, 100);
 			redirect(current_url());
 		} else {
 			$this->view->set("error", "Кодовете вече са генерирани.");

@@ -9,6 +9,7 @@ class Codes extends Auth {
 
 		$this->load->database();
 		$this->load->model("Codes_model");
+		$this->load->model("Log_model");
 
 		$this->view->set("current_path", $this->path->base . trim(strtok($this->path->current, "?") , "/"));
 	}
@@ -104,7 +105,11 @@ class Codes extends Auth {
 
 			$body = $this->view->result("orga/vote_email", true, $view_model);
 
-			$this->send_email("Гласувайте за най-добра игра на Burgas Game Jam 2016", $body, $i["email"]);
+			$email = $i["email"];
+			$this->send_email("Гласувайте за най-добра игра на Burgas Game Jam 2016", $body, $email);
+
+			$message = "Email sent to {$email}";
+			$this->Log_model->add($message);
 		}
 	}
 

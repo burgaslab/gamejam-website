@@ -57,3 +57,11 @@ CREATE TABLE `votes` (
 
 
 insert  into `categories`(`name`,`desc`) values ('design','Оформпление'),('gameplay','Геймплей (начин, по който се играе играта)'),('pleasure','Удоволствие от играта'),('storyline','Най-оригинална идея');
+
+
+CREATE TABLE `log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `message` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

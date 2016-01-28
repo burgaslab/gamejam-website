@@ -43,6 +43,9 @@ class Vote extends Base {
 		$validator = new validator();
 
 		if ($this->input->post()) {
+			// hinder any bruteforce attempts...codes are very weak.
+			sleep(1);
+
 			$validator = $this->Votes_model->validate($model, $categories, $teams, $team_id);
 
 			if ($validator->is_valid()) {

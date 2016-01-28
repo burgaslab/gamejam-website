@@ -8,5 +8,7 @@
 <td>{$item->team_name} {if $item->game}({$item->game}){/if}</td>
 <td class="actions">
 	<button title="редакция" class="edit"><span>редакция</span></button>
+	{*
 	<button title="изтриване" class="del"><span>изтриване</span></button>
+	*}
 </td>

@@ -61,10 +61,9 @@ class Participants_model extends CI_Model {
 		$age = $model["age"];
 		$occupation = $model["occupation"];
 		$skills = $model["skills"];
-		$confirmed = arr($model, "confirmed");
-		$time_confirmed = ($confirmed ? date("Y-m-d H:i:s") : null);
 		$team_id = arr($model, "team_id");
 		$team_id = $team_id ? $team_id : null;
+		$time_confirmed = ($team_id ? date("Y-m-d H:i:s") : null);
 
 		$data = array(
 				$name,
@@ -95,16 +94,15 @@ class Participants_model extends CI_Model {
 			$occupation = $model["occupation"];
 			$skills = $model["skills"];
 
-			$confirmed = $model["confirmed"];
-			$time_confirmed = $current->time_confirmed;
-			if ($confirmed && !$time_confirmed) {
-				$time_confirmed = date("Y-m-d H:i:s");
-			} else if (!$confirmed) {
-				$time_confirmed = null;
-			}
-
 			$team_id = $model["team_id"];
 			$team_id = $team_id ? $team_id : null;
+
+			$time_confirmed = $current->time_confirmed;
+			if ($team_id && !$time_confirmed) {
+				$time_confirmed = date("Y-m-d H:i:s");
+			} else if (!$team_id) {
+				$time_confirmed = null;
+			}
 
 			$data = array(
 					$name,

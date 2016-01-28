@@ -22,13 +22,7 @@
 	<textarea name="skills">{$item->skills|default}</textarea>
 </td>
 <td>{$item->timestamp|default}</td>
-<td>
-	<select name="confirmed">
-		{foreach $opt_bool as $i}
-			<option value="{$i@key}" {selected $item->time_confirmed|default==$i@key}>{$i}</option>
-		{/foreach}
-	</select>
-</td>
+<td>{$item->time_confirmed|default}</td>
 <td>
 	<select name="team_id">
 		<option value="">-</option>

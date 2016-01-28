@@ -4,8 +4,8 @@
 	<div class="orga codes">
 		<form class="pure-form" method="post" action="{$current_path}">
 			<div class="message">
-				<p>Публични: {$normal_count} бр.</p>
-				<p>Запазени за участници: {$reserved_count}</p>
+				<p>За гости: {$normal_count} бр.</p>
+				<p>За участници: {$reserved_count} бр.</p>
 			</div>
 			{if isset($error)}
 			<div class="message error">
@@ -15,8 +15,10 @@
 			<div class="spacer"></div>
 			<button type="submit" class="pure-button pure-button-primary" name="action" value="generate">Генериране</button>
 			<div class="spacer"></div>
+			{*
 			<button type="submit" class="pure-button pure-button-primary" name="action" value="clear">Изчистване</button>
 			<div class="spacer"></div>
+			*}
 			<button type="submit" class="pure-button pure-button-primary" name="action" value="export">Експорт</button>
 			<div class="spacer"></div>
 			<button type="submit" class="pure-button pure-button-primary" name="action" value="assign">Зачисли кодове на участници</button>
@@ -25,6 +27,10 @@
 			<div class="spacer"></div>
 			<button type="submit" class="pure-button pure-button-primary" name="action" value="send">Изпрати на участници</button>
 			<div class="spacer"></div>
+			{*
+			<button type="submit" class="pure-button pure-button-primary" name="action" value="test_email">test email</button>
+			<div class="spacer"></div>
+			*}
 		</form>
 		{if isset($list)}
 			<table class="grid pure-form sort">
@@ -34,6 +40,7 @@
 					<th class="sort">име</th>
 					<th class="sort">имейл</th>
 					<th class="sort">отбор</th>
+					<th class="sort">гласувал</th>
 					<th class="sort">код</th>
 				</tr>
 				</thead>
@@ -44,7 +51,8 @@
 						<td>{$i.id}</th>
 						<td>{$i.name}</th>
 						<td>{$i.email}</th>
-						<td>{$i.team_id}</th>
+						<td>{$i.team_name} ({$i.game})</th>
+						<td>{$i.time_vote}</td>
 						<td><a href="{$i.url}" target="_blank">{$i.code}</a></th>
 					</tr>
 				{/foreach}

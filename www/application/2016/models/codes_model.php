@@ -44,7 +44,7 @@ class Codes_model extends CI_Model {
 	}
 
 	public function can_assign() {
-		$sql = "SELECT COUNT(1) FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.time_confirmed IS NOT NULL AND A.team_id IS NOT NULL AND is_reserved=1";
+		$sql = "SELECT COUNT(1) FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.team_id IS NOT NULL AND is_reserved=1";
 
 		$query = $this->db->query($sql);
 
@@ -118,7 +118,7 @@ class Codes_model extends CI_Model {
 	}
 
 	public function assign() {
-		$sql = "SELECT * FROM participants WHERE time_confirmed IS NOT NULL AND team_id IS NOT NULL";
+		$sql = "SELECT * FROM participants WHERE team_id IS NOT NULL";
 		$query = $this->db->query($sql);
 		$participants = array();
 
@@ -145,7 +145,7 @@ class Codes_model extends CI_Model {
 
 	public function get_participants() {
 		// getting list
-		$sql = "SELECT A.id, A.name, A.email, A.team_id, B.code FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.time_confirmed IS NOT NULL AND A.team_id IS NOT NULL AND is_reserved=1";
+		$sql = "SELECT A.id, A.name, A.email, A.team_id, B.code, B.time_vote, C.name team_name, C.game FROM participants A JOIN codes B ON (A.id=B.participant_id) JOIN teams C ON (A.team_id=C.id) WHERE A.team_id IS NOT NULL AND is_reserved=1";
 		$query = $this->db->query($sql);
 
 		$res = array();
@@ -169,6 +169,9 @@ class Codes_model extends CI_Model {
 					"email" => $row->email,
 					"team_id" => $row->team_id,
 					"code" => $row->code,
+					"team_name" => $row->team_name,
+					"game" => $row->game,
+					"time_vote" => $row->time_vote,
 					"url" => $this->path->http_base . "vote?" . $data,
 			);
 		}

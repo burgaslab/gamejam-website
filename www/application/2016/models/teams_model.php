@@ -6,9 +6,9 @@ class Teams_model extends CI_Model {
 		parent::__construct();
 	}
 
-	public function get_list() {
-		$sql = "SELECT * FROM teams WHERE 1 ORDER BY name";
-		$query = $this->db->query($sql);
+	public function get_list($skip_id=0) {
+		$sql = "SELECT * FROM teams WHERE id!=? ORDER BY name";
+		$query = $this->db->query($sql, $skip_id);
 
 		$res = array();
 

@@ -12,7 +12,7 @@ class Votes extends Auth {
 	}
 
 	public function index() {
-		$this->view->set("categories", $this->Votes_model->categories());
+		$this->view->set("categories", $this->Votes_model->categories_votes());
 		$this->view->set("general", $this->Votes_model->general());
 
 		$this->render("orga/votes");

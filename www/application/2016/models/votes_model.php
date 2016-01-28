@@ -29,7 +29,7 @@ class Votes_model extends CI_Model {
 		return $res;
 	}
 
-	public function categories() {
+	public function get_categories() {
 		$sql = "SELECT * FROM categories";
 
 		$query = $this->db->query($sql);
@@ -40,6 +40,12 @@ class Votes_model extends CI_Model {
 		}
 
 		$query->free_result();
+
+		return $cats;
+	}
+
+	public function categories_votes() {
+		$cats = $this->get_categories();
 
 		$res = array();
 
@@ -58,5 +64,62 @@ class Votes_model extends CI_Model {
 
 	public function general() {
 		return $this->category(null);
+	}
+
+
+	private function get_code_id($code, $is_reserved) {
+		$sql = "SELECT id FROM codes WHERE code=? AND is_reserved=? AND time_vote IS NULL";
+		$params = array($code, $is_reserved);
+		$query = $this->db->query($sql, $params);
+		$res = $query->row_array();
+
+		return reset($res);
+	}
+
+	public function validate($data, $categories, $teams, $team_id) {
+		$res = new validator();
+
+		$code = $string = str_replace(' ', '', $data["code"]);
+		$is_reserved = $team_id ? true : false;
+		if (!$this->get_code_id($code, $is_reserved)) {
+			$res->add_error("code", "Невалиден код или кодът е използван");
+		}
+
+		foreach ($categories as $c) {
+			$team_id = $data[$c->name];
+
+			$found = false;
+			foreach ($teams as $t) {
+				if ($t->id == $data[$c->name]) {
+					$found = true;
+					break;
+				}
+			}
+
+			if (!$found) {
+				$res->add_error($c->name, "Невалиден избор");
+			}
+		}
+
+		return $res;
+	}
+
+
+	public function add($data, $categories, $team_id) {
+		$code = $string = str_replace(' ', '', $data["code"]);
+		$is_reserved = $team_id ? true : false;
+		$code_id = $this->get_code_id($code, $is_reserved);
+
+		assert($code_id);
+
+		$sql = "INSERT INTO votes (code_id, category, team_id) VALUES (?, ?, ?)";
+		foreach ($categories as $c) {
+			$params = array($code_id, $c->name, $data[$c->name]);
+			$this->db->query($sql, $params);
+		}
+
+		$sql = "UPDATE codes SET time_vote=? WHERE id=?";
+		$params = array(date("Y-m-d H:i:s"), $code_id);
+		$this->db->query($sql, $params);
 	}
 }

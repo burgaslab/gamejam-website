@@ -19,12 +19,12 @@ $config["nav"] = array(
 			array("title"=>"Ден 3 - Неделя", "url"=>"#day3"),
 			array("title"=>"Лектори", "url"=>"#speakers"),
 	)),
-	array("title"=>"За Jammer-и", "url"=>"jammers"),
+	array("title"=>"За Jammer-и", "url"=>"jammers", "css"=>"highlight"),
 	// array("title"=>"Снимки", "url"=>"photos"),
 	array("title"=>"BGJ 2015", "url"=>"bgj2015"),
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Press Release", "url"=>"press"),
-	array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
+	array("title"=>"Регистрация", "url"=>"registration"),
 );
 
 

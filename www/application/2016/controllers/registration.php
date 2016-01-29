@@ -6,7 +6,12 @@ class Registration extends Base {
 
 	const STATUS = "_status";
 
+
 	public function index() {
+		$this->render("registration");
+	}
+
+	private function old_index() {
 		$this->load->library("path");
 		$this->load->library("session");
 		$this->load->helper("url");

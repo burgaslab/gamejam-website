@@ -2,6 +2,8 @@
 
 {block "content"}
 <div class="registration">
+	<h1>Регистрациите са само на място. Краен срок 11ч. в събота!</h1>
+	{*
 	{if $success}
 		<div class="success">
 			<p>Вашата регистрация за Burgas Game Jam беше успешна!</p>
@@ -42,5 +44,6 @@
 			</div>
 		</form>
 	{/if}
+		*}
 </div>
 {/block}

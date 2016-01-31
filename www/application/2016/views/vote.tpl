@@ -19,7 +19,7 @@
 						<select name="{$c->name}">
 							<option value="">изберете отбор и игра...</option>
 							{foreach $teams as $t}
-								<option value="{$t->id}" {selected $model[$c->name]==$t->id}>отбор "{$t->name}" с игра "{$t->game}"</option>
+								<option value="{$t->id}" {selected $model[$c->name]==$t->id}>"{$t->game}" / отбор "{$t->name}"</option>
 							{/foreach}
 						</select>
 					</div>

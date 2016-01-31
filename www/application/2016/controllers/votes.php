@@ -1,8 +1,8 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 
-require("auth.php");
+require("base.php");
 
-class Votes extends Auth {
+class Votes extends Base {
 
 	public function __construct() {
 		parent::__construct();
@@ -15,7 +15,7 @@ class Votes extends Auth {
 		$this->view->set("categories", $this->Votes_model->categories_votes());
 		$this->view->set("general", $this->Votes_model->general());
 
-		$this->render("orga/votes");
+		$this->render("votes");
 	}
 
 

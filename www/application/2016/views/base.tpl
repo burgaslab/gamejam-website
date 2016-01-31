@@ -66,7 +66,7 @@
 						<li><a href="http://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="" /></a></li>
 						<li><a href="http://stedicenter.com/" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.png" alt="" /></a></li>
 						<li><a href="http://zia.bg/" title="Пекарни Зиа" target="_blank"><img src="{$base}resource/image/public/partner/zia.png" alt="" /></a></li>
-						<li><a href="https://www.facebook.com/3DFreshBar" title="3D Fresh" target="_blank"><img src="{$base}resource/image/public/partner/3dfresh.png" alt="" /></a></li>
+						<li><a href="https://www.facebook.com/3DFreshBar" title="3D Fresh" target="_blank"><img src="{$base}resource/image/public/partner/3Dfresh.png" alt="" /></a></li>
 						<li><a href="http://www.fusionmotion.net/" title="Fusion Motion Bulgaria" target="_blank"><img src="{$base}resource/image/public/partner/fusionmotion.png" alt="" /></a></li>
 						<li><a href="http://vijburgas.bg" title="Виж! Бургас" target="_blank"><img src="{$base}resource/image/public/partner/vijburgas.png" alt="" /></a></li>
 						<li><a href="http://burgasdream.com/" title="Burgas Dreams" target="_blank"><img src="{$base}resource/image/public/partner/burgasdreams.png" alt="" /></a></li>

@@ -4,6 +4,8 @@
 	{if $time > 0}
 	<div id="countdown"><div data-time="{$time}"></div></div>
 	{/if}
+	<iframe src="https://docs.google.com/forms/d/1USrad8qjh5B9ynBC9rKvwV7rNrL8gUqrdTRuQs8DtF8/viewform?embedded=true" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	{*
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false" type="text/javascript"></script>
 	<div id="googlemap" data-objects="{$map_model|json_encode}" data-root="{$base}"></div>
 	<div class="home text">
@@ -31,5 +33,5 @@
 			Минимална възраст: 12+
 		</p>
 	</div>
-
+	*}
 {/block}

@@ -27,7 +27,7 @@
 			</li>
 			<li>
 				Как се правят настолни игри + Инструкции как да се опишат компонентите (<a href="https://docs.google.com/document/d/1igd63lA40t35mp63ripE48g2mJbNv04fZ8fSar7Mtl4/edit?usp=sharing" 
-				target="_blank">бългрски</a>/<a href="http://archive.globalgamejam.org/wiki/board-games" 
+				target="_blank">български</a>/<a href="http://archive.globalgamejam.org/wiki/board-games" 
 				target="_blank">английски</a>)
 			</li>
 			</ul>

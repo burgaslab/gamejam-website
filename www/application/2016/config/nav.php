@@ -24,7 +24,9 @@ $config["nav"] = array(
 	array("title"=>"BGJ 2015", "url"=>"bgj2015"),
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Press Release", "url"=>"press"),
-	array("title"=>"Регистрация", "url"=>"registration"),
+	//array("title"=>"Регистрация", "url"=>"registration"),
+		array("title"=>"Гласуване", "url"=>"vote"),
+		array("title"=>"Класиране", "url"=>"votes"),
 );
 
 
@@ -32,6 +34,5 @@ $config["nav_orga"] = array(
 		array("title"=>"Участници", "url"=>"orga/participants"),
 		array("title"=>"Отбори", "url"=>"orga/teams"),
 		array("title"=>"Кодове", "url"=>"orga/codes"),
-		array("title"=>"Класиране", "url"=>"orga/votes"),
 		array("title"=>"Изход", "url"=>"orga/auth/logout"),
 );

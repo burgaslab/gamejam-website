@@ -42,7 +42,7 @@ class Vote extends Base {
 
 		$validator = new validator();
 
-		if ($this->input->post()) {
+		if ($this->input->post() && false) {
 			// hinder any bruteforce attempts...codes are very weak.
 			sleep(1);
 
@@ -63,6 +63,6 @@ class Vote extends Base {
 		$this->view->set("validator", $validator);
 		$this->view->set("success", $this->session->flashdata(self::STATUS));
 
-		$this->render("vote");
+		$this->render("vote_end");
 	}
 }

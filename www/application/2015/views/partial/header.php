@@ -53,6 +53,11 @@
 						<a class="<?= $this->method=="gallery" ? "active" : ""?>"  href="<?= $this->path->base ?>gallery">Снимки</a>
 					</li>
 				</ul>
+				<ul class="nav navbar-nav navbar-left">
+					<li class="dropdown">
+						<a class="<?= $this->method=="review" ? "active" : ""?>"  href="<?= $this->path->base ?>review">Ревю</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</div>

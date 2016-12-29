@@ -21,12 +21,17 @@ $config["nav"] = array(
 	)),
 	array("title"=>"За Jammer-и", "url"=>"jammers"),
 	// array("title"=>"Снимки", "url"=>"photos"),
-	array("title"=>"BGJ 2015", "url"=>"bgj2015"),
+	//array("title"=>"BGJ 2015", "url"=>"bgj2015"),
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Press Release", "url"=>"press"),
+	array("title"=>"Класиране", "url"=>"votes"),
+	array("title"=>"Снимки", "url"=>"gallery"),
+	array("title"=>"Ревю", "url"=>"review"),
 	//array("title"=>"Регистрация", "url"=>"registration"),
-		array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
-		array("title"=>"Класиране", "url"=>"votes"),
+	//array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
+	array("title"=>"Архив", "url"=>"", "sub" => array(
+		array("title"=>"Burgas Game Jam 2015", "url"=>"../2015"),
+	)),
 );
 
 

@@ -26,7 +26,7 @@
 								{if $children}
 								<ul>
 									{foreach $children as $j}
-									<li><a href="{$base}{$i.url}/{$j.url}">{$j.title}</a></li>
+									<li><a href="{$base}{$i.url}{$j.url}">{$j.title}</a></li>
 									{/foreach}
 								</ul>
 								{/if}

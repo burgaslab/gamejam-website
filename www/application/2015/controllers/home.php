@@ -36,6 +36,10 @@ class Home extends CI_Controller {
 		$this->load->view("jammers");
 	}
 
+	public function review() {
+		$this->load->view("review");
+	}
+
 	public function gallery() {		
 		clearstatcache();
 		

@@ -10,6 +10,8 @@ $config["opt_bool"] = array(1=>"да", 0=>"не");
 
 $config["event_start"] = "2016-01-29 14:00:00";
 $config["location"] = array(42.494730, 27.482612);
+$config["year"] = 2016;
+
 /*
  * Use this from other config files like so:
  * merge_env(__FILE__, $config).

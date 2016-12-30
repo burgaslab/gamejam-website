@@ -19,7 +19,7 @@ class Vote extends Base {
 
 		$model = array("code"=>"");
 		foreach ($categories as $c) {
-			$model[$c->name] = "";
+			$model["category"][$c->id] = "";
 		}
 
 		$team_id = 0;
@@ -36,13 +36,13 @@ class Vote extends Base {
 			}
 		}
 
-		$model = array_merge($model, (array)$this->input->post());
-
 		$teams = $this->Teams_model->get_list($team_id);
 
 		$validator = new validator();
 
 		if ($this->input->post() && false) {
+			$model = array_merge($model, (array)$this->input->post());
+
 			// hinder any bruteforce attempts...codes are very weak.
 			sleep(1);
 

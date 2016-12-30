@@ -16,10 +16,10 @@
 				{foreach $categories as $c}
 					<div class="pure-u-1 validate required {if $validator->has_error($c->name)}error{/if}">
 						<p>{$c@iteration}. {$c->desc}</p>
-						<select name="{$c->name}">
+						<select name="category[{$c->id}]">
 							<option value="">изберете отбор и игра...</option>
 							{foreach $teams as $t}
-								<option value="{$t->id}" {selected $model[$c->name]==$t->id}>"{$t->game}" / отбор "{$t->name}"</option>
+								<option value="{$t->id}" {selected $model["category"][$c->id]==$t->id}>"{$t->game}" / отбор "{$t->name}"</option>
 							{/foreach}
 						</select>
 					</div>

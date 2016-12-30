@@ -1,7 +1,7 @@
 {extends "base.tpl"}
 
 {block "content"}
-
+{*
 <div class="text">
 	<div class="reviews">
 	<h3>Историческият първи Burgas Game Jam 2015!</h3>
@@ -95,4 +95,5 @@
    
 	</div>
 </div>
+*}
 {/block}

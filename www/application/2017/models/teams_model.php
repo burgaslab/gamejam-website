@@ -7,8 +7,8 @@ class Teams_model extends CI_Model {
 	}
 
 	public function get_list($skip_id=0) {
-		$sql = "SELECT * FROM teams WHERE id!=? ORDER BY name";
-		$query = $this->db->query($sql, $skip_id);
+		$sql = "SELECT * FROM teams WHERE id!=? AND year=? ORDER BY name";
+		$query = $this->db->query($sql, array($skip_id, conf("year")));
 
 		$res = array();
 
@@ -22,8 +22,8 @@ class Teams_model extends CI_Model {
 	}
 
 	public function get_one($id) {
-		$sql = "SELECT * FROM teams WHERE id=?";
-		$query = $this->db->query($sql, $id);
+		$sql = "SELECT * FROM teams WHERE id=? AND year=?";
+		$query = $this->db->query($sql, array($id, conf("year")));
 
 		return $query->row();
 	}
@@ -33,11 +33,12 @@ class Teams_model extends CI_Model {
 		$game = $model["game"];
 
 		$data = array(
+				conf("year"),
 				$name,
 				$game,
 			);
 
-		$sql = "INSERT INTO teams (name, game) VALUES (?, ?)";
+		$sql = "INSERT INTO teams (year, name, game) VALUES (?, ?, ?)";
 		$this->db->query($sql, $data);
 	}
 
@@ -50,10 +51,11 @@ class Teams_model extends CI_Model {
 			$data = array(
 					$name,
 					$game,
-					$id
+					$id,
+					conf("year"),
 			);
 
-			$sql = "UPDATE teams SET name=?, game=? WHERE id=?";
+			$sql = "UPDATE teams SET name=?, game=? WHERE id=? AND year=?";
 			$this->db->query($sql, $data);
 			return $this->db->affected_rows() == 1;
 		}
@@ -62,10 +64,11 @@ class Teams_model extends CI_Model {
 
 	public function delete($id) {
 		$data = array(
-				$id
+				$id,
+				conf("year"),
 		);
 
-		$sql = "DELETE FROM teams WHERE id=?";
+		$sql = "DELETE FROM teams WHERE id=? AND year=?";
 		$this->db->query($sql, $data);
 		return $this->db->affected_rows() == 1;
 	}

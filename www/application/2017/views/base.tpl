@@ -4,7 +4,7 @@
 	<title>{$html_title}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:image" content="{$http_base}resource/image/public/facebook.jpg?v=3" />
+	<meta property="og:image" content="{$http_base}resource/image/public/facebook.jpg" />
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
 {webresources icon="public"}
@@ -21,12 +21,12 @@
 					<ul>
 						{strip}
 						{foreach $nav as $i}
-							{assign var="children" value=((isset($i.sub)) ? $i.sub : array())}
-							<li class="{$i.css|default} {if $children}dropdown{/if}"><a href="{$base}{$i.url}">{$i.title}{if $children}<i class="fa fa-caret-down"></i>{/if}</a>
+							{assign var="children" value=((isset($i->sub)) ? $i->sub : array())}
+							<li class="{$i->css|default} {if $children}dropdown{/if}"><a href="{$base}{$i->url}">{$i->title}{if $children}<i class="fa fa-caret-down"></i>{/if}</a>
 								{if $children}
 								<ul>
 									{foreach $children as $j}
-									<li><a href="{$base}{$i.url}{$j.url}">{$j.title}</a></li>
+									<li><a href="{$base}{$j->url}">{$j->title}</a></li>
 									{/foreach}
 								</ul>
 								{/if}

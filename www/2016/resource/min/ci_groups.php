@@ -1,6 +1,6 @@
 <?php
 
-$path_to_root = "../../";
+$path_to_root = "../../../";
 
 $skin = isset($_GET["skin"]) ? $_GET["skin"] : "";
 

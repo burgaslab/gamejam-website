@@ -16,18 +16,31 @@ abstract class Base extends CI_Controller {
 
 		$nav = $this->get_nav();
 
+		$nav = json_decode(json_encode($nav));
+
 		$page_title = "";
-		foreach ($nav as &$i) {
-			$quoted = preg_quote($current);
-			if (preg_match("/{$quoted}$/", $i["url"])) {
-				$css = arr($i, "css", "");
-				$i["css"] = "{$css} active";
+
+		foreach ($nav as $i) {
+			$found = null;
+			foreach (arr($i, "sub", array()) as $j) {
+				if ($j->url == $current) {
+					$found = $j;
+				}
+			}
+			if (!$found && $i->url == $current) {
+				$found = $i;
+			}
+
+			if ($found) {
+				$css = arr($found, "css", "");
+				$found->css = "{$css} active";
 
 				if ($current != "home") {
-					$page_title = $i["title"];
+					$page_title = $found->title;
 				}
 			}
 		}
+
 
 		$this->view->set("nav", $nav);
 

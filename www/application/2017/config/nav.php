@@ -2,30 +2,21 @@
 
 $config["nav"] = array(
 	array("title"=>"Начало", "url"=>"home"),
-	array("title"=>"Какво?", "url"=>"what", "sub" => array(
-			array("title"=>"Какво е Game Jam?", "url"=>"#game-jam"),
-			array("title"=>"Какво е Global Game Jam?", "url"=>"#global-game-jam"),
-			array("title"=>"Какво е Burgas Game Jam?", "url"=>"#burgas-game-jam"),
-	)),
-	array("title"=>"Правила", "url"=>"rules", "sub" => array(
-			array("title"=>"Темата", "url"=>"#theme"),
-			array("title"=>"Време", "url"=>"#time"),
-			array("title"=>"Участие", "url"=>"#participation"),
-			array("title"=>"Авторски права", "url"=>"#copyrights"),
+	array("title"=>"Burgas Game Jam", "url"=>"about", "sub" => array(
+			array("title"=>"Какво е Game Jam?", "url"=>"about"),
+			array("title"=>"Правила", "url"=>"rules"),
 	)),
 	array("title"=>"Програма", "url"=>"programme", "sub" => array(
-			array("title"=>"Ден 1 - Петък", "url"=>"#day1"),
-			array("title"=>"Ден 2 - Събота", "url"=>"#day2"),
-			array("title"=>"Ден 3 - Неделя", "url"=>"#day3"),
-			array("title"=>"Лектори", "url"=>"#speakers"),
+			array("title"=>"Ден 1 - Петък", "url"=>"programme#day1"),
+			array("title"=>"Ден 2 - Събота", "url"=>"programme#day2"),
+			array("title"=>"Ден 3 - Неделя", "url"=>"programme#day3"),
+			array("title"=>"Лектори", "url"=>"programme#speakers"),
 	)),
 	array("title"=>"За Jammer-и", "url"=>"jammers"),
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Press Release", "url"=>"press"),
-	//array("title"=>"Класиране", "url"=>"votes"),
-	//array("title"=>"Снимки", "url"=>"gallery"),
-	//array("title"=>"Игри", "url"=>"games"),
 	array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
+	//array("title"=>"Класиране", "url"=>"votes"),
 	//array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
 	array("title"=>"Архив", "url"=>"", "sub" => array(
 		array("title"=>"Burgas Game Jam 2015", "url"=>"2015"),

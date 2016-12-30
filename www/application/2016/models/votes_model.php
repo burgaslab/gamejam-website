@@ -6,12 +6,12 @@ class Votes_model extends CI_Model {
 		parent::__construct();
 	}
 
-	private function category($category) {
-		$where = 1;
-		$params = array($category);
+	private function category($category_id) {
+		$where = "year=?";
+		$params = array(conf("year"), $category_id);
 
-		if ($category !== null) {
-			$where = "category=?";
+		if ($category_id !== null) {
+			$where .= " AND category_id=?";
 		}
 
 		$sql = "SELECT COUNT(1) AS `count`, B.name, B.game FROM votes A JOIN teams B ON (A.team_id=B.id) WHERE {$where} GROUP BY B.id ORDER BY `count` DESC";
@@ -30,9 +30,10 @@ class Votes_model extends CI_Model {
 	}
 
 	public function get_categories() {
-		$sql = "SELECT * FROM categories";
+		$sql = "SELECT * FROM categories WHERE year=?";
+		$params = array(conf("year"));
 
-		$query = $this->db->query($sql);
+		$query = $this->db->query($sql, $params);
 		$cats = array();
 
 		foreach ($query->result() as $row) {
@@ -50,7 +51,7 @@ class Votes_model extends CI_Model {
 		$res = array();
 
 		foreach ($cats as $c) {
-			$standing = $this->category($c->name);
+			$standing = $this->category($c->id);
 
 			$res[] = (object)array(
 				"name" => $c->name,
@@ -68,8 +69,8 @@ class Votes_model extends CI_Model {
 
 
 	private function get_code_id($code, $is_reserved) {
-		$sql = "SELECT id FROM codes WHERE code=? AND is_reserved=? AND time_vote IS NULL";
-		$params = array($code, $is_reserved);
+		$sql = "SELECT id FROM codes WHERE code=? AND is_reserved=? AND time_vote IS NULL AND year=?";
+		$params = array($code, $is_reserved, conf("year"));
 		$query = $this->db->query($sql, $params);
 		$res = $query->row_array();
 
@@ -79,25 +80,23 @@ class Votes_model extends CI_Model {
 	public function validate($data, $categories, $teams, $team_id) {
 		$res = new validator();
 
-		$code = $string = str_replace(' ', '', $data["code"]);
+		$code = str_replace(' ', '', $data["code"]);
 		$is_reserved = $team_id ? true : false;
 		if (!$this->get_code_id($code, $is_reserved)) {
 			$res->add_error("code", "Невалиден код или кодът е използван");
 		}
 
 		foreach ($categories as $c) {
-			$team_id = $data[$c->name];
-
 			$found = false;
 			foreach ($teams as $t) {
-				if ($t->id == $data[$c->name]) {
+				if ($t->id == $data["category"][$c->id]) {
 					$found = true;
 					break;
 				}
 			}
 
 			if (!$found) {
-				$res->add_error($c->name, "Невалиден избор");
+				$res->add_error($c->id, "Невалиден избор");
 			}
 		}
 
@@ -112,14 +111,14 @@ class Votes_model extends CI_Model {
 
 		assert($code_id);
 
-		$sql = "INSERT INTO votes (code_id, category, team_id) VALUES (?, ?, ?)";
+		$sql = "INSERT INTO votes (code_id, category_id, team_id) VALUES (?, ?, ?)";
 		foreach ($categories as $c) {
-			$params = array($code_id, $c->name, $data[$c->name]);
+			$params = array($code_id, $c->id, $data["category"][$c->id]);
 			$this->db->query($sql, $params);
 		}
 
-		$sql = "UPDATE codes SET time_vote=? WHERE id=?";
-		$params = array(date("Y-m-d H:i:s"), $code_id);
+		$sql = "UPDATE codes SET time_vote=? WHERE id=? AND year=?";
+		$params = array(date("Y-m-d H:i:s"), $code_id, conf("year"));
 		$this->db->query($sql, $params);
 	}
 }

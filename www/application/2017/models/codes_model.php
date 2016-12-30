@@ -7,11 +7,11 @@ class Codes_model extends CI_Model {
 	}
 
 	public function count($reserved) {
-		$where = 1;
-		$params = array($reserved);
+		$where = "year=?";
+		$params = array(conf("year"), $reserved);
 
 		if ($reserved !== null) {
-			$where = "is_reserved=?";
+			$where .= " AND is_reserved=?";
 		}
 
 		$sql = "SELECT COUNT(1) FROM codes WHERE {$where}";
@@ -30,9 +30,11 @@ class Codes_model extends CI_Model {
 	}
 
 	public function can_delete() {
-		$sql = "SELECT COUNT(1) FROM votes";
+		$sql = "SELECT COUNT(1) FROM votes JOIN codes ON (votes.code_id=codes.id) WHERE year=?";
 
-		$query = $this->db->query($sql);
+		$params = array(conf("year"));
+
+		$query = $this->db->query($sql, $params);
 
 		$res = $query->row_array();
 
@@ -44,9 +46,11 @@ class Codes_model extends CI_Model {
 	}
 
 	public function can_assign() {
-		$sql = "SELECT COUNT(1) FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.team_id IS NOT NULL AND is_reserved=1";
+		$sql = "SELECT COUNT(1) FROM participants A JOIN codes B ON (A.id=B.participant_id) WHERE A.team_id IS NOT NULL AND is_reserved=1 AND B.year=?";
 
-		$query = $this->db->query($sql);
+		$params = array(conf("year"));
+
+		$query = $this->db->query($sql, $params);
 
 		$res = $query->row_array();
 
@@ -78,12 +82,13 @@ class Codes_model extends CI_Model {
 
 		assert(count($codes) == $total);
 
-		$sql = "INSERT INTO codes (code, is_reserved) VALUES (?, ?)";
+		$sql = "INSERT INTO codes (code, is_reserved, year) VALUES (?, ?, ?)";
 
 		for ($i = 0; $i < $total; $i++) {
 			$data = array(
 					$codes[$i],
 					$i < $normal ? 0 : 1,
+					conf("year"),
 			);
 
 			$this->db->query($sql, $data);
@@ -91,16 +96,17 @@ class Codes_model extends CI_Model {
 	}
 
 	public function delete() {
-		$sql = "DELETE FROM codes";
-		$this->db->query($sql);
+		$params = array(conf("year"));
+		$sql = "DELETE FROM codes WHERE year=?";
+		$this->db->query($sql, $params);
 	}
 
 	public function get_list($reserved, $order="code") {
-		$where = 1;
-		$params = array($reserved);
+		$where = "year=?";
+		$params = array(conf("year"), $reserved);
 
 		if ($reserved !== null) {
-			$where = "is_reserved=?";
+			$where .= " AND is_reserved=?";
 		}
 
 		$sql = "SELECT * FROM codes WHERE {$where} ORDER BY {$order}";
@@ -118,8 +124,9 @@ class Codes_model extends CI_Model {
 	}
 
 	public function assign() {
-		$sql = "SELECT * FROM participants WHERE team_id IS NOT NULL";
-		$query = $this->db->query($sql);
+		$sql = "SELECT * FROM participants WHERE team_id IS NOT NULL AND year=?";
+		$params = array(conf("year"));
+		$query = $this->db->query($sql, $params);
 		$participants = array();
 
 		foreach ($query->result() as $row) {
@@ -145,8 +152,9 @@ class Codes_model extends CI_Model {
 
 	public function get_participants() {
 		// getting list
-		$sql = "SELECT A.id, A.name, A.email, A.team_id, B.code, B.time_vote, C.name team_name, C.game FROM participants A JOIN codes B ON (A.id=B.participant_id) JOIN teams C ON (A.team_id=C.id) WHERE A.team_id IS NOT NULL AND is_reserved=1";
-		$query = $this->db->query($sql);
+		$sql = "SELECT A.id, A.name, A.email, A.team_id, B.code, B.time_vote, C.name team_name, C.game FROM participants A JOIN codes B ON (A.id=B.participant_id) JOIN teams C ON (A.team_id=C.id) WHERE A.team_id IS NOT NULL AND is_reserved=1 AND A.year=?";
+		$params = array(conf("year"));
+		$query = $this->db->query($sql, $params);
 
 		$res = array();
 

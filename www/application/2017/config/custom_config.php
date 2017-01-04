@@ -2,7 +2,7 @@
 
 $config["cache_dir"] = APPPATH . "cache/";
 
-$config["title"] = "Burgas Game Jam :: 22-22 януари 2017";
+$config["title"] = "Burgas Game Jam :: 20-22 януари 2017";
 
 $config["age_groups"] = array("18-20г.", "21-29г.", "30г.+");
 $config["occupations"] = array("ученик", "студент", "работещ", "безработен");

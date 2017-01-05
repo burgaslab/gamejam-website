@@ -1,9 +1,13 @@
 {extends "base.tpl"}
 
 {block "content"}
+	
 	{if $time > 0}
 	<div id="countdown"><div data-time="{$time}"></div></div>
 	{/if}
+	<div class="video">
+		<iframe width="100%" height="315" src="https://www.youtube.com/embed/yA_A-5U1B1U{if $autoplay}?autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>
+	</div>
 	{*
 	<iframe src="https://docs.google.com/forms/d/1USrad8qjh5B9ynBC9rKvwV7rNrL8gUqrdTRuQs8DtF8/viewform?embedded=true" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	*}

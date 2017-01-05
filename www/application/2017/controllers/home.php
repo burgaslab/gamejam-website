@@ -17,6 +17,13 @@ class Home extends Base {
 		);
 		$this->view->set("map_model", $map_model);
 
+		$autoplay = false;
+		if (!isset($_COOKIE["autoplay"])) {
+			$autoplay = true;
+			setcookie("autoplay","1", time()+999999);
+		}
+		$this->view->set("autoplay", $autoplay);
+
 		$this->render("home");
 	}
 }

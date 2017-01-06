@@ -5,7 +5,7 @@ $config["cache_dir"] = APPPATH . "cache/";
 $config["title"] = "Burgas Game Jam :: 20-22 януари 2017";
 
 $config["age_groups"] = array("18-20г.", "21-29г.", "30г.+");
-$config["occupations"] = array("ученик", "студент", "работещ", "безработен");
+$config["occupations"] = array("ученик", "студент", "работещ", "геймър", "безработен");
 $config["opt_bool"] = array(1=>"да", 0=>"не");
 
 $config["event_start"] = "2017-01-20 14:00:00";

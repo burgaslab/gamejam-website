@@ -21,10 +21,9 @@
 					<em>Ще бъде използван за връзка с вас!</em>
 				</div>
 				<div class="pure-u-1 pure-u-sm-1-2 validate required {if $validator->has_error("age")}error{/if}">
-					<p class="label">Възрастова група</p>
-					{foreach $age_groups as $i}
-					<label><input type="radio" name="age" value="{$i}" {checked $model.age==$i}>{$i}</label>
-					{/foreach}
+					<p class="label">Възраст /само за статистиката/</p>
+
+					<input class="pure-input-1" type="text" placeholder=Възраст name="age" value="{$model.age}" />
 				</div>
 				<div class="pure-u-1 pure-u-sm-1-2 validate required {if $validator->has_error("occupation")}error{/if}">
 					<p class="label">Заетост</p>

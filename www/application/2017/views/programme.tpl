@@ -12,7 +12,7 @@
 		</p>
 		<p><label>17:00 – 17:30</label> Почивка</p>
 		<p><label>17:30 – 18:00</label> Разясняване на правилата</p>
-		<p><label>18:00 – 18:30</label> Keynote видео от Global Game Jam и официално обявяване на темата за 2016 година</p>
+		<p><label>18:00 – 18:30</label> Keynote видео от Global Game Jam и официално обявяване на темата за 2017 година</p>
 		<p><label>18:30 – 22:00</label> Сформиране на отбори<br/></p>
 		<a id="day2"></a>
 		<h4><span><em class="bubble bubble-3"></em><i>2<sup>ри</sup></i> Ден (събота)</span></h4>

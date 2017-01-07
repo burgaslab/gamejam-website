@@ -144,8 +144,8 @@ class Participants_model extends CI_Model {
 		if (!$this->check_email($id, $data["email"])) {
 			$res->add_error("email", "Имейлът е използван за регистрация");
 		}
-		if (!in_array($data["age"], conf("age_groups"))) {
-			$res->add_error("age", "Невалидна възраст");
+		if (!$data["age"]>=18) {
+			$res->add_error("age", "Събитието е достъпно само за пълнолетни");
 		}
 		if (!in_array($data["occupation"], conf("occupations"))) {
 			$res->add_error("occupation", "Невалидна заетост");

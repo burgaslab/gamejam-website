@@ -23,7 +23,7 @@
 				<div class="pure-u-1 pure-u-sm-1-2 validate required {if $validator->has_error("age")}error{/if}">
 					<p class="label">Възраст /само за статистиката/</p>
 
-					<input class="pure-input-1" type="text" placeholder=Възраст name="age" value="{$model.age}" />
+					<input class="pure-input-1" type="text" placeholder=Възраст name="age" value="{$model.age}" style="max-width: 100px;" />
 				</div>
 				<div class="pure-u-1 pure-u-sm-1-2 validate required {if $validator->has_error("occupation")}error{/if}">
 					<p class="label">Заетост</p>

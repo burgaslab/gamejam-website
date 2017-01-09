@@ -1,6 +1,6 @@
 .settings
 .project
-.development
+/www/.development
 /2016/.development
 /stuff/legacy_app/app/config/mysql.php
 /www/application/2015/config/production/database.php

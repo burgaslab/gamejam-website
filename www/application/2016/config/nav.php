@@ -26,7 +26,6 @@ $config["nav"] = array(
 	array("title"=>"Press Release", "url"=>"press"),
 	array("title"=>"Класиране", "url"=>"votes"),
 	array("title"=>"Снимки", "url"=>"gallery"),
-	array("title"=>"Ревю", "url"=>"review"),
 	//array("title"=>"Регистрация", "url"=>"registration"),
 	//array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
 	array("title"=>"Архив", "url"=>"", "sub" => array(

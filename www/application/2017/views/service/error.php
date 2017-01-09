@@ -1,3 +1,7 @@
+<?php
+$script = isset($_SERVER["SCRIPT_NAME"]) ? $_SERVER["SCRIPT_NAME"] : "";
+$base = rtrim(str_replace(basename($script), '', $script), "/") . '/';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -16,6 +20,7 @@ a { color: #000; }
 			<tr>
 				<td>
 					<p><?php echo $message; ?></p>
+					<p><img src="<?php echo $base ?>resource/image/public/logo.png" alt="" /></p>
 					<p><a href="/"><?php echo $app_name; ?></a></p>
 				</td>
 			</tr>

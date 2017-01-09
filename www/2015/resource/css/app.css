@@ -528,3 +528,6 @@ ul.assets li { float:left; margin: 5px;}
 ul.assets a img { border: 5px solid #fff; border-radius: 3px; -webkit-transition: border-color 0.15s ease-in-out; transition: border-color 0.15s ease-in-out;  }
 ul.assets a:hover img { border-color: @blue; }
 ul.assets a { display:block; width:100%; float: left; }
+
+
+a.current { text-decoration: none; margin: 4px; font-weight: 500; font-size: 20px; color: #FFF100; display: block; }

@@ -222,18 +222,25 @@ function array_merge_recursive_distinct($arr1, $arr2) {
 }
 
 /**
- * Redirects to https on the same resource
+ * Gets the secure URL for the current one
+ */
+function ssl_url($port="") {
+	$host = $_SERVER['HTTP_HOST'];
+	$host = preg_replace("/:[0-9]+/", "", $host);
+	if ($port) {
+		$host = ":{$port}";
+	}
+	return "https://".$host.$_SERVER['REQUEST_URI'];
+}
+
+/**
+ * Redirects to https on the same URL
  */
 function enforce_ssl($port="") {
 	$https = strtolower(_server("HTTPS"));
 	$is_on = ($https == "on" || $https == "1");
 	if (!$is_on) {
-		$host = $_SERVER['HTTP_HOST'];
-		$host = preg_replace("/:[0-9]+/", "", $host);
-		if ($port) {
-			$host = ":{$port}";
-		}
-		$url = "https://".$host.$_SERVER['REQUEST_URI'];
+		$url = ssl_url($port);
 		redirect($url);
 	}
 }

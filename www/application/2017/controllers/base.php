@@ -8,6 +8,11 @@ abstract class Base extends CI_Controller {
 		$this->load->config("webresources");
 		$this->load->config("nav");
 		$this->load->library("smarty", null, "view");
+		$this->load->helper("url");
+
+		if (conf("force_ssl")) {
+			enforce_ssl();
+		}
 
 		$this->view->set("base", $this->path->base);
 		$this->view->set("http_base", $this->path->http_base);

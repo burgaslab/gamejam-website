@@ -5,11 +5,7 @@
 	<input type="text" name="email" value="{$item->email|default}" />
 </td>
 <td>
-	<select name="age">
-		{foreach $age_groups as $i}
-			<option value="{$i}" {selected $item->age|default==$i}>{$i}</option>
-		{/foreach}
-	</select>
+	<input type="text" name="age" value="{$item->age|default}" />
 </td>
 <td>
 	<select name="occupation">

@@ -1,10 +1,10 @@
 <?php
 
-$path_to_root = "../../../";
+$path_to_root = "../../";
 
 $skin = isset($_GET["skin"]) ? $_GET["skin"] : "";
 
-require_once ($path_to_root . "application/2016/config/webresources.php");
+require_once ($path_to_root . "../application/2016/config/webresources.php");
 $webresources = $config["webresources"];
 
 function walker(&$item, $index, $root) {

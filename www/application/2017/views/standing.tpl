@@ -1,7 +1,8 @@
 {extends "orga/base.tpl"}
 
 {block "content"}
-	<div class="orga votes">
+<div class="orga votes">
+	{if $open}
 		<ul class="cats">
 			<li><a href="#general">Генерално класиране</a></li>
 			{foreach $categories as $c}
@@ -47,6 +48,10 @@
 				{/foreach}
 			</table>
 		{/foreach}
-		
-	</div>
+	{else}
+		<div class="success">
+			<p>Засега няма класиране :)</p>
+		</div>
+	{/if}
+</div>
 {/block}

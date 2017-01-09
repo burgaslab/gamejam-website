@@ -12,8 +12,11 @@ class Vote extends Base {
 		$this->load->database();
 		$this->load->model("Votes_model");
 		$this->load->model("Teams_model");
+		$this->load->model("Settings_model");
 
 		$this->classloader->load("common", "Validator");
+
+		$open = $this->Settings_model->get_value("voting");
 
 		$categories = $this->Votes_model->get_categories();
 
@@ -40,7 +43,7 @@ class Vote extends Base {
 
 		$validator = new validator();
 
-		if ($this->input->post()) {
+		if ($open && $this->input->post()) {
 			$model = array_merge($model, (array)$this->input->post());
 
 			// hinder any bruteforce attempts...codes are very weak.
@@ -56,6 +59,7 @@ class Vote extends Base {
 			}
 		}
 
+		$this->view->set("open", $open);
 		$this->view->set("is_participant", ($team_id != 0));
 		$this->view->set("categories", $categories);
 		$this->view->set("teams", $teams);

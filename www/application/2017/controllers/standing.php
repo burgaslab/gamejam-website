@@ -2,20 +2,25 @@
 
 require("base.php");
 
-class Votes extends Base {
+class Standing extends Base {
 
 	public function __construct() {
 		parent::__construct();
 
 		$this->load->database();
 		$this->load->model("Votes_model");
+		$this->load->model("Settings_model");
 	}
 
 	public function index() {
+		$open = $this->Settings_model->get_value("standing");
+
 		$this->view->set("categories", $this->Votes_model->categories_votes());
 		$this->view->set("general", $this->Votes_model->general());
+		$this->view->set("open", $open);
 
-		$this->render("votes");
+
+		$this->render("standing");
 	}
 
 

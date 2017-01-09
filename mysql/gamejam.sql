@@ -69,3 +69,15 @@ CREATE TABLE `log` (
   `message` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `settings` (
+  `id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `desc` varchar(64) NOT NULL,
+  `value` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO settings (`id`, `name`, `desc`, `value`)
+VALUES (1, 'registration', 'Отворена регистрация', 'true'),(2, 'voting', 'Отворено гласуване', 'false'),(3, 'standing', 'Класиране', 'true');
+

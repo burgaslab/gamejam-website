@@ -13,7 +13,9 @@ class Registration extends Base {
 		$this->load->helper("url");
 		$this->load->database();
 		$this->load->model("Participants_model");
+		$this->load->model("Settings_model");
 
+		$open = $this->Settings_model->get_value("registration");
 		$age_groups = conf("age_groups");
 		$occupations = conf("occupations");
 
@@ -24,7 +26,7 @@ class Registration extends Base {
 
 		$validator = new validator();
 
-		if ($this->input->post()) {
+		if ($open && $this->input->post()) {
 			$validator = $this->Participants_model->validate(0, $model);
 			$validator->validate_required("agree", $model["agree"], 1);
 
@@ -39,6 +41,7 @@ class Registration extends Base {
 		}
 
 
+		$this->view->set("open", $open);
 		$this->view->set("age_groups", $age_groups);
 		$this->view->set("occupations", $occupations);
 		$this->view->set("model", $model);

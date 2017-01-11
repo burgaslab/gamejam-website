@@ -7,9 +7,8 @@
 		<h4><span><em class="bubble bubble-1"></em><i>1<sup>ви</sup></i> Ден (петък)</span></h4>
 		<p><label>14:00 – 18:00</label> Регистрация</p>
 		<p><label>14:30 – 15:00</label> Официално откриване</p>
-		<p><label>15:00 – 15:40</label>
-			Цветомир Христов, продуцент UKI Games (<a href="http://dashlegends.io">http://dashlegends.io</a>) <br/>
-			Планиране на игра
+		<p><label>15:00 – 15:40</label>Планиране на игра <br />
+			Лектор: Цветомир Христов, продуцент, UKI Games (<a href="http://dashlegends.io">http://dashlegends.io</a>)			
 		<p><label>16:00 – 16:50</label>
 			Лекция 2
 		</p>

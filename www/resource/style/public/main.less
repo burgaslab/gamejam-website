@@ -105,7 +105,7 @@ body { background: url(../../image/public/body.png); }
 	ul.assets {
 		overflow: hidden; margin: 1em; list-style-type: none;
 		li { float:left; }
-		a img, p img { border: 5px solid #fff; border-radius: 3px; -webkit-transition: border-color 0.15s ease-in-out; transition: border-color 0.15s ease-in-out;  }
+		p img, a img { border: 5px solid #fff; border-radius: 3px; -webkit-transition: border-color 0.15s ease-in-out; transition: border-color 0.15s ease-in-out; }
 		a:hover img, p:hover img { border-color: @blue; }
 		a { display:block; width:100%; }
 	}
@@ -273,6 +273,12 @@ body { background: url(../../image/public/body.png); }
 #footer {
 	.wrap { border-radius: 8px; padding: 20px 0 10px 0; }
 	h3 { font-size: 1.6em; color: #333; margin: 0 20px 10px; }
+
+ul.assets {
+	a img {
+		max-height: 120px; background-color: #fff;
+	}
+}
 	
 	.partners {
 		ul {

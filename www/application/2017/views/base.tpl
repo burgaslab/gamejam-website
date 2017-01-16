@@ -60,25 +60,28 @@
 						<li><a href="http://burgas.bg" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgasmunic.png" alt="Община Бургас" /></a></li>
 						<li><a href="http://creatizmo.com" title="Creatizmo" target="_blank"><img src="{$base}resource/image/public/partner/creatizmo.png" alt="Creatizmo" /></a></li>
 						<li><a href="http://littlegg.com" title="Littlegg" target="_blank"><img style="background-color: #EA9B08" src="{$base}resource/image/public/partner/littlegg.png" alt="Littlegg" /></a></li>
+						<li><a href="http://www.dmsysbg.com" title="DMS Компютри и офис техника" target="_blank"><img style="background-color: #000" src="{$base}resource/image/public/partner/dmsysbg.png" alt="DMS" /></a></li>
 						<li><a href="http://tobiigaming.com/ggj" title="Tobii" target="_blank"><img src="{$base}resource/image/public/partner/tobii.png" alt="Tobii" /></a></li>
 						<li><a href="http://technologica.com" title="ТехноЛогика" target="_blank"><img src="{$base}resource/image/public/partner/technologica.png" alt="Technologica" /></a></li>
 						<li><a href="http://vrita.net" title="Врита" target="_blank"><img src="{$base}resource/image/public/partner/vrita.png" alt="Врита" /></a></li>
 						<li><a href="https://www.facebook.com/3DFreshBar/" title="3D Fresh" target="_blank"><img src="{$base}resource/image/public/partner/3Dfresh.png" alt="3D Fresh" /></a></li>
+						<li><a href="http://www.vijburgas.bg" title="Виж Бургас" target="_blank"><img src="{$base}resource/image/public/partner/vijburgas.png" alt="Виж Бургас" /></a></li>
 					</ul>
 				</div>
 
 				<div class="partners">
 					<h3>Награди от:</h3>
 					<ul class="assets">
-						<li><a href="http://europe.casualconnect.org/" title="Casual Connect" target="_blank"><img src="{$base}resource/image/public/partner/casual_connect.png" alt="Casual Connect" /></a></li>
+						<li><a href="http://europe.casualconnect.org/" title="Indie prize" target="_blank"><img src="{$base}resource/image/public/partner/indie_prize.png" alt="Indie prize" /></a></li>
 						<li><a href="https://softuni.bg/" title="SoftUni" target="_blank"><img src="{$base}resource/image/public/partner/softuni.png" alt="СофтУни" /></a></li>
 						<li><a href="http://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="Хамалогика" /></a></li>
-						<li><a href="http://www.dmsysbg.com" title="DMS Компютри и офис техника" target="_blank"><img style="background-color: #000" src="{$base}resource/image/public/partner/dmsysbg.png" alt="DMS" /></a></li>
 						<li><a href="http://www.musala.com" title="Musala Soft" target="_blank"><img src="{$base}resource/image/public/partner/musala.png" alt="Musala Soft" /></a></li>
 						<li><a href="http://www.komplex2000.com" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
 						
 					</ul>
 				</div>
+<br />
+<br />
 				<div class="contacts">
 					<div class="pure-g">
 						<div class="pure-u-1 pure-u-sm-1-4">

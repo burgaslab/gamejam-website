@@ -4,7 +4,7 @@
 	<title>{$html_title}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:image" content="{$http_base}resource/image/public/facebook.jpg" />
+	<meta property="og:image" content="{$http_base}resource/image/public/facebook.png" />
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
 {webresources icon="public"}
@@ -38,8 +38,8 @@
 				{block "logo"}
 				<div class="logo">
 					<div class="logo-wrap">
-						<a href="{$base}"><img src="{$base}resource/image/public/logo.png" class="pure-img" alt="" /></a>
-						<p>20-21-22 януари 2017<br/>в Експозиционен център “Флора”</p>
+						<a href="{$base}"><img src="{$base}resource/image/public/logo.png" class="pure-img" alt="Burgas Game Jam 2017" /></a>
+						<p style="display: none">20-21-22 януари 2017<br/>в Експозиционен център “Флора”</p>
 					</div>
 				</div>
 				{/block}
@@ -96,7 +96,7 @@
 							<p><a href="https://www.facebook.com/BurgasGameJam"><i class="fa fa-facebook"></i>Burgas Game Jam</a></p>
 							</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="https://www.google.bg/maps/place/%D0%95%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D0%BD+%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80+%D0%A4%D0%BB%D0%BE%D1%80%D0%B0+%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81/@42.4942556,27.4753644,15z/data=!4m8!1m2!2m1!1z0YTQu9C-0YDQsA!3m4!1s0x40a694ed387e6e4d:0xfe565c58d6cd774e!8m2!3d42.5043459!4d27.4825012" data-iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2080.218232373273!2d27.48193048992954!3d42.494256012388426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x852570772343eadc!2sSea+Casino!5e0!3m2!1sen!2sbg!4v1452447228232" class="swipebox-iframe"><i class="fa fa-map-marker"></i>Експозиционен център “Флора”</a></p>
+							<p><a target="_blank" href="https://www.google.bg/maps/place/%D0%95%D0%BA%D1%81%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D0%BD+%D1%86%D0%B5%D0%BD%D1%82%D1%8A%D1%80+%D0%A4%D0%BB%D0%BE%D1%80%D0%B0+%D0%91%D1%83%D1%80%D0%B3%D0%B0%D1%81/@42.5043459,27.4825012,15z/data=!4m12!1m6!3m5!1s0x0:0xfe565c58d6cd774e!2z0JXQutGB0L_QvtC30LjRhtC40L7QvdC10L0g0YbQtdC90YLRitGAINCk0LvQvtGA0LAg0JHRg9GA0LPQsNGB!8m2!3d42.5043459!4d27.4825012!3m4!1s0x0:0xfe565c58d6cd774e!8m2!3d42.5043459!4d27.4825012"><i class="fa fa-map-marker"></i>Експозиционен център “Флора”</a></p>
 						</div>
 					</div>
 				</div>

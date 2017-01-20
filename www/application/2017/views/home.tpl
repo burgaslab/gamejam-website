@@ -1,21 +1,22 @@
 {extends "base.tpl"}
 
 {block "content"}
-	<div class="home text">
-		<h4><span>Live stream от събитието</span></h4>
-	</div>
-	<div class="video">
-		<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBurgasGameJam%2Fvideos%2F1632803533683215%2F&show_text=1&width=400" width="400" height="486" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-	</div>
+	{if $live_stream}
+		<div class="home text">
+			<h4><span>Live stream от събитието</span></h4>
+		</div>
+		<div class="video">
+			{$live_stream nofilter}
+		</div>
+	{else}
+		<div class="video">
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/yA_A-5U1B1U{if $autoplay}?autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<iframe src="https://docs.google.com/forms/d/1USrad8qjh5B9ynBC9rKvwV7rNrL8gUqrdTRuQs8DtF8/viewform?embedded=true" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	{/if}
 	{if $time > 0}
 	<div id="countdown"><div data-time="{$time}"></div></div>
-	{/if}
-	{*
-	<div class="video">
-		<iframe width="100%" height="315" src="https://www.youtube.com/embed/yA_A-5U1B1U{if $autoplay}?autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>
-	</div>
-	<iframe src="https://docs.google.com/forms/d/1USrad8qjh5B9ynBC9rKvwV7rNrL8gUqrdTRuQs8DtF8/viewform?embedded=true" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-	*}
+	{/if}}
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjVP8Yr2qihfS8ymTPtq_qUJUsVUAOgrU " type="text/javascript"></script>
 	<div id="googlemap" data-objects="{$map_model|json_encode}" data-root="{$base}"></div>
 	<div class="home text">

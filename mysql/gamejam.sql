@@ -60,7 +60,7 @@ CREATE TABLE `votes` (
 
 
 insert  into `categories`(`year`, `name`,`desc`) values (2016, 'design','Оформпление'),(2016, 'gameplay','Геймплей (начин, по който се играе играта)'),(2016, 'pleasure','Удоволствие от играта'),(2016, 'storyline','Най-оригинална идея');
-insert  into `categories`(`year`, `name`,`desc`) values (2017, 'design','Оформпление'),(2017, 'gameplay','Геймплей (начин, по който се играе играта)'),(2017, 'pleasure','Удоволствие от играта'),(2017, 'storyline','Най-оригинална идея');
+insert  into `categories`(`year`, `name`,`desc`) values (2017, 'design','Аудио и визуално оформление'),(2017, 'gameplay','Геймплей и сюжет'),(2017, 'originality','Оригиналност');
 
 
 CREATE TABLE `log` (
@@ -80,4 +80,5 @@ CREATE TABLE `settings` (
 
 INSERT INTO settings (`id`, `name`, `desc`, `value`)
 VALUES (1, 'registration', 'Отворена регистрация', 'true'),(2, 'voting', 'Отворено гласуване', 'false'),(3, 'standing', 'Класиране', 'true');
+INSERT INTO settings VALUES (4, 'live-stream', 'Лайв стрийм код', '');
 

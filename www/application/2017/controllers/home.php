@@ -24,6 +24,13 @@ class Home extends Base {
 		}
 		$this->view->set("autoplay", $autoplay);
 
+		$this->load->database();
+
+		$this->load->model("Settings_model");
+
+		$this->view->set("live_stream", $this->Settings_model->get_value("live-stream"));
+
+
 		$this->render("home");
 	}
 }

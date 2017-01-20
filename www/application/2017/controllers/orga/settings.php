@@ -19,7 +19,10 @@ class Settings extends Auth {
 			$model = array();
 			foreach ($settings as $i) {
 				$val = _post("setting|{$i->id}");
-				$model[$i->id] = ($val ? true : false);
+				if ($i->name != "live-stream") {
+					$val = ($val ? true : false);
+				}
+				$model[$i->id] = $val;
 			}
 			$this->Settings_model->update($model);
 

@@ -8,13 +8,13 @@
 		<p><label>14:00 – 18:00</label> Регистрация</p>
 		<p><label>14:30 – 15:00</label> Официално откриване</p>
 
-		<p><label>15:00 – 15:40</label> "Планиране на игра" - лекция<br />
+		<p><label>15:00 – 15:40</label> "Планиране на игра" - лекция (<a href="https://drive.google.com/open?id=1ZdWRP_LyoZzoOqNrnADVJ8I2pdGC7um116926PIdVeg">слайдове</a>)<br />
 Лектор: Цветомир Христов, продуцент, UKI Games (http://dashlegends.io)</p>
 
-		<p><label>16:00 – 16:40</label> „Игри във виртуалната реалност с Oculus Rift и Leap Motion“ - презентация и демо<br />
+		<p><label>16:00 – 16:40</label> „Игри във виртуалната реалност с Oculus Rift и Leap Motion“ - <br />презентация и демо (<a href="https://drive.google.com/open?id=0B73N6p5h56nlamxPNE00NzVpNnc">слайдове</a>)<br />
 Лектор: Георги Георгиев, ръководител офис в Бургас, ТехноЛогика ЕАД</p>
 
-		<p><label>17:00 – 17:15</label> „Демонстрация на Tobii EyeX Tracker“ - презентация<br />
+		<p><label>17:00 – 17:15</label> „Демонстрация на Tobii EyeX Tracker“ - презентация (<a href="http://prezi.com/fkup-qkyzn_f">слайдове</a>)<br />
 Лектори: БургасЛаб</p>
 
 		<p><label>17:20 – 17:30</label> „OpenCity“ - презентация<br />

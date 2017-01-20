@@ -5,7 +5,7 @@
 		<h4><span>Live stream от събитието</span></h4>
 	</div>
 	<div class="video">
-		<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBurgasGameJam%2Fvideos%2Fvb.1399961060300798%2F1632778650352370%2F%3Ftype%3D3&show_text=0&width=400" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+		<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FBurgasGameJam%2Fvideos%2F1632803533683215%2F&show_text=1&width=400" width="400" height="486" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 	</div>
 	{if $time > 0}
 	<div id="countdown"><div data-time="{$time}"></div></div>

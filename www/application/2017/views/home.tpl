@@ -1,6 +1,7 @@
 {extends "base.tpl"}
 
 {block "content"}
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeY1zo60X9zL5xucKp-qzSE0A_D2m9MZwfExHejCXvU9a5JjQ/viewform?embedded=true" width="100%" height="2000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	{if $live_stream}
 		<div class="home text">
 			<h4><span>Live stream от събитието</span></h4>
@@ -12,8 +13,8 @@
 		<div class="video">
 			<iframe width="100%" height="315" src="https://www.youtube.com/embed/yA_A-5U1B1U{if $autoplay}?autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<iframe src="https://docs.google.com/forms/d/1USrad8qjh5B9ynBC9rKvwV7rNrL8gUqrdTRuQs8DtF8/viewform?embedded=true" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	{/if}
+	{*
 	{if $time > 0}
 	<div id="countdown"><div data-time="{$time}"></div></div>
 	{/if}}
@@ -45,4 +46,5 @@
 		</p>
 		<p>&nbsp;</p>
 	</div>
+	*}
 {/block}

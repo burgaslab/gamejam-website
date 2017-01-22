@@ -36,8 +36,7 @@
 			Delivery procedure: Цялата процедура трябва да е завършена до <span style="color:#ea2727;"><b>неделя, 15:00ч</b></span>.
 			<ul>
 				<li>
-					<span  style="color:#ea2727;"><b>Важно!!</b></span> Тази <a href="
-		https://drive.google.com/file/d/0B5KdK7f6_0mkcUZlUlVPUXpObkE/view" target="_blank">презентация</a> показва как да предадете играта си</li>
+					<span  style="color:#ea2727;"><b>Важно!!</b></span> Тази <a href="https://docs.google.com/presentation/d/1iCgz4knXyBjcWXfjsap5zk79GO6H_uiKl0OJmcgXSOM/view" target="_blank">презентация</a> показва как да предадете играта си</li>
 					<ul>
 						<li><a href="http://ggj.s3.amazonaws.com/GGJ_directory_structure.zip" target="_blank">Примерна zip структура </a></li>
 					</ul>

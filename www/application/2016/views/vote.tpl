@@ -8,7 +8,7 @@
 		</div>
 	{else}
 		<form method="post" action="" class="pure-form pure-form-stacked validate">
-			<h1>Гласувайте за най-добра игра на Burgas Game Jam 2016</h1>
+			<h1>Гласувайте за най-добра игра на Burgas Game Jam 2017</h1>
 			{if $is_participant}
 			<h3>Важно: Не можете да гласувате за собствения си отбор, затова той не присъства в списъците!</h3>
 			{/if}

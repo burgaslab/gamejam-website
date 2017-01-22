@@ -1,7 +1,7 @@
 {extends "base.tpl"}
 
 {block "content"}
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeY1zo60X9zL5xucKp-qzSE0A_D2m9MZwfExHejCXvU9a5JjQ/viewform?embedded=true" width="100%" height="2000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeY1zo60X9zL5xucKp-qzSE0A_D2m9MZwfExHejCXvU9a5JjQ/viewform?embedded=true" width="100%" height="3000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 	{if $live_stream}
 		<div class="home text">
 			<h4><span>Live stream от събитието</span></h4>

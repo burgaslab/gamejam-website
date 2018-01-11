@@ -1,7 +1,7 @@
 <div class="row ">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-			<a href="<?= $this->path->base ?>.." class="current">&larr; Обратно към BGJ 2017</a>
+			<a href="<?= $this->path->base ?>.." class="current">&larr; Обратно към BGJ 2018</a>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
 					<span class="sr-only">Toggle navigation</span>
@@ -42,22 +42,24 @@
 					<li>
 						<a href="<?= $this->path->base ?>jammers" class="dropdown-toggle register <?= $this->method=="jammers" ? "active" : ""?>">За Jammer-и</a>
 					</li>
-				</ul>
-				<!--
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a class="register <?= $this->method=="registration" ? "active" : ""?>"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a>
-					</li>
-				</ul> -->
-				<ul class="nav navbar-nav navbar-left">
+					<!--
+						<li class="dropdown">
+							<a class="register <?= $this->method=="registration" ? "active" : ""?>"  href="<?= $this->path->base ?>registration">Регистрирай се за участие</a>
+						</li>
+					-->
 					<li class="dropdown">
 						<a class="<?= $this->method=="gallery" ? "active" : ""?>"  href="<?= $this->path->base ?>gallery">Снимки</a>
 					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-left">
 					<li class="dropdown">
 						<a class="<?= $this->method=="review" ? "active" : ""?>"  href="<?= $this->path->base ?>review">Ревю</a>
 					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Архив<b class="caret"></b></a> <span class="dropdown-arrow"></span>
+						<ul class="dropdown-menu">
+							<li><a href="<?= $this->path->base ?>/../../2015">Burgas Game Jam 2015</a></li>
+							<li><a href="<?= $this->path->base ?>/../../2016">Burgas Game Jam 2016</a></li>
+							<li><a href="<?= $this->path->base ?>/../../2017">Burgas Game Jam 2017</a></li>
+						</ul></li>
 				</ul>
 			</div>
 		</nav>

@@ -33,9 +33,11 @@ class Auth extends Base {
 
 		if ($this->input->post("login")) {
 			$username = $this->input->post("username");
-			$password = self::hash_password($this->input->post("password"));
+			$password = $this->input->post("password");
 
-			$res = ($username == conf("orga_username") && $password = conf("orga_password"));
+			$hasher = new PasswordHash(12, false);
+			
+			$res = ($username == conf("orga_username") && $hasher->CheckPassword($password, conf("orga_password")));
 			if ($res) {
 				$this->session->set_userdata(array($this->session_key=>1));
 				$location = _get("ret", "/orga");

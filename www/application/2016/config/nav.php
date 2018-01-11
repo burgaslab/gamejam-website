@@ -30,6 +30,8 @@ $config["nav"] = array(
 	//array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
 	array("title"=>"Архив", "url"=>"", "sub" => array(
 		array("title"=>"Burgas Game Jam 2015", "url"=>"../2015"),
+		array("title"=>"Burgas Game Jam 2016", "url"=>"../2016"),
+		array("title"=>"Burgas Game Jam 2017", "url"=>"../2017"),
 	)),
 );
 

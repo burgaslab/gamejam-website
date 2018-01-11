@@ -100,7 +100,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'application/2017';
+	$application_folder = 'application/2018';
 
 /*
  * --------------------------------------------------------------------

@@ -33,7 +33,7 @@
 		<h4><span><em class="bubble bubble-3"></em><i>3</i>Направи игра!</span></h4>
 		<p>1 тема</p>
 		<p>~ 45 часа</p>
-		<p>над 630 локации от 93 страни (2016)</p>
+		<p>над 518 локации от 78 страни (2017)</p>
 		<p class="registration"><a href="{$base}registration">Регистрирай се за участие още сега!</a></p>
 		<br />
 		<h4><span><em class="bubble bubble-1"></em><a href="{$base}what"><i class="fa fa-question"></i> Какво е Burgas Game Jam</a></span></h4>

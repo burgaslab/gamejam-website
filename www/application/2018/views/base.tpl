@@ -56,28 +56,21 @@
 				<div class="partners">
 					<h3>С подкрепата на:</h3>
 					<ul class="assets">
-						<li><a href="http://globalgamejam.org" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="Global Game Jam" /></a></li>
-						<li><a href="http://burgas.bg" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgasmunic.png" alt="Община Бургас" /></a></li>
-						{*
-						<li><a href="http://vrita.net" title="Врита" target="_blank"><img src="{$base}resource/image/public/partner/vrita.png" alt="Врита" /></a></li>
-						*}
+						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
+						<li><a href="http://www.komplex2000.com/" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
+						<li><a href="https://www.facebook.com/BigBoyPizzaBulgaria/" title="Big Boy Pizza" target="_blank"><img src="{$base}resource/image/public/partner/bigboypizza.png" alt="Big Boy Pizza" /></a></li>
+						<li><a href="https://www.facebook.com/papacraftbeer/" title="Papa Beer" target="_blank"><img src="{$base}resource/image/public/partner/papabeer.jpg" alt="Papa Beer" /></a></li>
+						<li><a href="http://transwagon-bg.com/" title="Трансвагон АД" target="_blank"><img src="{$base}resource/image/public/partner/transwagon.png" alt="Трансвагон АД" /></a></li>
+						<li><a href="http://www.technologica.com/" title="ТехноЛогика" target="_blank"><img src="{$base}resource/image/public/partner/technologica.png" alt="ТехноЛогика" /></a></li>
+						<li><a href="http://www.vodokanalstroy.com/" title="Водоканалстрой" target="_blank"><img src="{$base}resource/image/public/partner/vodokanalstroj.png" alt="Водоканалстрой" /></a></li>
+						<li><a href="http://www.sutherlandglobal.bg" title="Съдърланд България" target="_blank"><img src="{$base}resource/image/public/partner/sutherland.png" alt="Съдърланд България" /></a></li>
+						<li><a href="https://www.facebook.com/codexacademy%20/" title="Code-X" target="_blank"><img src="{$base}resource/image/public/partner/codex.png" alt="Code-X" /></a></li>
+						<li><a href="http://meduzata.com/" title="Медузата" target="_blank"><img src="{$base}resource/image/public/partner/meduzata.png" alt="Медузата" /></a></li>
+						<li><a href="https://vijmag.bg/" title="Виж!" target="_blank"><img src="{$base}resource/image/public/partner/vij.png" alt="Виж!" /></a></li>
+						<li><a href="https://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="Хамалогика" /></a></li>
+						<li><a href="https://www.brita.bg/" title="Brita" target="_blank"><img src="{$base}resource/image/public/partner/brita.png" alt="Brita" /></a></li>
 					</ul>
 				</div>
-
-				<div class="partners">
-					<h3>Награди от:</h3>
-					<ul class="assets">
-						{*
-						<li><a href="http://europe.casualconnect.org/" title="Indie prize" target="_blank"><img src="{$base}resource/image/public/partner/indie_prize.png" alt="Indie prize" /></a></li>
-						<li><a href="https://softuni.bg/" title="SoftUni" target="_blank"><img src="{$base}resource/image/public/partner/softuni.png" alt="СофтУни" /></a></li>
-						<li><a href="http://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="Хамалогика" /></a></li>
-						<li><a href="http://www.musala.com" title="Musala Soft" target="_blank"><img src="{$base}resource/image/public/partner/musala.png" alt="Musala Soft" /></a></li>
-						<li><a href="http://www.komplex2000.com" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
-						*}
-					</ul>
-				</div>
-<br />
-<br />
 				<div class="contacts">
 					<div class="pure-g">
 						<div class="pure-u-1 pure-u-sm-1-4">

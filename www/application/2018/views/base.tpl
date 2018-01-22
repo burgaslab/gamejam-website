@@ -12,7 +12,7 @@
 <body>
 	<div id="page-wrap">
 		<div id="side-nav">
-			<img src="{$base}resource/image/public/logo.png" alt="" />
+			<img src="{$base}resource/image/public/header.png" alt="" />
 		</div>
 		<div id="header" class="cf">
 			<div class="wrap">
@@ -38,7 +38,7 @@
 				{block "logo"}
 				<div class="logo">
 					<div class="logo-wrap">
-						<a href="{$base}"><img src="{$base}resource/image/public/logo.png" class="pure-img" alt="Burgas Game Jam 2018" /></a>
+						<a href="{$base}"><img src="{$base}resource/image/public/header.png" class="pure-img" alt="Burgas Game Jam 2018" /></a>
 						<p style="display: none">26-27-28 януари 2018<br/>в Експозиционен център “Флора”</p>
 					</div>
 				</div>

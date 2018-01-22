@@ -24,7 +24,7 @@
 	
 	{if $time > 0}
 	<div id="countdown"><div data-time="{$time}"></div></div>
-	{/if}}
+	{/if}
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjVP8Yr2qihfS8ymTPtq_qUJUsVUAOgrU " type="text/javascript"></script>
 	<div id="googlemap" data-objects="{$map_model|json_encode}" data-root="{$base}"></div>
 	<div class="home text">

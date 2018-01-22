@@ -20,7 +20,7 @@ a { color: #000; }
 			<tr>
 				<td>
 					<p><?php echo $message; ?></p>
-					<p><img src="<?php echo $base ?>resource/image/public/logo.png" alt="" /></p>
+					<p><img src="<?php echo $base ?>resource/image/public/header.png" alt="" /></p>
 					<p><a href="/"><?php echo $app_name; ?></a></p>
 				</td>
 			</tr>

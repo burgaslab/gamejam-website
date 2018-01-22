@@ -2,28 +2,24 @@
 
 {block "content"}
 <div class="text">
-	{*
 	<a id="day1"></a>
 	<div class="programme">
 		<h4><span><em class="bubble bubble-1"></em><i>1<sup>ви</sup></i> Ден (петък)</span></h4>
-		<p><label>14:00 – 18:00</label> Регистрация</p>
-		<p><label>14:30 – 15:00</label> Официално откриване</p>
+		<p><label>14:00 – 17:00</label> Регистрация</p>
+		<p><label>14:00 – 14:20</label> Официално откриване</p>
+		<p><label>14:30 – 14:50</label> Презентация на Tobii EyeX Tracker <br />
+			Лектор: Пламен Шкодров, уеб програмист, BurgasLab
+		</p>
 
-		<p><label>15:00 – 15:40</label> "Планиране на игра" - лекция (<a href="https://drive.google.com/open?id=1ZdWRP_LyoZzoOqNrnADVJ8I2pdGC7um116926PIdVeg">слайдове</a>)<br />
-Лектор: Цветомир Христов, продуцент, UKI Games (http://dashlegends.io)</p>
+		<p><label>15:00 – 15:50</label> Какво има в един гейм енджин<br />
+			Лектор: Борислав Станимиров, програмист на видео игри, CHOBOLABS
+		</p>
 
-		<p><label>16:00 – 16:40</label> „Игри във виртуалната реалност с Oculus Rift и Leap Motion“ - <br />презентация и демо (<a href="https://drive.google.com/open?id=0B73N6p5h56nlamxPNE00NzVpNnc">слайдове</a>)<br />
-Лектор: Георги Георгиев, ръководител офис в Бургас, ТехноЛогика ЕАД</p>
-
-		<p><label>17:00 – 17:15</label> „Демонстрация на Tobii EyeX Tracker“ - презентация (<a href="http://prezi.com/fkup-qkyzn_f">слайдове</a>)<br />
-Лектори: БургасЛаб</p>
-
-		<p><label>17:20 – 17:30</label> „OpenCity“ - презентация<br />
-Лектори: БургасЛаб</p>
-
-		<p><label>17:30 – 18:00</label> Разясняване на правилата</p>
-		<p><label>18:00 – 18:30</label> Keynote видео от Global Game Jam и официално обявяване на темата за 2017 година</p>
-		<p><label>18:30 – 22:00</label> Сформиране на отбори<br/></p>
+		<p><label>16:00 – 16:50</label> Алгоритми за поведение на персонажите в игри<br />
+			Лектор: Радослав Рачев, gameplay програмист, Ubisoft</p>
+		<p><label>17:00 – 17:30</label> Разясняване на правилата. Keynote видео от Global Game Jam и
+официално обявяване на темата за 2018 година</p>
+		<p><label>17:30 – 22:00</label> Сформиране на отбори и започване на работа<br/></p>
 		<a id="day2"></a>
 		<h4><span><em class="bubble bubble-3"></em><i>2<sup>ри</sup></i> Ден (събота)</span></h4>
 		<p><label>10:00</label> Начало</p>
@@ -44,6 +40,7 @@
 		<p><label>18:00 – 19:00</label> Play Party - гости и участници изпробват новите игри и дават своя глас в онлайн анкета</p>
 		<p><label>19:00 – 20:00</label> Закриване - обявяване на резултатите и награди </p>
 	</div>
+	{*
 	<a id="speakers"></a>
 	<div class="speakers">
 		<h4><span><em class="bubble bubble-2"></em><i class="fa fa-bullhorn"></i> Лектори</span></h4>

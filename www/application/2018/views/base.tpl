@@ -58,7 +58,7 @@
 					<ul class="assets">
 						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
 						<li><a href="http://www.komplex2000.com/" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
-						<li><a href="https://www.facebook.com/BigBoyPizzaBulgaria/" title="Big Boy Pizza" target="_blank"><img src="{$base}resource/image/public/partner/bigboypizza.png" alt="Big Boy Pizza" /></a></li>
+						<li><a href="https://www.facebook.com/BigBoyPizzaBulgaria/" title="Big Boy Pizza" target="_blank"><img src="{$base}resource/image/public/partner/bigboypizza.jpg" alt="Big Boy Pizza" /></a></li>
 						<li><a href="https://www.facebook.com/papacraftbeer/" title="Papa Beer" target="_blank"><img src="{$base}resource/image/public/partner/papabeer.jpg" alt="Papa Beer" /></a></li>
 						<li><a href="http://transwagon-bg.com/" title="Трансвагон АД" target="_blank"><img src="{$base}resource/image/public/partner/transwagon.png" alt="Трансвагон АД" /></a></li>
 						<li><a href="http://www.technologica.com/" title="ТехноЛогика" target="_blank"><img src="{$base}resource/image/public/partner/technologica.png" alt="ТехноЛогика" /></a></li>

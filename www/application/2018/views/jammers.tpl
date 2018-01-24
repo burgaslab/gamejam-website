@@ -9,38 +9,35 @@
 		</li>
 		<li>
 			<a href="https://docs.google.com/presentation/d/1gzJpXquXfzQH6tlUDVzO38W5OCOEa7h5xKccIYKdmQw/edit#slide=id.p" 
-			target="_blank">Lifecycle of a 48 hour game</a>
+			target="_blank">Как да направим игра за 48 часа</a>
+		</li>
+		<li>
+			<a href="https://unity3d.com/GGJ" 
+			target="_blank">Ресурси от Unity - лицензи, tutorials, free tools and assets</a>
+		</li>
+		<li>
+			Всичко за наличните лицензи за Unity, GameMaker and more! <a href="https://globalgamejam.org/jammer-resources" target="_blank">тук</a> и <a href="https://globalgamejam.org/sponsors" target="_blank">тук</a>.
+		</li>
+		<li>
+			<a href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/preview?sle=true" 
+			target="_blank">Списък с ресурси за джамъри, създаден от GlobalGameJam</a>
+		</li>
+		<li>
+			Как се правят настолни игри + Инструкции как да се опишат компонентите (<a href="https://docs.google.com/document/d/1igd63lA40t35mp63ripE48g2mJbNv04fZ8fSar7Mtl4/edit?usp=sharing" 
+			target="_blank">български</a>/<a href="http://archive.globalgamejam.org/wiki/board-games" 
+			target="_blank">английски</a>)
+		</li>
+		<li>
+			Завършване и предаване на играта: <span style="color:#ea2727;"><b>цялата процедура трябва да е завършена до неделя, 15:00ч</b></span>.
+			<ul>
+				<li>
+					<a href="https://docs.google.com/presentation/d/1iCgz4knXyBjcWXfjsap5zk79GO6H_uiKl0OJmcgXSOM/view" target="_blank"><b><span style="color:#ea2727;">Презентация, показваща как показва как да предадете играта си</span></b></a></li>
+				<li><a href="https://ggj.s3.amazonaws.com/GGJ_directory_structure.zip" target="_blank">Примерна zip структура </a></li>
+			</ul>
 		</li>
 		<li>
 			<a href="https://www.youtube.com/watch?v=z06QR-tz1_o" 
 			target="_blank">Extra Credits - Making Your First Game: Basics - How To Start Your Game Development</a>
-		</li>
-		<li>
-			Ресурси			
-			<ul>
-			<li>
-				Всичко за наличните <span style="color: #ea2727;"><b>лицензи</b></span> за Unity, GameMaker and more! <a href="http://globalgamejam.org/jammer-resources" target="_blank">тук</a> и <a href="globalgamejam.org/sponsors" target="_blank">тук</a>.
-			</li>
-			<li>
-				<a href="https://docs.google.com/document/d/1qQf5zjvJHEB40xYhTiFo9GzNYUBt8iAw8vzPu2Oy354/preview?sle=true" 
-				target="_blank">RESOURCES FOR JAMMERS:</a> Handy list put together by GGJ14 organizers from around the world.
-			</li>
-			<li>
-				Как се правят настолни игри + Инструкции как да се опишат компонентите (<a href="https://docs.google.com/document/d/1igd63lA40t35mp63ripE48g2mJbNv04fZ8fSar7Mtl4/edit?usp=sharing" 
-				target="_blank">български</a>/<a href="http://archive.globalgamejam.org/wiki/board-games" 
-				target="_blank">английски</a>)
-			</li>
-			</ul>
-		</li>
-		<li>
-			Delivery procedure: Цялата процедура трябва да е завършена до <span style="color:#ea2727;"><b>неделя, 15:00ч</b></span>.
-			<ul>
-				<li>
-					<span  style="color:#ea2727;"><b>Важно!!</b></span> Тази <a href="https://docs.google.com/presentation/d/1iCgz4knXyBjcWXfjsap5zk79GO6H_uiKl0OJmcgXSOM/view" target="_blank">презентация</a> показва как да предадете играта си</li>
-					<ul>
-						<li><a href="http://ggj.s3.amazonaws.com/GGJ_directory_structure.zip" target="_blank">Примерна zip структура </a></li>
-					</ul>
-			</ul>
 		</li>
 	</ul>
 </div>

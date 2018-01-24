@@ -17,6 +17,7 @@ class Standing extends Base {
 
 		$this->view->set("categories", $this->Votes_model->categories_votes());
 		$this->view->set("general", $this->Votes_model->general());
+		$this->view->set("audience", $this->Votes_model->audience());
 
 		$this->load->config("auth");
 		$this->load->library("session");

@@ -6,15 +6,21 @@ class Votes_model extends CI_Model {
 		parent::__construct();
 	}
 
-	private function category($category_id) {
-		$where = "year=?";
+	private function category($category_id, $which) {
+		$where = "B.year=?";
 		$params = array(conf("year"), $category_id);
 
 		if ($category_id !== null) {
 			$where .= " AND category_id=?";
 		}
+		
+		if ($which == "participants") {
+			$where .= " AND C.participant_id IS NOT NULL";
+		} else {
+			$where .= " AND C.participant_id IS NULL";
+		}
 
-		$sql = "SELECT COUNT(1) AS `count`, B.name, B.game FROM votes A JOIN teams B ON (A.team_id=B.id) WHERE {$where} GROUP BY B.id ORDER BY `count` DESC";
+		$sql = "SELECT COUNT(1) AS `count`, B.name, B.game FROM votes A JOIN teams B ON (A.team_id=B.id) JOIN codes C ON (A.code_id=C.id) WHERE {$where} GROUP BY B.id ORDER BY `count` DESC";
 
 		$query = $this->db->query($sql, $params);
 
@@ -51,7 +57,7 @@ class Votes_model extends CI_Model {
 		$res = array();
 
 		foreach ($cats as $c) {
-			$standing = $this->category($c->id);
+			$standing = $this->category($c->id, "participants");
 
 			$res[] = (object)array(
 				"name" => $c->name,
@@ -64,9 +70,12 @@ class Votes_model extends CI_Model {
 	}
 
 	public function general() {
-		return $this->category(null);
+		return $this->category(null, "participants");
 	}
 
+	public function audience() {
+		return $this->category(null, "audience");
+	}
 
 	private function get_code_id($code, $is_reserved) {
 		$sql = "SELECT id FROM codes WHERE code=? AND is_reserved=? AND time_vote IS NULL AND year=?";

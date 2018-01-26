@@ -7,7 +7,6 @@
 	*}
 	
 	{* live stream and video *}
-	{*
 	{if $live_stream}
 		<div class="home text">
 			<h4><span>Live stream от събитието</span></h4>
@@ -15,11 +14,11 @@
 		<div class="video">
 			{$live_stream nofilter}
 		</div>
-	{else}
+	{/if}
+	{*
 		<div class="video">
 			<iframe width="100%" height="315" src="https://www.youtube.com/embed/yA_A-5U1B1U{if $autoplay}?autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>
 		</div>
-	{/if}
 	*}
 	
 	{if $time > 0}

@@ -8,9 +8,6 @@
 	
 	{* live stream and video *}
 	{if $live_stream}
-		<div class="home text">
-			<h4><span>Live stream от събитието</span></h4>
-		</div>
 		<div class="video">
 			{$live_stream nofilter}
 		</div>

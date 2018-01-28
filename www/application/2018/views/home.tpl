@@ -12,6 +12,13 @@
 			{$live_stream nofilter}
 		</div>
 	{/if}
+	
+	{if $embed}
+		<div class="video">
+			{$embed nofilter}
+		</div>
+	{/if}
+	
 	{*
 		<div class="video">
 			<iframe width="100%" height="315" src="https://www.youtube.com/embed/yA_A-5U1B1U{if $autoplay}?autoplay=1{/if}" frameborder="0" allowfullscreen></iframe>

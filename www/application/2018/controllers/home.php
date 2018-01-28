@@ -29,6 +29,7 @@ class Home extends Base {
 		$this->load->model("Settings_model");
 
 		$this->view->set("live_stream", $this->Settings_model->get_value("live-stream"));
+		$this->view->set("embed", $this->Settings_model->get_value("embed"));
 
 
 		$this->render("home");

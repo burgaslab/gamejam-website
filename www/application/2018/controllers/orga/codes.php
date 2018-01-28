@@ -106,7 +106,7 @@ class Codes extends Auth {
 			$body = $this->view->result("orga/vote_email", true, $view_model);
 
 			$email = $i["email"];
-			$this->send_email("Гласувайте за най-добра игра на Burgas Game Jam 2017", $body, $email);
+			$this->send_email(sprintf("Гласувайте за най-добра игра на Burgas Game Jam %s", conf("year")), $body, $email);
 
 			$message = "Email sent to {$email}";
 			$this->Log_model->add($message);

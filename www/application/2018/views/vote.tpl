@@ -27,7 +27,7 @@
 					{/foreach}
 					{if !$is_participant}
 					<div class="pure-u-1 validate required {if $validator->has_error("code")}error{/if}">
-						<p>6 цифрен код за гласуване * </p>
+						<p>4. Шест цифрен код за гласуване * </p>
 						<input class="pure-input-1" type="text" placeholder="Код за гласуване" name="code" value="{$model.code}" />
 						<p>* <em>Ако не знаете какво е това, питайте някой от екипа на Burgas Game Jam.</em></p>
 					</div>

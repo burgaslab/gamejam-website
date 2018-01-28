@@ -19,7 +19,7 @@ class Settings extends Auth {
 			$model = array();
 			foreach ($settings as $i) {
 				$val = _post("setting|{$i->id}");
-				if ($i->name != "live-stream") {
+				if ($i->name != "live-stream" && $i->name != "embed") {
 					$val = ($val ? true : false);
 				}
 				$model[$i->id] = $val;

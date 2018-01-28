@@ -10,7 +10,7 @@
 		<form class="pure-form" method="post">
 			{foreach $settings as $i}
 				<label>{$i->desc}</label>
-				{if $i->name=="live-stream"}
+				{if $i->name=="live-stream" || $i->name=="embed"}
 				<p>
 					<textarea name="setting[{$i->id}]" rows="" cols="" style="width: 500px; height: 100px;">{$i->value}</textarea>
 				</p>

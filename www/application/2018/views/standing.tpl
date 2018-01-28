@@ -14,7 +14,7 @@
 		*}
 	
 		<a id="general"></a>
-		<h2>Генерално класиране</h2>
+		<h2>Крайно класиране</h2>
 		<table class="grid">
 			<tr>
 				<th class="pos">позиция</th>
@@ -31,7 +31,7 @@
 				</tr>
 			{/foreach}
 		</table>
-		
+		{*
 		{foreach $categories as $c}
 			<a id="{$c->name}"></a>
 			<h3>Категория "{$c->name}" - {$c->desc}</h3>
@@ -52,6 +52,7 @@
 				{/foreach}
 			</table>
 		{/foreach}
+		*}
 		
 		<a id="audience"></a>
 		<h3>Награда на публиката</h3>

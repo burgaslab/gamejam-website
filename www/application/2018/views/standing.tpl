@@ -1,4 +1,4 @@
-{extends "orga/base.tpl"}
+{extends "base.tpl"}
 
 {block "content"}
 <div class="orga votes">

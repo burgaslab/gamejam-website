@@ -1,10 +1,9 @@
 {extends "base.tpl"}
 
 {block "content"}
-	{*
 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfrWWjTQIWXyt2kc2Ugf0CFe4xlh-Zs_FfDdpy2ZFxr_o-7ww/viewform?embedded=true" width="100%" height="4000px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-	*}
 	
+	{*
 	{if $live_stream}
 		<div class="video">
 			{$live_stream nofilter}
@@ -47,4 +46,5 @@
 		</p>
 		<p>&nbsp;</p>
 	</div>
+	*}
 {/block}

@@ -11,9 +11,8 @@ class Registration extends Base {
 		$this->load->library("path");
 		$this->load->library("session");
 		$this->load->helper("url");
-		$this->load->database();
+		
 		$this->load->model("Participants_model");
-		$this->load->model("Settings_model");
 
 		$open = $this->Settings_model->get_value("registration");
 		$age_groups = conf("age_groups");

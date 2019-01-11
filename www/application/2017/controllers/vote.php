@@ -16,7 +16,7 @@ class Vote extends Base {
 
 		$this->classloader->load("common", "Validator");
 
-		$open = $this->Settings_model->get_value("voting");
+		$open = $this->Settings_model->get_value("vote");
 
 		$categories = $this->Votes_model->get_categories();
 

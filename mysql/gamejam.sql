@@ -79,7 +79,7 @@ CREATE TABLE `settings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO settings (`id`, `name`, `desc`, `value`)
-VALUES (1, 'registration', 'Отворена регистрация', 'true'),(2, 'voting', 'Отворено гласуване', 'false'),(3, 'standing', 'Класиране', 'true');
+VALUES (1, 'registration', 'Отворена регистрация', 'true'),(2, 'vote', 'Отворено гласуване', 'false'),(3, 'standing', 'Класиране', 'true');
 INSERT INTO settings VALUES (4, 'live-stream', 'Лайв стрийм код', '');
 INSERT INTO `settings` (`id`, `name`, `desc`, `value`) VALUES ('5', 'embed', 'Embed', ''); 
 

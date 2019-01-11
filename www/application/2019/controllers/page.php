@@ -8,7 +8,6 @@ abstract class Page extends Base {
 	public function __construct() {
 		parent::__construct();
 
-		$this->load->database();
 		$this->load->model("Pages_model");
 
 		$this->year = conf("year");

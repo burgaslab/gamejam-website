@@ -7,9 +7,7 @@ class Standing extends Base {
 	public function __construct() {
 		parent::__construct();
 
-		$this->load->database();
 		$this->load->model("Votes_model");
-		$this->load->model("Settings_model");
 	}
 
 	public function index() {

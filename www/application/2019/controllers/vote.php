@@ -9,14 +9,13 @@ class Vote extends Base {
 	public function index() {
 		$this->load->library("session");
 		$this->load->helper("url");
-		$this->load->database();
+		
 		$this->load->model("Votes_model");
 		$this->load->model("Teams_model");
-		$this->load->model("Settings_model");
 
 		$this->classloader->load("common", "Validator");
 
-		$open = $this->Settings_model->get_value("voting");
+		$open = $this->Settings_model->get_value("vote");
 
 		$categories = $this->Votes_model->get_categories();
 

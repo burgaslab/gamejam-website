@@ -10,6 +10,9 @@ abstract class Base extends CI_Controller {
 		$this->load->library("smarty", null, "view");
 		$this->load->helper("url");
 
+		$this->load->database();
+		$this->load->model("Settings_model");
+
 		if (conf("force_ssl")) {
 			enforce_ssl();
 		}
@@ -25,7 +28,17 @@ abstract class Base extends CI_Controller {
 
 		$page_title = "";
 
-		foreach ($nav as $i) {
+		$props = array("registration", "vote", "standing");
+		$dynamic = array();
+		foreach ($props as $i) {
+			$dynamic[$i] = $this->Settings_model->get_value($i);
+		}
+
+		foreach ($nav as $index=>$i) {
+			if (!arr($dynamic, $i->url, true)) {
+				unset($nav[$index]);
+				continue;
+			}
 			$found = null;
 			foreach (arr($i, "sub", array()) as $j) {
 				if ($j->url == $current) {

@@ -2,7 +2,9 @@
 
 $config["cache_dir"] = APPPATH . "cache/";
 
-$config["title"] = "Burgas Game Jam :: 25-27 януари 2019";
+$config["title"] = "Burgas Game Jam";
+$config["location"] = "Експозиционен център “Флора”";
+$config["period"] = "25-27 януари 2019";
 
 $config["age_groups"] = array("18-20г.", "21-29г.", "30г.+");
 $config["occupations"] = array("ученик", "студент", "работещ", "геймър", "безработен");

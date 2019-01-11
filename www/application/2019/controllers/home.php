@@ -12,8 +12,8 @@ class Home extends Base {
 		$map_model[] = array (
 				"lat" => $location[0],
 				"lng" => $location[1],
-				"title" => "Експозиционен център “Флора”",
-				"text" => "26-28 януари 2018",
+				"title" => conf("location"),
+				"text" => conf("period"),
 		);
 		$this->view->set("map_model", $map_model);
 
@@ -31,6 +31,10 @@ class Home extends Base {
 		$this->view->set("live_stream", $this->Settings_model->get_value("live-stream"));
 		$this->view->set("embed", $this->Settings_model->get_value("embed"));
 
+		$this->load->model("Pages_model");
+
+		$page = $this->Pages_model->get_one(conf("year"), "home");
+		$this->view->set("text", $page->text);
 
 		$this->render("home");
 	}

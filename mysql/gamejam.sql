@@ -83,3 +83,19 @@ VALUES (1, 'registration', 'Отворена регистрация', 'true'),(2
 INSERT INTO settings VALUES (4, 'live-stream', 'Лайв стрийм код', '');
 INSERT INTO `settings` (`id`, `name`, `desc`, `value`) VALUES ('5', 'embed', 'Embed', ''); 
 
+CREATE TABLE `pages` (
+  `name` varchar(32) NOT NULL,
+  `year` int(11) NOT NULL,
+  `title` varchar(256) NOT NULL,
+  `text` text NOT NULL,
+  PRIMARY KEY (`name`,`year`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('home', 2019, 'Начало');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('about', 2019, 'Какво е Game Jam?');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('rules', 2019, 'Правила');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('programme', 2019, 'Програма');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('jammers', 2019, 'За Jammer-и');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('support', 2019, 'Подкрепи');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('press', 2019, 'Press Release');
+

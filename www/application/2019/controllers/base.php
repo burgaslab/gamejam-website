@@ -49,7 +49,12 @@ abstract class Base extends CI_Controller {
 
 		$this->view->set("nav", $nav);
 
-		$title = conf("title");
+		$this->set_page_title($page_title);
+		
+	}
+
+	protected function set_page_title($page_title) {
+		$title = sprintf("%s :: %s", conf("title"), conf("period"));
 		if ($page_title) {
 			$title = "{$page_title} | {$title}";
 		}

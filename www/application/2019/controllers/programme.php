@@ -1,10 +1,10 @@
 <?php if ( ! defined("BASEPATH")) exit("No direct script access allowed");
 
-require("base.php");
+require("page.php");
 
-class Programme extends Base {
+class Programme extends Page {
 
 	public function index() {
-		$this->render("programme");
+		$this->show_page("programme");
 	}
 }

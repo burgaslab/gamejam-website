@@ -21,6 +21,8 @@ class Auth extends Base {
 		if ($method != "login" && !$this->session->userdata($this->session_key)) {
 			redirect("/orga/auth/login");
 		}
+
+		$this->view->set("current_path", $this->path->base . trim(strtok($this->path->current, "?") , "/"));
 	}
 
 	protected function get_nav() {

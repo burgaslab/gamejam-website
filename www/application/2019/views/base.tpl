@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html data-root="{$base}">
 <head>
 	<title>{$html_title}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta property="og:image" content="{$http_base}resource/image/public/facebook.png" />
+{block "bundle"}
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
 {webresources icon="public"}
+{/block}
 </head>
 <body>
 	<div id="page-wrap">
@@ -38,8 +40,8 @@
 				{block "logo"}
 				<div class="logo">
 					<div class="logo-wrap">
-						<a href="{$base}"><img src="{$base}resource/image/public/header.png" class="pure-img" alt="Burgas Game Jam 2018" /></a>
-						<p style="display: none">26-27-28 януари 2018<br/>в Експозиционен център “Флора”</p>
+						<a href="{$base}"><img src="{$base}resource/image/public/header.png" class="pure-img" alt="Burgas Game Jam 2019" /></a>
+						<p style="display: none">25-26-27 януари 2019<br/>в Експозиционен център “Флора”</p>
 					</div>
 				</div>
 				{/block}
@@ -57,6 +59,7 @@
 					<h3>С подкрепата на:</h3>
 					<ul class="assets">
 						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
+						{*
 						<li><a href="http://www.komplex2000.com/" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
 						<li><a href="https://www.facebook.com/BigBoyPizzaBulgaria/" title="Big Boy Pizza" target="_blank"><img src="{$base}resource/image/public/partner/bigboypizza.jpg" alt="Big Boy Pizza" /></a></li>
 						<li><a href="https://www.facebook.com/papacraftbeer/" title="Papa Beer" target="_blank"><img src="{$base}resource/image/public/partner/papabeer.jpg" alt="Papa Beer" /></a></li>
@@ -69,12 +72,13 @@
 						<li><a href="https://vijmag.bg/" title="Виж!" target="_blank"><img src="{$base}resource/image/public/partner/vij.png" alt="Виж!" /></a></li>
 						<li><a href="https://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="Хамалогика" /></a></li>
 						<li><a href="https://www.brita.bg/" title="Brita" target="_blank"><img src="{$base}resource/image/public/partner/brita.png" alt="Brita" /></a></li>
+						*}
 					</ul>
 				</div>
 				<div class="contacts">
 					<div class="pure-g">
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<a href="{$base}support" class="support">Подкрепи Burgas Game Jam 2018</a>
+							<a href="{$base}support" class="support">Подкрепи Burgas Game Jam 2019</a>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
 							<p><a href="mailto:gamejam@burgaslab.org"><i class="fa fa-envelope"></i>gamejam@burgaslab.org</a></p>

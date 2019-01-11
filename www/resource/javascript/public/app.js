@@ -152,7 +152,7 @@ $(function() {
 		if (!confirm("Сигурни ли сте?")) {
 			e.preventDefault();
 		}
-	})
+	});
 });
 
 

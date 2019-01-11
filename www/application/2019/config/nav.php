@@ -15,9 +15,9 @@ $config["nav"] = array(
 	array("title"=>"За Jammer-и", "url"=>"jammers"),
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Press Release", "url"=>"press"),
-	//array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
-	array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
-	array("title"=>"Класиране", "url"=>"standing"),
+	array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
+	//array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
+	//array("title"=>"Класиране", "url"=>"standing"),
 	array("title"=>"Архив", "url"=>"", "sub" => array(
 		array("title"=>"Burgas Game Jam 2015", "url"=>"./2015"),
 		array("title"=>"Burgas Game Jam 2016", "url"=>"./2016"),

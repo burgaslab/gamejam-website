@@ -1,7 +1,7 @@
 <div class="row ">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<nav class="navbar navbar-inverse navbar-embossed" role="navigation">
-			<a href="<?= $this->path->base ?>.." class="current">&larr; Обратно към BGJ 2018</a>
+			<a href="<?= $this->path->base ?>.." class="current">&larr; Обратно към BGJ 2019</a>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
 					<span class="sr-only">Toggle navigation</span>
@@ -59,6 +59,7 @@
 							<li><a href="<?= $this->path->base ?>/../../2015">Burgas Game Jam 2015</a></li>
 							<li><a href="<?= $this->path->base ?>/../../2016">Burgas Game Jam 2016</a></li>
 							<li><a href="<?= $this->path->base ?>/../../2017">Burgas Game Jam 2017</a></li>
+							<li><a href="<?= $this->path->base ?>/../../2018">Burgas Game Jam 2018</a></li>
 						</ul></li>
 				</ul>
 			</div>

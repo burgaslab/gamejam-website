@@ -32,6 +32,7 @@ $config["nav"] = array(
 		array("title"=>"Burgas Game Jam 2015", "url"=>"../2015"),
 		array("title"=>"Burgas Game Jam 2016", "url"=>"../2016"),
 		array("title"=>"Burgas Game Jam 2017", "url"=>"../2017"),
+		array("title"=>"Burgas Game Jam 2018", "url"=>"../2018"),
 	)),
 );
 

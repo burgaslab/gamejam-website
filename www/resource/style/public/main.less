@@ -1,12 +1,16 @@
 @blue: #07547A;
-@pink: #ea1474;
 @gray: #8b8b8b;
 @darkgray: #fff;
+
+@primary_color: #f3d92d;
+@secondary_color: #d62977;
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family: roboto, arial; }
 
 html, body { overflow-x: hidden; }
-body { background: url(../../image/public/body.jpg); background-size: 650px; }
+body { background: url(/resource/image/public/body.svg);
+    background-size: cover;
+    background-attachment: fixed; }
 .wrap { width: 90%; margin: 0 auto; }
 
 #page-wrap { 
@@ -19,7 +23,7 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 	img { display: block; width: 100%; background: #fff; padding: 10px; box-sizing: border-box; }
 	a { display: block; color: #fff; text-decoration: none; height: 44px; line-height: 44px; border-top: solid 1px rgba(255, 255, 255, 0.05); padding: 0 1em 0 1em; -webkit-transition: color 0.15s ease-in-out; transition: color 0.15s ease-in-out; }
 	li.highlight > a { color: #ff8a00; }
-	a:hover, li.active > a { background: @pink; }
+	a:hover, li.active > a { background: @primary_color; }
 	ul ul a { text-indent: 20px; }
 	.fa { margin: 0 0 0 0.5em;  font-size: 1.2em; }
 	a:hover { color: #0C91D3; }
@@ -28,7 +32,7 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 #header {
 	position: relative;
 	.mobile { 
-		position:absolute; color:@pink; border:3px solid @pink; width:40px; height:40px; text-align:center; font-size:23px; border-radius: 40px; left:15px; top: 15px; cursor: pointer;
+		position:absolute; color:@primary_color; border:3px solid @primary_color; width:40px; height:40px; text-align:center; font-size:23px; border-radius: 40px; left:15px; top: 15px; cursor: pointer;
 		i { padding:8px 0 0; }
 	}
 	a.current { display: block; text-decoration: none; margin: 4px; font-weight: 500; font-size: 20px; color: #EA1474; }
@@ -40,10 +44,10 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 		ul { margin: 0 0 0 0; }
 		> ul > li { 
 			> a { -webkit-transition: color 0.15s ease-in-out; transition: color 0.15s ease-in-out; display: block; text-decoration: none; font-weight: 600; font-size: 1em; outline: 0; color: #333; line-height: 45px; padding: 0px 12px 5px 12px; }
-			&:hover > a, &.active > a { color: @pink; }
-			&.highlight { background: #ff8a00; }
+			&:hover > a, &.active > a { color: @primary_color; }
+			&.highlight { background: @secondary_color; }
 			&.highlight > a {color: #fff;}
-			&.active { background: @pink; a { color: #fff; }}
+			&.active { background: @primary_color; a { color: #333; }}
 			.fa { margin: 0 0 0 0.5em;  font-size: 1.2em; }
 		}
 		> ul > li {
@@ -51,10 +55,10 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 			&:first-child { margin-left: 0; }
 		}
 		> ul ul { 
-			visibility: hidden; opacity: 0; -webkit-transition: 0.15s ease-in-out; transition: 0.15s ease-in-out; position: absolute; top: 0; z-index: 10; min-width: 200px; background: @pink; padding: 0.5em 0 0.5em 0; border-radius: 8px; margin-top: 3em; text-align: left; left: 50%; transform: translateX(-50%); 
-			a { display: block; padding: 0.6em 1em; font-size: 0.90em; color: #fff; text-decoration: none; }
+			visibility: hidden; opacity: 0; -webkit-transition: 0.15s ease-in-out; transition: 0.15s ease-in-out; position: absolute; top: 0; z-index: 10; min-width: 200px; background: @primary_color; padding: 0.5em 0 0.5em 0; border-radius: 8px; margin-top: 3em; text-align: left; left: 50%; transform: translateX(-50%); 
+			a { display: block; padding: 0.6em 1em; font-size: 0.90em; color: #333; text-decoration: none; }
 			a:hover { color: @gray; }
-			&:before { content: ''; position: absolute; top: -10px; left: 50%; margin-left: -10px; border-bottom: solid 10px @pink; border-left: solid 10px transparent; border-right: solid 10px transparent; }
+			&:before { content: ''; position: absolute; top: -10px; left: 50%; margin-left: -10px; border-bottom: solid 10px @primary_color; border-left: solid 10px transparent; border-right: solid 10px transparent; }
 		}
 		li:hover ul { visibility: visible; opacity: 1; }
 	}
@@ -69,7 +73,7 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 #content {
 	padding: 1em 0;
 	.wrap { background: rgba(220, 220, 220, 0.75); border-radius: 8px; }
-	h1 { color: @pink; margin: 0.5em 0; }
+	h1 { color: @primary_color; margin: 0.5em 0; }
 	h2 { color: @gray; font-size: 1.4em; margin: 0.8em 0 0 0; padding: 0 0 0.5em;}
 
 	.text {
@@ -85,19 +89,19 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 		h4 {
 			margin: 20px 0 0 0;
 			span { color: #000; font-weight: 400; padding: 7px; font-size: 1.5em; line-height: 3em; position: relative; }
-			i { background-color: @pink; border-radius: 50%; color: #fff; display: inline-block; font-size: 1em; font-weight: 700; height: 40px; padding: 10px; width: 40px; margin: 0 5px 0 0; line-height: 35px; vertical-align: middle; font-style: normal; text-align: center; }
+			i { background-color: @primary_color; border-radius: 50%; color: #333; display: inline-block; font-size: 1em; font-weight: 700; height: 40px; padding: 10px; width: 40px; margin: 0 5px 0 0; line-height: 35px; vertical-align: middle; font-style: normal; text-align: center; }
 			i sup { font-size: 0.7em; }
 			a { text-decoration: none; }
 			a:hover { text-decoration: underline; }
 		}
 		p { line-height: 1.6em; font-size: 1.3em; }
-		a { color: @pink; }
+		a { color: @primary_color; }
 		a:hover { text-decoration: none; }
 		ul { padding: 0 0 0 20px; line-height: 1.6em; font-size: 20px; }
 		li { margin: 10px 0; }
 	}
 	.jammers {
-		a { text-decoration: none !important; color: @pink; }
+		a { text-decoration: none !important; color: @primary_color; }
 		a:hover { text-decoration: underline !important; }
 	}
 	.home {
@@ -117,7 +121,7 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 		overflow: hidden; margin: 1em; list-style-type: none;
 		li { float:left; }
 		p img, a img { border: 5px solid #fff; border-radius: 3px; -webkit-transition: border-color 0.15s ease-in-out; transition: border-color 0.15s ease-in-out; }
-		a:hover img, p:hover img { border-color: @pink; }
+		a:hover img, p:hover img { border-color: @primary_color; }
 		a { display:block; width:100%; }
 	}
 
@@ -125,7 +129,7 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 		margin: 20px 0; 
 		h4 { margin-top: 10px; }
 		> p {
-			> label { background: @pink; line-height: 28px; margin: 0 10px 0 0; padding: 0 5px; color: #fff; font-size: 0.8em; }
+			> label { background: @primary_color; line-height: 28px; margin: 0 10px 0 0; padding: 0 5px; color: #333; font-size: 0.8em; }
 			&.drop { text-decoration: line-through; }
 			> span { font-size: 0.8em; }
 		}
@@ -155,7 +159,7 @@ body { background: url(../../image/public/body.jpg); background-size: 650px; }
 		.pure-g { padding: 0; box-sizing: border-box; }
 		.pure-g > div { padding: 0 1em 1em 0;box-sizing: border-box;  }
 		textarea { min-height: 200px; }
-		button { margin: 1em 0 0 0; }
+		button { margin: 1em 0 0 0; background-color: @secondary_color;}
 	}
 	
 	.map { background: #ccc; margin: 1em 0; height: 300px; }
@@ -289,11 +293,11 @@ ul.assets {
 			overflow: hidden; margin: 1em; list-style-type: none; 
 			
 			a img, p img { border: 5px solid #fff; border-radius: 3px; -webkit-transition: border-color 0.15s ease-in-out; transition: border-color 0.15s ease-in-out;  }
-			a:hover img, p:hover img { border-color: @pink; }
+			a:hover img, p:hover img { border-color: @primary_color; }
 
 			li { display: inline-block; }
 			a { text-decoration: none; }
-			a.support  { display: block; background: @pink; padding: 16px; color: #f1f1f1; border-radius: 8px; }
+			a.support  { display: block; background: @primary_color; padding: 16px; color: #f1f1f1; border-radius: 8px; }
 		}
 	}
 	.contacts {
@@ -301,10 +305,10 @@ ul.assets {
 			margin: 1em; font-size: 1.2em; overflow: hidden;
 			> div { padding: 0 2em 0 0; box-sizing: border-box; }
 			a { text-decoration: none; }
-			a.support  { display: block; background: @pink; padding: 16px; color: #f1f1f1; border-radius: 8px; }
+			a.support  { display: block; background: @primary_color; padding: 16px; color: #333; border-radius: 8px; }
 			p a:hover { text-decoration: underline; }
 			p { line-height: 1.5em; }
-			i.fa { margin: 0 5px 0 0; background: #ccc; padding: 2px 3px 2px 8px; }
+			i.fa { margin: 0 5px 0 0; background: #333; padding: 2px 3px 2px 8px; }
 		}
 	}
 }

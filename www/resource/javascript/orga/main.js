@@ -42,7 +42,7 @@ $(function() {
 			plugin_preview_width : 980,
 			plugin_preview_height : 800,
 			table_grid : false,
-			extended_valid_elements: "span,span[*],i[*],em[*],a,a[*],a[id]",
+			extended_valid_elements: "span,span[*],i[*],em[*],a,a[*],a[id],a[href]",
 			verify_html: false
 	});
 });

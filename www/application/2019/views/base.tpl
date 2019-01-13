@@ -10,6 +10,7 @@
 {webresources bundle="public_js"}
 {webresources icon="public"}
 {/block}
+{literal}
 <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -27,6 +28,7 @@
   src="https://www.facebook.com/tr?id=373124866570193&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
+{/literal}
 </head>
 <body>
 	<div id="page-wrap">

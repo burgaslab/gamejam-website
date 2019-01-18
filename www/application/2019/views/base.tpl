@@ -82,9 +82,9 @@
 						<li><a href="http://stedicenter.com/" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.png" alt="Книжарница Стеди" /></a></li>
 						<li><a href="http://www.technologica.com/" title="ТехноЛогика" target="_blank"><img src="{$base}resource/image/public/partner/technologica.png" alt="ТехноЛогика" /></a></li>
 						<li><a href="http://www.komplex2000.com/" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
-						<li><a href="https://www.epam.com" title="EPAM Systems Bulgaria" target="_blank"><img src="{$base}resource/image/public/partner/epam.jpg" alt="EPAM Systems Bulgaria" /></a></li>
-						<li><a href="#" title="GDPR Consulting" target="_blank"><img src="{$base}resource/image/public/partner/gdpr.jpg" alt="GDPR Consulting" /></a></li>
-						<li><a href="https://www.siteground.com/" title="SiteGround" target="_blank"><img src="{$base}resource/image/public/partner/siteground.jpg" alt="SiteGround" /></a></li>
+						<li><a href="https://www.epam.com" title="EPAM Systems Bulgaria" target="_blank"><img src="{$base}resource/image/public/partner/epam.png" alt="EPAM Systems Bulgaria" /></a></li>
+						<li><a href="#" title="GDPR Consulting" target="_blank"><img src="{$base}resource/image/public/partner/gdpr.png" alt="GDPR Consulting" /></a></li>
+						<li><a href="https://www.siteground.com/" title="SiteGround" target="_blank"><img src="{$base}resource/image/public/partner/siteground.png" alt="SiteGround" /></a></li>
 						<li><a href="http://meduzata.com/" title="Медузата" target="_blank"><img src="{$base}resource/image/public/partner/meduzata.png" alt="Медузата" /></a></li>
 						<li><a href="https://softuni.org/" title="SoftUni" target="_blank"><img src="{$base}resource/image/public/partner/softuni.png" alt="SoftUni" /></a></li>
 						

@@ -33,6 +33,9 @@
 						<input class="pure-input-1" type="text" placeholder="Умения" name="skills" value="{$model.skills}" />
 						<em>Разделени със запетая</em>
 					</div>
+					
+					<p class="pure-u-1">Необходимо е да имате навършени 18 години или да сте придружен от родител или настойник.</p>
+					
 					<div class="pure-u-1 validate required {if $validator->has_error("agree")}error{/if}">
 						<label><input type="checkbox" name="agree" {checked $model.agree} />&nbsp;Наясно съм, че проектите се публикуват под <a href="{$base}rules#copyrights">Creative commons лиценз <i class="fa fa-exclamation-circle"></i></a></label>
 					</div>

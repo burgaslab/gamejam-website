@@ -78,8 +78,17 @@
 					<h3>С подкрепата на:</h3>
 					<ul class="assets">
 						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
-						{*
+						<li><a href="https://www.facebook.com/piazza.grande.burgas" title="Пицария Piazza Grande" target="_blank"><img src="{$base}resource/image/public/partner/piazza-grande.png" alt="Пицария Piazza Grande" /></a></li>
+						<li><a href="http://stedicenter.com/" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.png" alt="Книжарница Стеди" /></a></li>
+						<li><a href="http://www.technologica.com/" title="ТехноЛогика" target="_blank"><img src="{$base}resource/image/public/partner/technologica.png" alt="ТехноЛогика" /></a></li>
 						<li><a href="http://www.komplex2000.com/" title="Комплекс 2000" target="_blank"><img src="{$base}resource/image/public/partner/komplex2000.jpg" alt="Комплекс 2000" /></a></li>
+						<li><a href="https://www.epam.com" title="EPAM Systems Bulgaria" target="_blank"><img src="{$base}resource/image/public/partner/epam.jpg" alt="EPAM Systems Bulgaria" /></a></li>
+						<li><a href="#" title="GDPR Consulting" target="_blank"><img src="{$base}resource/image/public/partner/gdpr.jpg" alt="GDPR Consulting" /></a></li>
+						<li><a href="https://www.siteground.com/" title="SiteGround" target="_blank"><img src="{$base}resource/image/public/partner/siteground.jpg" alt="SiteGround" /></a></li>
+						<li><a href="http://meduzata.com/" title="Медузата" target="_blank"><img src="{$base}resource/image/public/partner/meduzata.png" alt="Медузата" /></a></li>
+						<li><a href="https://softuni.org/" title="SoftUni" target="_blank"><img src="{$base}resource/image/public/partner/softuni.png" alt="SoftUni" /></a></li>
+						
+						{*
 						<li><a href="https://www.facebook.com/BigBoyPizzaBulgaria/" title="Big Boy Pizza" target="_blank"><img src="{$base}resource/image/public/partner/bigboypizza.jpg" alt="Big Boy Pizza" /></a></li>
 						<li><a href="https://www.facebook.com/papacraftbeer/" title="Papa Beer" target="_blank"><img src="{$base}resource/image/public/partner/papabeer.jpg" alt="Papa Beer" /></a></li>
 						<li><a href="http://transwagon-bg.com/" title="Трансвагон АД" target="_blank"><img src="{$base}resource/image/public/partner/transwagon.png" alt="Трансвагон АД" /></a></li>
@@ -87,7 +96,6 @@
 						<li><a href="http://www.vodokanalstroy.com/" title="Водоканалстрой" target="_blank"><img src="{$base}resource/image/public/partner/vodokanalstroj.png" alt="Водоканалстрой" /></a></li>
 						<li><a href="http://www.sutherlandglobal.bg" title="Съдърланд България" target="_blank"><img src="{$base}resource/image/public/partner/sutherland.png" alt="Съдърланд България" /></a></li>
 						<li><a href="https://www.facebook.com/codexacademy%20/" title="Code-X" target="_blank"><img src="{$base}resource/image/public/partner/codex.png" alt="Code-X" /></a></li>
-						<li><a href="http://meduzata.com/" title="Медузата" target="_blank"><img src="{$base}resource/image/public/partner/meduzata.png" alt="Медузата" /></a></li>
 						<li><a href="https://vijmag.bg/" title="Виж!" target="_blank"><img src="{$base}resource/image/public/partner/vij.png" alt="Виж!" /></a></li>
 						<li><a href="https://hamalogika.com" title="Хамалогика" target="_blank"><img src="{$base}resource/image/public/partner/hamalogika.png" alt="Хамалогика" /></a></li>
 						<li><a href="https://www.brita.bg/" title="Brita" target="_blank"><img src="{$base}resource/image/public/partner/brita.png" alt="Brita" /></a></li>

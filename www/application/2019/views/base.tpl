@@ -112,7 +112,7 @@
 							<p>организатор: <a href="http://burgaslab.org">BurgasLab</a></p>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="https://www.facebook.com/events/2028494330723285/"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
+							<p><a href="https://www.facebook.com/events/380140959411446/"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
 							<p><a href="https://www.facebook.com/BurgasGameJam"><i class="fa fa-facebook"></i>Burgas Game Jam</a></p>
 							</div>
 						<div class="pure-u-1 pure-u-sm-1-4">

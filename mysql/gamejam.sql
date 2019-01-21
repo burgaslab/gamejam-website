@@ -99,3 +99,5 @@ INSERT INTO pages (`name`, `year`, `title`) VALUES ('jammers', 2019, 'За Jamme
 INSERT INTO pages (`name`, `year`, `title`) VALUES ('support', 2019, 'Подкрепи');
 INSERT INTO pages (`name`, `year`, `title`) VALUES ('press', 2019, 'Press Release');
 
+INSERT INTO categories (`year`, `name`) VALUES ('2019', 'Най-добра игра');
+

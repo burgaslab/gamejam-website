@@ -16,7 +16,7 @@
 				<div class="pure-g">
 					{foreach $categories as $c}
 						<div class="pure-u-1 validate required {if $validator->has_error($c->name)}error{/if}">
-							<p>{$c@iteration}. {$c->desc}</p>
+							<p>{$c->desc}</p>
 							<select name="category[{$c->id}]">
 								<option value="">изберете отбор и игра...</option>
 								{foreach $teams as $t}
@@ -27,7 +27,7 @@
 					{/foreach}
 					{if !$is_participant}
 					<div class="pure-u-1 validate required {if $validator->has_error("code")}error{/if}">
-						<p>4. Шест цифрен код за гласуване * </p>
+						<p>Шест цифрен код за гласуване * </p>
 						<input class="pure-input-1" type="text" placeholder="Код за гласуване" name="code" value="{$model.code}" />
 						<p>* <em>Ако не знаете какво е това, питайте някой от екипа на Burgas Game Jam.</em></p>
 					</div>

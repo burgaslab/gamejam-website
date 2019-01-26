@@ -87,7 +87,7 @@
 						<li><a href="https://www.siteground.com/" title="SiteGround" target="_blank"><img src="{$base}resource/image/public/partner/siteground.png" alt="SiteGround" /></a></li>
 						<li><a href="http://meduzata.com/" title="Медузата" target="_blank"><img src="{$base}resource/image/public/partner/meduzata.png" alt="Медузата" /></a></li>
 						<li><a href="https://softuni.org/" title="SoftUni" target="_blank"><img src="{$base}resource/image/public/partner/softuni.png" alt="SoftUni" /></a></li>
-						
+						<li><a href="http://www.sutherlandglobal.bg" title="Съдърланд България" target="_blank"><img src="{$base}resource/image/public/partner/sutherland.png" alt="Съдърланд България" /></a></li>
 						{*
 						<li><a href="https://www.facebook.com/BigBoyPizzaBulgaria/" title="Big Boy Pizza" target="_blank"><img src="{$base}resource/image/public/partner/bigboypizza.jpg" alt="Big Boy Pizza" /></a></li>
 						<li><a href="https://www.facebook.com/papacraftbeer/" title="Papa Beer" target="_blank"><img src="{$base}resource/image/public/partner/papabeer.jpg" alt="Papa Beer" /></a></li>

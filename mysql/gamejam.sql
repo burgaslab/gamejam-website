@@ -101,3 +101,16 @@ INSERT INTO pages (`name`, `year`, `title`) VALUES ('press', 2019, 'Press Releas
 
 INSERT INTO categories (`year`, `name`) VALUES ('2019', 'Най-добра игра');
 
+
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('home', 2020, 'Начало');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('about', 2020, 'Какво е Game Jam?');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('rules', 2020, 'Правила');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('programme', 2020, 'Програма');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('jammers', 2020, 'За Jammer-и');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('support', 2020, 'Подкрепи');
+INSERT INTO pages (`name`, `year`, `title`) VALUES ('press', 2020, 'Press Release');
+
+
+INSERT INTO categories (`year`, `name`) VALUES ('2020', 'Най-добра игра');
+
+

@@ -16,7 +16,7 @@
 		</div>
 		<div id="header" class="cf">
 			<div class="wrap">
-				<a href="{$base}.." class="current">&larr; Обратно към BGJ 2019</a>
+				<a href="{$base}.." class="current">&larr; Обратно към BGJ 2023</a>
 				<span class="mobile"><i class="fa fa-bars"></i></span>
 				<nav>
 					<ul>

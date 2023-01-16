@@ -23,6 +23,8 @@ $config["nav"] = array(
 		array("title"=>"Burgas Game Jam 2016", "url"=>"../2016"),
 		array("title"=>"Burgas Game Jam 2017", "url"=>"../2017"),
 		array("title"=>"Burgas Game Jam 2018", "url"=>"../2018"),
+		array("title"=>"Burgas Game Jam 2019", "url"=>"../2019"),
+		array("title"=>"Burgas Game Jam 2020", "url"=>"../2020"),
 	)),
 );
 

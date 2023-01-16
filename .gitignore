@@ -6,6 +6,7 @@
 /www/2017/.development
 /www/2018/.development
 /www/2019/.development
+/www/2020/.development
 /www/application/2015/config/production/database.php
 /www/application/2016/cache/*
 !/www/application/2016/cache/index.html
@@ -31,3 +32,9 @@
 /www/application/2019/config/production/auth.php
 /www/application/2019/config/production/config.php
 /www/application/2019/config/production/database.php
+/www/application/2020/cache/*
+!/www/application/2020/cache/index.html
+/www/application/2020/logs/*.php
+/www/application/2020/config/production/auth.php
+/www/application/2020/config/production/config.php
+/www/application/2020/config/production/database.php

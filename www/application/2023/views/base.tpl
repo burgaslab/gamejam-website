@@ -78,6 +78,13 @@
 					<h3>С подкрепата на:</h3>
 					<ul class="assets">
 						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
+						<li><a href="https://pliant.io/" title="Pliant" target="_blank"><img src="{$base}resource/image/public/partner/pliant.png" alt="Pliant" /></a></li>
+						<li><a href="https://www.scalefocus.com/" title="Scalefocus" target="_blank"><img src="{$base}resource/image/public/partner/scalefocus2.png" alt="Scalefocus" /></a></li>
+						<li><a href="https://www.facebook.com/yavkafoodbar/?locale=bg_BG" title="ЯВ-КА" target="_blank"><img src="{$base}resource/image/public/partner/yavka.png" alt="ЯВ-КА" /></a></li>
+						<li><a href="http://stedicenter.com/" title="Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.jpg" alt="Стеди" /></a></li>
+
+						<li><a href="https://www.facebook.com/BoardGameClubAurora/" title="Club Aurora" target="_blank"><img src="{$base}resource/image/public/partner/aurora.png" alt="Club Aurora" /></a></li>
+						<li><a href="https://robopartans.com/" title="Робопартанс" target="_blank"><img src="{$base}resource/image/public/partner/robopartans.png" alt="Робопартанс" /></a></li>
 					</ul>
 				</div>
 				<div class="contacts">
@@ -90,7 +97,7 @@
 							<p>организатор: <a href="http://burgaslab.org">BurgasLab</a></p>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="https://www.facebook.com/events/758406278003754/"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
+							<p><a href="https://www.facebook.com/events/s/burgas-game-jam-2023/1865225987188243/"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
 							<p><a href="https://www.facebook.com/BurgasGameJam"><i class="fa fa-facebook"></i>Burgas Game Jam</a></p>
 							</div>
 						<div class="pure-u-1 pure-u-sm-1-4">

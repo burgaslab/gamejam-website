@@ -5,11 +5,11 @@
 	{if $open}
 		{if $success}
 			<div class="success">
-				<p>Вашата регистрация за Burgas Game Jam 2020 беше успешна!</p>
+				<p>Вашата регистрация за Burgas Game Jam 2023 беше успешна!</p>
 			</div>
 		{else}
 			<form method="post" action="#" class="pure-form pure-form-stacked validate">
-				<h1>Регистрация за Burgas Game Jam 2020</h1>
+				<h1>Регистрация за Burgas Game Jam 2023</h1>
 				{if !$validator->is_valid()}
 					{error_summary $validator}
 				{/if}

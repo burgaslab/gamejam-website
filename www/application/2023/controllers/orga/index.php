@@ -9,6 +9,6 @@ class Index extends Auth {
 	}
 
 	public function index() {
-		redirect("/orga/pages");
+		redirect("/orga/participants");
 	}
 }

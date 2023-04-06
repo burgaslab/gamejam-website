@@ -14,7 +14,7 @@ $config["nav"] = array(
 	array("title"=>"За Jammer-и", "url"=>"jammers"),
 	array("title"=>"Подкрепи", "url"=>"support"),
 	array("title"=>"Press Release", "url"=>"press"),
-	//array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
+	array("title"=>"Регистрация", "url"=>"registration", "css"=>"highlight"),
 	//array("title"=>"Гласуване", "url"=>"vote", "css"=>"highlight"),
 	//array("title"=>"Класиране", "url"=>"standing"),
 	array("title"=>"Архив", "url"=>"", "sub" => array(
@@ -29,8 +29,8 @@ $config["nav"] = array(
 
 
 $config["nav_orga"] = array(
-		//array("title"=>"Участници", "url"=>"orga/participants"),
-		//array("title"=>"Отбори", "url"=>"orga/teams"),
+		array("title"=>"Участници", "url"=>"orga/participants"),
+		array("title"=>"Отбори", "url"=>"orga/teams"),
 		//array("title"=>"Кодове", "url"=>"orga/codes"),
 		array("title"=>"Страници", "url"=>"orga/pages"),
 		array("title"=>"Настройки", "url"=>"orga/settings"),

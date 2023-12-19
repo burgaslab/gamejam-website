@@ -1,3 +1,7 @@
+#<IfModule mime_module>
+#AddType application/x-httpd-alt-php53 .php .php5 .phtml
+#</IfModule>
+
 Options All -Indexes
 DirectoryIndex index.php
 

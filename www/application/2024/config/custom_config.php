@@ -17,7 +17,7 @@ $config["location"] = array(42.498087, 27.477206);
 $config["year"] = 2024;
 $config["force_ssl"] = true;
 
-$config["shirt_sizes"] = array("XS", "S", "M", "L", "XL");
+$config["shirt_sizes"] = array("XS", "S", "M", "L", "XL", "XXL", "XXXL");
 /*
  * Use this from other config files like so:
  * merge_env(__FILE__, $config).

@@ -1,5 +1,5 @@
 <?php
-$config["webresources_ver"] = "1";
+$config["webresources_ver"] = "1.1";
 
 $config["webresources_minify"] = false;
 

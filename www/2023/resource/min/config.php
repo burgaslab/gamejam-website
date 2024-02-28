@@ -9,7 +9,7 @@
 /**
  * Path to LESS compiler
  */
-$min_lessCompiler = '../../application/2023/third_party/lessc.php';
+$min_lessCompiler = '../../../application/2023/third_party/lessc.php';
 
 /**
  * Allow use of the Minify URI Builder app. Only set this to true while you need it.

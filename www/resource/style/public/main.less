@@ -2,8 +2,8 @@
 @gray: #8b8b8b;
 @darkgray: #fff;
 
-@primary_color: #fe754b;
-@secondary_color: #3d163e;
+@primary_color: #5348c1;
+@secondary_color: #00ffff;
 
 html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family: roboto, arial; }
 
@@ -11,7 +11,7 @@ html, body { overflow-x: hidden; }
 body { background: url(../../image/public/body.jpg);
     background-size: cover;
 		background-attachment: fixed;
-		color: #f1f1f1;
+		color: #390165;
 }
 .wrap { width: 90%; margin: 0 auto; }
 
@@ -21,10 +21,10 @@ body { background: url(../../image/public/body.jpg);
 }
 
 #side-nav {
-	position: absolute; background: #555; height: 100%; width: 275px; left: -275px; overflow-y: auto;
-	img { display: block; width: 100%; background: #fff; padding: 10px; box-sizing: border-box; }
+	position: absolute; background: #7371d3; height: 100%; width: 275px; left: -275px; overflow-y: auto;
+	img { display: block; width: 100%; background: #390165; padding: 10px; box-sizing: border-box; }
 	a { display: block; color: #fff; text-decoration: none; height: 44px; line-height: 44px; border-top: solid 1px rgba(255, 255, 255, 0.05); padding: 0 1em 0 1em; -webkit-transition: color 0.15s ease-in-out; transition: color 0.15s ease-in-out; }
-	li.highlight > a { color: #ff8a00; }
+	li.highlight > a { color: #00ffff; }
 	a:hover, li.active > a { background: @primary_color; }
 	ul ul a { text-indent: 20px; }
 	.fa { margin: 0 0 0 0.5em;  font-size: 1.2em; }
@@ -39,18 +39,18 @@ body { background: url(../../image/public/body.jpg);
 	}
 	a.current { display: block; text-decoration: none; margin: 4px; font-weight: 500; font-size: 20px; color: #EA1474; }
 	nav {
-		background: #633a64; border-radius: 0 0 8px 8px; width: 100%; display: block; text-align: left;
+		background: #7371d3; border-radius: 0 0 8px 8px; width: 100%; display: block; text-align: left;
 		display: none; margin: 0 0 20px 0;
 		li { list-style-type: none; margin: 0; padding: 0; }
 		li:first-child { border-radius: 0 0 0 8px; }
 		ul { margin: 0 0 0 0; }
 		> ul > li { 
 			> a { -webkit-transition: color 0.15s ease-in-out; transition: color 0.15s ease-in-out; display: block; text-decoration: none; font-weight: 600; font-size: 1em; outline: 0; color: #fff; line-height: 45px; padding: 0px 12px 5px 12px; }
-			&:hover > a { color: @primary_color; }
+			&:hover > a { color: @secondary_color; }
 			&.active > a { color: #fff; }
 			&.highlight { background: @secondary_color; }
-			&.highlight > a {color: #fff;}
-			&.active { background: @primary_color; a { color: #333; }}
+			&.highlight > a {color: #5348c1;}
+			&.active { background: @primary_color; a { color: @secondary_color; }}
 			.fa { margin: 0 0 0 0.5em;  font-size: 1.2em; }
 		}
 		> ul > li {
@@ -60,7 +60,7 @@ body { background: url(../../image/public/body.jpg);
 		> ul ul { 
 			visibility: hidden; opacity: 0; -webkit-transition: 0.15s ease-in-out; transition: 0.15s ease-in-out; position: absolute; top: 0; z-index: 10; min-width: 200px; background: @primary_color; padding: 0.5em 0 0.5em 0; border-radius: 8px; margin-top: 3em; text-align: left; left: 50%; transform: translateX(-50%); 
 			a { display: block; padding: 0.6em 1em; font-size: 0.90em; color: #fff; text-decoration: none; }
-			a:hover { color: @gray; }
+			a:hover { color: #00ffff; }
 			&:before { content: ''; position: absolute; top: -10px; left: 50%; margin-left: -10px; border-bottom: solid 10px @primary_color; border-left: solid 10px transparent; border-right: solid 10px transparent; }
 		}
 		li:hover ul { visibility: visible; opacity: 1; }
@@ -76,7 +76,7 @@ body { background: url(../../image/public/body.jpg);
 #content {
 	padding: 1em 0;
 	.wrap { 
-		background: rgba(61, 22, 62, 0.85);
+		background: rgba(255, 255, 255, 0.88);
 		border-radius: 8px; 
 	}
 	h1 { color: @primary_color; margin: 0.5em 0; }
@@ -95,13 +95,13 @@ body { background: url(../../image/public/body.jpg);
 		h4 {
 			margin: 20px 0 0 0;
 			span { font-weight: 400; padding: 7px; font-size: 1.5em; line-height: 3em; position: relative; }
-			i { background-color: @primary_color; border-radius: 50%; color: #333; display: inline-block; font-size: 1em; font-weight: 700; height: 40px; padding: 10px; width: 40px; margin: 0 5px 0 0; line-height: 35px; vertical-align: middle; font-style: normal; text-align: center; }
+			i { background-color: #03d8d2; border-radius: 50%; color: #333; display: inline-block; font-size: 1em; font-weight: 700; height: 40px; padding: 10px; width: 40px; margin: 0 5px 0 0; line-height: 35px; vertical-align: middle; font-style: normal; text-align: center; }
 			i sup { font-size: 0.7em; }
 			a { text-decoration: none; }
 			a:hover { text-decoration: underline; }
 		}
 		p { line-height: 1.6em; font-size: 1.3em; }
-		a { color: @primary_color; }
+		a { color: #02a5ad; }
 		a:hover { text-decoration: none; }
 		ul { padding: 0 0 0 20px; line-height: 1.6em; font-size: 20px; }
 		li { margin: 10px 0; }
@@ -135,7 +135,7 @@ body { background: url(../../image/public/body.jpg);
 		margin: 20px 0; 
 		h4 { margin-top: 10px; }
 		> p {
-			> label { background: @primary_color; line-height: 28px; margin: 0 10px 0 0; padding: 0 5px; color: #333; font-size: 0.8em; }
+			> label { background: @primary_color; line-height: 28px; margin: 0 10px 0 0; padding: 0 5px; color: #03d8d2; font-size: 0.8em; }
 			&.drop { text-decoration: line-through; }
 			> span { font-size: 0.8em; }
 		}
@@ -166,7 +166,7 @@ body { background: url(../../image/public/body.jpg);
 		.pure-g { padding: 0; box-sizing: border-box; }
 		.pure-g > div { padding: 0 1em 1em 0;box-sizing: border-box;  }
 		textarea { min-height: 200px; }
-		button.pure-button { margin: 1em 0 0 0; background-color: @secondary_color;}
+		button.pure-button { margin: 1em 0 0 0; background-color: @secondary_color; color: #390165;}
 	}
 	
 	.map { background: #ccc; margin: 1em 0; height: 300px; }
@@ -244,7 +244,7 @@ body { background: url(../../image/public/body.jpg);
 				&.cancel:hover { background-color:#e5a70a; }
 			}
 			
-			input, {
+			input {
 				width: 120px;
 				&.small { width: 50px; } 
 			}
@@ -348,10 +348,16 @@ body { background: url(../../image/public/body.jpg);
 			margin: 1em; font-size: 1.2em; overflow: hidden;
 			> div { padding: 0 2em 0 0; box-sizing: border-box; }
 			a { text-decoration: none; }
-			a.support  { display: block; background: @primary_color; padding: 16px; color: #fff; border-radius: 8px; }
+			a.support  { display: block; background: @secondary_color; padding: 16px; color: #333; border-radius: 8px; }
 			p a:hover { text-decoration: underline; }
-			p { line-height: 1.5em; }
-			i.fa { margin: 0 5px 0 0; background: @primary_color; padding: 5px; border-radius: 3px;}
+			p {
+				@media only screen and (max-width: 600px) {
+					line-height: 2.5em;
+				} 
+
+				line-height: 1.5em; 
+			}
+			i.fa { margin: 0 5px 0 0; background: @secondary_color; padding: 5px; border-radius: 3px; color: #333;}
 		}
 	}
 }
@@ -367,7 +373,7 @@ body { background: url(../../image/public/body.jpg);
 
 .mosaicflow__column { float: left; }
 
-em.bubble { display:inline-block; background: #E53283; border-radius: 30px; position: absolute; opacity: 1; width: 30px; height: 30px; }
+em.bubble { display:inline-block; background: #7371d3; border-radius: 30px; position: absolute; opacity: 1; width: 30px; height: 30px; }
 em.bubble-1 { animation: bubble1 1s linear 1s infinite; -webkit-animation: bubble1 1s linear 1s infinite; top: -25px; left: 15px; }
 em.bubble-2 { animation: bubble2 2s linear 1s infinite; -webkit-animation: bubble2 2s linear 1s infinite; top: -35px; left: 15px; }
 em.bubble-3 { animation: bubble3 1.5s linear 1s infinite; -webkit-animation: bubble3 1.5s linear 1s infinite; top: -35px; left: 15px;

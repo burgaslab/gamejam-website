@@ -4,7 +4,7 @@
 	<title>{$html_title}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:image" content="{$http_base}resource/image/public/facebook.png" />
+	<meta property="og:image" content="{$http_base}resource/image/public/header.png" />
 {block "bundle"}
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
@@ -31,7 +31,7 @@
 <body class="{block "body_class"}{/block}">
 	<div id="page-wrap">
 		<div id="side-nav">
-			<img src="{$base}resource/image/public/header.png" alt="" />
+			<img src="{$base}resource/image/public/header.png?v=1" alt="" />
 		</div>
 		<div id="header" class="cf">
 			<div class="wrap">
@@ -57,7 +57,7 @@
 				{block "logo"}
 				<div class="logo">
 					<div class="logo-wrap">
-						<a href="{$base}"><img src="{$base}resource/image/public/header.png" class="pure-img" alt="Burgas Game Jam 2024" /></a>
+						<a href="{$base}"><img src="{$base}resource/image/public/header.png?v=1" class="pure-img" alt="Burgas Game Jam 2024" /></a>
 						<p style="display: none">26 януари - 28 януари 2024<br/>в Регионална библиотека “Пейо Яворов”</p>
 					</div>
 				</div>
@@ -75,9 +75,32 @@
 				<div class="partners">
 					<h3>С подкрепата на:</h3>
 					<ul class="assets">
-						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
-						<li><a href="http://globalgamejam.org" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="Global Game Jam" /></a></li>
 						<li><a href="http://burgaslab.org" title="BurgasLab" target="_blank"><img src="{$base}resource/image/public/partner/burgaslab.png" alt="BurgasLab" /></a></li>
+						<li><a href="http://globalgamejam.org" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="Global Game Jam" /></a></li>
+
+						<li><a href="https://pliant.io/" title="Pliant" target="_blank"><img src="{$base}resource/image/public/partner/pliant.png" alt="Pliant" /></a></li>
+						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
+						<li><a href="https://mal-burgas.com/bg/biblioteka" title="Регионална Библиотека 'Пейо К. Яворов'" target="_blank"><img src="{$base}resource/image/public/partner/biblioteka.jpg" alt="Регионална Библиотека 'Пейо К. Яворов'" /></a></li>
+						<li><a href="https://primorsko.bg/" title="Община Приморско" target="_blank"><img src="{$base}resource/image/public/partner/primorsko.png" alt="Община Приморско" /></a></li>
+						<li><a href="https://ruoburgas.bg/" title="РУО - Бургас" target="_blank"><img src="{$base}resource/image/public/partner/ruo-burgas.webp" alt="РУО - Бургас" /></a></li>
+						<li><a href="https://souprimorsko.net/" title="СУ Никола Вапцаров - Приморско" target="_blank"><img src="{$base}resource/image/public/partner/primorsko-school.png" alt="СУ Никола Вапцаров - Приморско" /></a></li>
+
+						<li><a href="https://www.facebook.com/BoardGameClubAurora/" title="Board Game Club Aurora" target="_blank"><img src="{$base}resource/image/public/partner/aurora.jpg" alt="Board Game Club Aurora" /></a></li>
+						<li><a href="https://giftlab.bg/" title="Gift Lab" target="_blank"><img src="{$base}resource/image/public/partner/giftlab.png" alt="Gift Lab" /></a></li>
+						<li><a href="https://xiro.bg/" title="Xiro" target="_blank"><img src="{$base}resource/image/public/partner/xiro.png" alt="Xiro" /></a></li>
+						<li><a href="https://robopartans.com/" title="Robopartans" target="_blank"><img src="{$base}resource/image/public/partner/robopartans.jpg" alt="Robopartans" /></a></li>
+						
+						<li><a href="https://comnet.bg/" title="Comnet" target="_blank"><img src="{$base}resource/image/public/partner/comnet.jpg" alt="Comnet" /></a></li>
+						<li><a href="https://www.facebook.com/p/Reflex-Studio-100029707011872" title="Reflex Studio Burgas" target="_blank"><img src="{$base}resource/image/public/partner/reflexstudioburgas.png" alt="Reflex Studio Burgas" /></a></li>
+						<li><a href="http://musicroomsburgas.eu/" title="Music Rooms Burgas" target="_blank"><img src="{$base}resource/image/public/partner/musicroombsburgas.png" alt="Music Rooms Burgas" /></a></li>
+						<li><a href="https://bnr.bg/burgas" title="БНР Бургас" target="_blank"><img src="{$base}resource/image/public/partner/bnr-burgas.png" alt="БНР Бургас" /></a></li>
+						<li><a href="https://www.facebook.com/yavkafoodbar/?locale=bg_BG" title="ЯВ-КА" target="_blank"><img src="{$base}resource/image/public/partner/yavka.png" alt="ЯВ-КА" /></a></li>
+						<li><a href="https://www.facebook.com/p/%D0%A5%D0%BB%D0%B5%D0%91%D0%90%D0%A0%D0%BD%D0%B0-100063576221095/?locale=bg_BG" title="ХлеБАРна" target="_blank"><img src="{$base}resource/image/public/partner/hlebarna.jpg" alt="ХлеБАРна" /></a></li>
+						<li><a href="https://www.pizza-romance.com/" title="Pizza Romance" target="_blank"><img src="{$base}resource/image/public/partner/pizza-romance.webp" alt="Pizza Romance" /></a></li>
+
+						<li><a href="http://stedicenter.com/" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.jpg" alt="Книжарница Стеди" /></a></li>
+						<li><a href="https://www.bryzosport.com/" title="Бризос Спорт" target="_blank"><img src="{$base}resource/image/public/partner/bryzos.jpg" alt="Бризос Спорт" /></a></li>
+						<li><a href="https://ez-arcade-machine.com/" title="Retro Gaming EZ Arcade" target="_blank"><img src="{$base}resource/image/public/partner/ezarcade.jpg" alt="Retro Gaming EZ Arcade" /></a></li>
 					</ul>
 				</div>
 				<div class="contacts">
@@ -90,8 +113,8 @@
 							<p>организатор: <a href="https://burgaslab.org">BurgasLab</a></p>
 						</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
-							<p><a href="TODO:"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
-							<p><a href="https://www.facebook.com/BurgasGameJam"><i class="fa fa-facebook"></i>Burgas Game Jam</a></p>
+							<p><a href="https://www.facebook.com/events/1557310468415614" target="_blank"><i class="fa fa-facebook"></i>събитието във фейсбук</a></p>
+							<p><a href="https://www.facebook.com/BurgasGameJam" target="_blank"><i class="fa fa-facebook"></i>Burgas Game Jam</a></p>
 							</div>
 						<div class="pure-u-1 pure-u-sm-1-4">
 							<p><a target="_blank" href="https://maps.app.goo.gl/KUjhpdzArR35cfsr8"><i class="fa fa-map-marker"></i>Регионална библиотека “Пейо Яворов”</a></p>

@@ -52,3 +52,9 @@
 /www/application/2024/config/production/auth.php
 /www/application/2024/config/production/config.php
 /www/application/2024/config/production/database.php
+/www/application/2025/cache/*
+!/www/application/2025/cache/index.html
+/www/application/2025/logs/*.php
+/www/application/2025/config/production/auth.php
+/www/application/2025/config/production/config.php
+/www/application/2025/config/production/database.php

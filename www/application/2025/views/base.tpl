@@ -4,7 +4,7 @@
 	<title>{$html_title}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:image" content="{$http_base}resource/image/public/header.png" />
+	<meta property="og:image" content="{$http_base}resource/image/public/header.png?v=1" />
 {block "bundle"}
 {webresources bundle="public_css"}
 {webresources bundle="public_js"}
@@ -31,7 +31,7 @@
 <body class="{block "body_class"}{/block}">
 	<div id="page-wrap">
 		<div id="side-nav">
-			<img src="{$base}resource/image/public/header.png?v=1" alt="" />
+			<img src="{$base}resource/image/public/header.png" alt="" />
 		</div>
 		<div id="header" class="cf">
 			<div class="wrap">
@@ -77,7 +77,15 @@
 					<ul class="assets">
 						<li><a href="http://burgaslab.org" title="BurgasLab" target="_blank"><img src="{$base}resource/image/public/partner/burgaslab.png" alt="BurgasLab" /></a></li>
 						<li><a href="http://globalgamejam.org" title="Global Game Jam" target="_blank"><img src="{$base}resource/image/public/partner/ggj.png" alt="Global Game Jam" /></a></li>
-						<li><a href="https://www.burgas.bg/" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
+						<li><a href="https://www.burgas.bg" title="Община Бургас" target="_blank"><img src="{$base}resource/image/public/partner/burgas.png" alt="Община Бургас" /></a></li>
+						<li><a href="https://maps.app.goo.gl/KUjhpdzArR35cfsr8" title="Регионална библиотека “Пейо Яворов”" target="_blank"><img src="{$base}resource/image/public/partner/lib.png" alt="Регионална библиотека “Пейо Яворов”" /></a></li>
+						<li><a href="https://www.sumup.com" title="SumUp" target="_blank"><img src="{$base}resource/image/public/partner/sumup.png" alt="SumUp" /></a></li>
+						<li><a href="https://www.facebook.com/yavkafoodbar/?locale=bg_BG" title="ЯВ-КА food bar" target="_blank"><img src="{$base}resource/image/public/partner/yav-ka.png" alt="ЯВ-КА food bar" /></a></li>
+						<li><a href="https://www.pizza-romance.com" title="Пицарии “Романс“" target="_blank"><img src="{$base}resource/image/public/partner/romans.png" alt="Пицарии “Романс“" /></a></li>
+						<li><a href="http://stedicenter.com" title="Книжарница Стеди" target="_blank"><img src="{$base}resource/image/public/partner/stedi.png" alt="Книжарница Стеди" /></a></li>
+						<li><a href="https://www.facebook.com/BoardGameClubAurora" title="Club Aurora" target="_blank"><img src="{$base}resource/image/public/partner/aurora.png" alt="Club Aurora" /></a></li>
+						<li><a href="https://giftlab.bg/" title="Gift Lab" target="_blank"><img src="{$base}resource/image/public/partner/giftlab.png" alt="Gift Lab" /></a></li>
+						<li><a href="https://ez-arcade-machine.com/" title="Retro Gaming EZ Arcade" target="_blank"><img src="{$base}resource/image/public/partner/logo-ez-arcade.jpg" alt="Retro Gaming EZ Arcade" /></a></li>
 					</ul>
 				</div>
 				<div class="contacts">
